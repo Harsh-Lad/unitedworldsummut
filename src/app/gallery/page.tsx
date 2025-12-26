@@ -3,25 +3,24 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/Button";
 
-const categories = ["All", "Conferences", "Networking", "Ceremonies", "Exhibitions"];
+const categories = ["All", "Conferences", "Networking", "Ceremonies"];
 
 const galleryImages = [
   { id: 1, title: "Opening Ceremony 2024", category: "Ceremonies", src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" },
   { id: 2, title: "Panel Discussion", category: "Conferences", src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80" },
   { id: 3, title: "Networking Session", category: "Networking", src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80" },
-  { id: 4, title: "Exhibition Hall", category: "Exhibitions", src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80" },
+  { id: 4, title: "Exhibition Hall", category: "Conferences", src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80" },
   { id: 5, title: "Award Ceremony", category: "Ceremonies", src: "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=800&q=80" },
   { id: 6, title: "Keynote Speech", category: "Conferences", src: "https://images.unsplash.com/photo-1558008258-3256797b43f3?w=800&q=80" },
   { id: 7, title: "Business Meetup", category: "Networking", src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" },
-  { id: 8, title: "Product Showcase", category: "Exhibitions", src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80" },
-  { id: 9, title: "Gala Dinner", category: "Ceremonies", src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80" },
-  { id: 10, title: "Workshop Session", category: "Conferences", src: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80" },
-  { id: 11, title: "VIP Reception", category: "Networking", src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&q=80" },
-  { id: 12, title: "Innovation Display", category: "Exhibitions", src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" },
+  { id: 8, title: "Gala Dinner", category: "Ceremonies", src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80" },
+  { id: 9, title: "Workshop Session", category: "Conferences", src: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80" },
+  { id: 10, title: "VIP Reception", category: "Networking", src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&q=80" },
+  { id: 11, title: "Innovation Display", category: "Conferences", src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" },
+  { id: 12, title: "Closing Ceremony", category: "Ceremonies", src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80" },
 ];
 
 export default function GalleryPage() {
@@ -51,106 +50,76 @@ export default function GalleryPage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-navy relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
-            alt="Gallery"
-            fill
-            className="object-cover opacity-20"
-            priority
-          />
-        </div>
-        <Container className="relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Events <span className="text-gold-500">Gallery</span>
-            </h1>
-            <p className="text-lg text-gray-300">
-              Explore moments captured from our summits, conferences, and global
-              gatherings
-            </p>
-          </motion.div>
+      {/* Hero */}
+      <section className="pt-32 pb-16 bg-navy-900">
+        <Container>
+          <div className="max-w-3xl">
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="text-gold-500 text-sm tracking-[0.2em] uppercase mb-6"
+            >
+              Gallery
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
+            >
+              Moments from
+              <br />
+              our summits
+            </motion.h1>
+          </div>
         </Container>
       </section>
 
-      {/* Gallery Section */}
-      <section className="py-24 bg-white">
+      {/* Gallery */}
+      <section className="py-16 bg-white">
         <Container>
-          {/* Category Filter */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex flex-wrap justify-center gap-3 mb-12"
-          >
+          {/* Filter */}
+          <div className="flex flex-wrap gap-4 mb-12">
             {categories.map((category) => (
-              <Button
+              <button
                 key={category}
-                variant={activeCategory === category ? "primary" : "outline"}
-                size="sm"
                 onClick={() => setActiveCategory(category)}
+                className={`px-4 py-2 text-sm transition-colors ${
+                  activeCategory === category
+                    ? "bg-navy-900 text-white"
+                    : "text-gray-600 hover:text-navy-900"
+                }`}
               >
                 {category}
-              </Button>
+              </button>
             ))}
-          </motion.div>
+          </div>
 
-          {/* Gallery Grid */}
-          <motion.div
-            layout
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
-          >
+          {/* Grid */}
+          <motion.div layout className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
             <AnimatePresence mode="popLayout">
-              {filteredImages.map((image, index) => (
+              {filteredImages.map((image) => (
                 <motion.div
                   key={image.id}
                   layout
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.3, delay: index * 0.05 }}
-                  whileHover={{ scale: 1.03 }}
-                  className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer group"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="relative aspect-square overflow-hidden cursor-pointer group"
                   onClick={() => setSelectedImage(image.id)}
                 >
                   <Image
                     src={image.src}
                     alt={image.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
-
-                  {/* Hover Overlay */}
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    className="absolute inset-0 bg-navy-900/70 flex flex-col items-center justify-center p-4 transition-all duration-300"
-                  >
-                    <motion.div
-                      initial={{ scale: 0 }}
-                      whileHover={{ scale: 1 }}
-                      className="w-12 h-12 rounded-full bg-gold-500 flex items-center justify-center mb-3"
-                    >
-                      <ZoomIn size={20} className="text-navy-900" />
-                    </motion.div>
-                    <span className="text-white font-medium text-center text-sm">
-                      {image.title}
-                    </span>
-                    <span className="text-gold-400 text-xs mt-1">
-                      {image.category}
-                    </span>
-                  </motion.div>
-
-                  {/* Shine effect */}
-                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/20 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-navy-900/0 group-hover:bg-navy-900/40 transition-colors" />
+                  <div className="absolute inset-x-0 bottom-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p className="text-white text-sm font-medium">{image.title}</p>
+                    <p className="text-gray-300 text-xs">{image.category}</p>
+                  </div>
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -165,50 +134,41 @@ export default function GalleryPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-navy-900/95 backdrop-blur-sm flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 bg-navy-900/95 flex items-center justify-center p-4"
             onClick={() => setSelectedImage(null)}
           >
-            {/* Close Button */}
-            <motion.button
-              whileHover={{ scale: 1.1, rotate: 90 }}
-              whileTap={{ scale: 0.9 }}
-              className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/10 text-white hover:bg-gold-500 hover:text-navy-900 transition-colors flex items-center justify-center"
+            <button
+              className="absolute top-6 right-6 w-12 h-12 flex items-center justify-center text-white hover:text-gold-500 transition-colors"
               onClick={() => setSelectedImage(null)}
             >
               <X size={24} />
-            </motion.button>
+            </button>
 
-            {/* Navigation Arrows */}
-            <motion.button
-              whileHover={{ scale: 1.1, x: -5 }}
-              whileTap={{ scale: 0.9 }}
-              className="absolute left-4 md:left-8 w-12 h-12 rounded-full bg-white/10 text-white hover:bg-gold-500 hover:text-navy-900 transition-colors flex items-center justify-center"
+            <button
+              className="absolute left-4 md:left-8 w-12 h-12 flex items-center justify-center text-white hover:text-gold-500 transition-colors"
               onClick={(e) => {
                 e.stopPropagation();
                 handlePrevious();
               }}
             >
-              <ChevronLeft size={28} />
-            </motion.button>
+              <ChevronLeft size={32} />
+            </button>
 
-            <motion.button
-              whileHover={{ scale: 1.1, x: 5 }}
-              whileTap={{ scale: 0.9 }}
-              className="absolute right-4 md:right-8 w-12 h-12 rounded-full bg-white/10 text-white hover:bg-gold-500 hover:text-navy-900 transition-colors flex items-center justify-center"
+            <button
+              className="absolute right-4 md:right-8 w-12 h-12 flex items-center justify-center text-white hover:text-gold-500 transition-colors"
               onClick={(e) => {
                 e.stopPropagation();
                 handleNext();
               }}
             >
-              <ChevronRight size={28} />
-            </motion.button>
+              <ChevronRight size={32} />
+            </button>
 
-            {/* Image Container */}
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
+              initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className="relative w-full max-w-5xl aspect-video rounded-2xl overflow-hidden"
+              exit={{ scale: 0.95, opacity: 0 }}
+              className="relative w-full max-w-5xl aspect-video overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
@@ -218,13 +178,11 @@ export default function GalleryPage() {
                 className="object-cover"
                 sizes="100vw"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-navy-900 via-navy-900/50 to-transparent p-6">
-                <h3 className="text-white text-xl font-bold">
+              <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-navy-900 to-transparent p-6">
+                <h3 className="text-white text-xl font-semibold">
                   {selectedImageData.title}
                 </h3>
-                <p className="text-gold-400 text-sm">
-                  {selectedImageData.category}
-                </p>
+                <p className="text-gray-400 text-sm">{selectedImageData.category}</p>
               </div>
             </motion.div>
           </motion.div>

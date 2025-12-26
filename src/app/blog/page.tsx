@@ -3,74 +3,53 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Calendar, ArrowRight, FileText, Search } from "lucide-react";
+import Image from "next/image";
+import { Search } from "lucide-react";
 import Container from "@/components/ui/Container";
-import Card from "@/components/ui/Card";
-import Button from "@/components/ui/Button";
-import Badge from "@/components/ui/Badge";
 
-const categories = ["All", "Events", "Vision", "Impact", "News"];
+const categories = ["All", "Events", "Vision", "Impact"];
 
 const blogPosts = [
   {
-    id: 1,
-    title: "Conference, Meetings & MOU Signing Ceremony",
-    excerpt:
-      "A landmark event bringing together global leaders for strategic partnerships and agreements that will shape the future of international business.",
-    date: "2024-12-15",
+    title: "MOU Signing Ceremony Marks New Chapter in Global Trade",
+    excerpt: "A landmark event bringing together global leaders for strategic partnerships and agreements that will shape the future of international business.",
+    date: "Dec 2024",
     category: "Events",
     slug: "conference-mou-signing",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
     featured: true,
   },
   {
-    id: 2,
-    title: "Conference, Meetings Vision 2030",
-    excerpt:
-      "Exploring the future of sustainable development aligned with UAE Vision 2030 objectives and global transformation goals.",
-    date: "2024-12-10",
+    title: "Vision 2030: Aligning Summit Goals with UAE's Future",
+    excerpt: "Exploring sustainable development aligned with UAE Vision 2030 objectives and global transformation goals.",
+    date: "Dec 2024",
     category: "Vision",
     slug: "vision-2030-conference",
-    featured: true,
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
   },
   {
-    id: 3,
-    title: "Supporting Sustainable Development Goals",
-    excerpt:
-      "How United World Summit is driving progress towards the UN Sustainable Development Goals through strategic initiatives.",
-    date: "2024-12-05",
+    title: "How the Summit Advances UN Sustainable Development Goals",
+    excerpt: "Driving progress towards critical global objectives through strategic initiatives and partnerships.",
+    date: "Nov 2024",
     category: "Impact",
     slug: "sustainable-development-goals",
-    featured: true,
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
   },
   {
-    id: 4,
     title: "Global Business Opportunities in Asian Markets",
-    excerpt:
-      "Analyzing emerging opportunities and strategic partnerships in rapidly growing Asian markets for 2025.",
-    date: "2024-11-28",
-    category: "News",
+    excerpt: "Analyzing emerging opportunities and strategic partnerships in rapidly growing Asian markets.",
+    date: "Nov 2024",
+    category: "Events",
     slug: "asian-markets-opportunities",
-    featured: false,
+    image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&q=80",
   },
   {
-    id: 5,
     title: "Women in Leadership: Breaking Barriers",
-    excerpt:
-      "Celebrating the achievements of women leaders and exploring initiatives to promote gender equality in business.",
-    date: "2024-11-20",
+    excerpt: "Celebrating achievements of women leaders and initiatives to promote gender equality in business.",
+    date: "Oct 2024",
     category: "Impact",
     slug: "women-in-leadership",
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "Digital Transformation Summit Highlights",
-    excerpt:
-      "Key takeaways from our digital transformation summit featuring industry leaders and technology innovators.",
-    date: "2024-11-15",
-    category: "Events",
-    slug: "digital-transformation-summit",
-    featured: false,
+    image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&q=80",
   },
 ];
 
@@ -79,139 +58,141 @@ export default function BlogPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredPosts = blogPosts.filter((post) => {
-    const matchesCategory =
-      activeCategory === "All" || post.category === activeCategory;
+    const matchesCategory = activeCategory === "All" || post.category === activeCategory;
     const matchesSearch =
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
+  const [featured, ...rest] = filteredPosts;
+
   return (
     <>
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-navy">
+      {/* Hero */}
+      <section className="pt-32 pb-16 bg-navy-900">
         <Container>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              News & <span className="text-gold-500">Insights</span>
-            </h1>
-            <p className="text-lg text-gray-300">
-              Stay updated with the latest developments, success stories, and
-              insights from the United World Summit
-            </p>
-          </motion.div>
+          <div className="max-w-3xl">
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="text-gold-500 text-sm tracking-[0.2em] uppercase mb-6"
+            >
+              News & Insights
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
+            >
+              Latest updates
+            </motion.h1>
+          </div>
         </Container>
       </section>
 
-      {/* Blog Section */}
-      <section className="py-24 bg-white">
+      {/* Blog */}
+      <section className="py-16 bg-white">
         <Container>
-          {/* Search and Filter */}
-          <div className="flex flex-col md:flex-row gap-6 justify-between items-center mb-12">
-            {/* Search */}
-            <div className="relative w-full md:w-80">
-              <Search
-                size={20}
-                className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"
-              />
-              <input
-                type="text"
-                placeholder="Search articles..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent"
-              />
-            </div>
-
-            {/* Category Filter */}
-            <div className="flex flex-wrap gap-2">
+          {/* Filter & Search */}
+          <div className="flex flex-col md:flex-row gap-6 justify-between items-start md:items-center mb-12">
+            <div className="flex flex-wrap gap-4">
               {categories.map((category) => (
-                <Button
+                <button
                   key={category}
-                  variant={activeCategory === category ? "primary" : "outline"}
-                  size="sm"
                   onClick={() => setActiveCategory(category)}
+                  className={`px-4 py-2 text-sm transition-colors ${
+                    activeCategory === category
+                      ? "bg-navy-900 text-white"
+                      : "text-gray-600 hover:text-navy-900"
+                  }`}
                 >
                   {category}
-                </Button>
+                </button>
               ))}
+            </div>
+
+            <div className="relative w-full md:w-64">
+              <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              <input
+                type="text"
+                placeholder="Search..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-10 pr-4 py-2 border border-gray-200 text-sm focus:outline-none focus:border-navy-900"
+              />
             </div>
           </div>
 
-          {/* Blog Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredPosts.map((post, index) => (
-              <motion.article
-                key={post.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Link href={`/blog/${post.slug}`}>
-                  <Card variant="bordered" className="h-full group">
-                    {/* Image Placeholder */}
-                    <div className="aspect-video rounded-xl bg-navy-800 mb-6 overflow-hidden flex items-center justify-center">
-                      <FileText size={40} className="text-gold-500/30" />
+          {filteredPosts.length === 0 ? (
+            <div className="text-center py-16">
+              <p className="text-gray-500">No articles found</p>
+            </div>
+          ) : (
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Featured */}
+              {featured && (
+                <motion.article
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="lg:row-span-2"
+                >
+                  <Link href={`/blog/${featured.slug}`} className="group block">
+                    <div className="aspect-4/3 relative overflow-hidden mb-6">
+                      <Image
+                        src={featured.image}
+                        alt={featured.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
                     </div>
+                    <p className="text-gray-500 text-sm mb-2">
+                      {featured.date} · {featured.category}
+                    </p>
+                    <h2 className="text-2xl md:text-3xl font-semibold text-navy-900 group-hover:text-gold-600 transition-colors leading-tight mb-3">
+                      {featured.title}
+                    </h2>
+                    <p className="text-gray-600 leading-relaxed">
+                      {featured.excerpt}
+                    </p>
+                  </Link>
+                </motion.article>
+              )}
 
-                    {/* Content */}
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-3">
-                        <Badge variant="navy">{post.category}</Badge>
-                        <span className="text-gray-400 text-sm flex items-center gap-1">
-                          <Calendar size={14} />
-                          {new Date(post.date).toLocaleDateString("en-US", {
-                            month: "short",
-                            day: "numeric",
-                            year: "numeric",
-                          })}
-                        </span>
-                      </div>
-
-                      <h3 className="text-xl font-bold text-navy-900 group-hover:text-gold-600 transition-colors line-clamp-2">
-                        {post.title}
-                      </h3>
-
-                      <p className="text-gray-600 line-clamp-3">
-                        {post.excerpt}
-                      </p>
-
-                      <span className="inline-flex items-center text-gold-600 font-medium text-sm group-hover:gap-2 transition-all">
-                        Read More
-                        <ArrowRight
-                          size={16}
-                          className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity"
+              {/* Other posts */}
+              <div className="space-y-8">
+                {rest.map((post, index) => (
+                  <motion.article
+                    key={post.slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                  >
+                    <Link href={`/blog/${post.slug}`} className="group flex gap-6">
+                      <div className="w-32 h-24 relative shrink-0 overflow-hidden">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          sizes="128px"
                         />
-                      </span>
-                    </div>
-                  </Card>
-                </Link>
-              </motion.article>
-            ))}
-          </div>
-
-          {/* No Results */}
-          {filteredPosts.length === 0 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="text-center py-16"
-            >
-              <FileText size={48} className="mx-auto text-gray-300 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-600 mb-2">
-                No articles found
-              </h3>
-              <p className="text-gray-400">
-                Try adjusting your search or filter criteria
-              </p>
-            </motion.div>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-gray-500 text-sm mb-1">
+                          {post.date} · {post.category}
+                        </p>
+                        <h3 className="text-lg font-semibold text-navy-900 group-hover:text-gold-600 transition-colors leading-snug line-clamp-2">
+                          {post.title}
+                        </h3>
+                      </div>
+                    </Link>
+                  </motion.article>
+                ))}
+              </div>
+            </div>
           )}
         </Container>
       </section>

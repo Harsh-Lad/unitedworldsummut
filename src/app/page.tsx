@@ -1,5 +1,4 @@
 import Hero from "@/components/sections/Hero";
-import Stats from "@/components/sections/Stats";
 import AboutPreview from "@/components/sections/AboutPreview";
 import Highlights from "@/components/sections/Highlights";
 import Sectors from "@/components/sections/Sectors";
@@ -11,7 +10,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Stats />
       <AboutPreview />
       <Highlights />
       <Sectors />

@@ -3,141 +3,129 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Container from "@/components/ui/Container";
-import SectionHeader from "@/components/ui/SectionHeader";
-import Card from "@/components/ui/Card";
-import Button from "@/components/ui/Button";
-import Badge from "@/components/ui/Badge";
 
-const blogPosts = [
+const posts = [
   {
-    id: 1,
-    title: "Conference, Meetings & MOU Signing Ceremony",
-    excerpt:
-      "A landmark event bringing together global leaders for strategic partnerships and agreements.",
-    date: "2024-12-15",
-    category: "Events",
+    title: "MOU Signing Ceremony Marks New Chapter in Global Trade",
+    date: "Dec 2024",
     slug: "conference-mou-signing",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+    featured: true,
   },
   {
-    id: 2,
-    title: "Conference, Meetings Vision 2030",
-    excerpt:
-      "Exploring the future of sustainable development aligned with UAE Vision 2030 objectives.",
-    date: "2024-12-10",
-    category: "Vision",
+    title: "Vision 2030: Aligning Summit Goals with UAE's Future",
+    date: "Dec 2024",
     slug: "vision-2030-conference",
     image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
+    featured: false,
   },
   {
-    id: 3,
-    title: "Supporting Sustainable Development Goals",
-    excerpt:
-      "How United World Summit is driving progress towards the UN Sustainable Development Goals.",
-    date: "2024-12-05",
-    category: "Impact",
+    title: "How the Summit Advances UN Sustainable Development Goals",
+    date: "Nov 2024",
     slug: "sustainable-development-goals",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+    featured: false,
   },
 ];
 
 export default function BlogPreview() {
-  return (
-    <section className="py-24 bg-white overflow-hidden">
-      <Container>
-        <SectionHeader
-          title="Latest News & Insights"
-          subtitle="Stay updated with the latest developments and success stories"
-        />
+  const [featured, ...rest] = posts;
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) => (
-            <motion.article
-              key={post.id}
-              initial={{ opacity: 0, y: 30 }}
+  return (
+    <section className="py-28 bg-off-white">
+      <Container>
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
+          <div>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4"
+            >
+              News & Insights
+            </motion.p>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
+              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-navy-900"
             >
-              <Link href={`/blog/${post.slug}`}>
-                <Card variant="bordered" className="h-full group" glow>
-                  {/* Image */}
-                  <div className="aspect-video rounded-xl mb-6 overflow-hidden relative">
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.4 }}
-                      className="relative w-full h-full"
-                    >
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                      />
-                    </motion.div>
-                    {/* Category badge overlay */}
-                    <div className="absolute top-4 left-4">
-                      <Badge variant="gold">{post.category}</Badge>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2 text-gray-400 text-sm">
-                      <Calendar size={14} />
-                      {new Date(post.date).toLocaleDateString("en-US", {
-                        month: "short",
-                        day: "numeric",
-                        year: "numeric",
-                      })}
-                    </div>
-
-                    <h3 className="text-xl font-bold text-navy-900 group-hover:text-gold-600 transition-colors line-clamp-2">
-                      {post.title}
-                    </h3>
-
-                    <p className="text-gray-600 line-clamp-3">{post.excerpt}</p>
-
-                    <motion.span
-                      className="inline-flex items-center text-gold-600 font-medium text-sm"
-                      whileHover={{ x: 5 }}
-                    >
-                      Read More
-                      <motion.span
-                        animate={{ x: [0, 5, 0] }}
-                        transition={{ duration: 1.5, repeat: Infinity }}
-                        className="ml-1"
-                      >
-                        <ArrowRight size={16} />
-                      </motion.span>
-                    </motion.span>
-                  </div>
-                </Card>
-              </Link>
-            </motion.article>
-          ))}
+              Latest Updates
+            </motion.h2>
+          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <Link
+              href="/blog"
+              className="group inline-flex items-center gap-2 text-navy-900 font-semibold hover:text-gold-600 transition-colors"
+            >
+              All articles
+              <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </Link>
+          </motion.div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-center mt-12"
-        >
-          <Link href="/blog">
-            <Button variant="secondary" size="lg" className="group">
-              View All Articles
-              <ArrowRight
-                size={20}
-                className="ml-2 group-hover:translate-x-1 transition-transform"
-              />
-            </Button>
-          </Link>
-        </motion.div>
+        <div className="grid lg:grid-cols-2 gap-8">
+          {/* Featured post - larger */}
+          <motion.article
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <Link href={`/blog/${featured.slug}`} className="group block">
+              <div className="aspect-3/2 relative overflow-hidden mb-6">
+                <Image
+                  src={featured.image}
+                  alt={featured.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+              <p className="text-gray-500 text-sm mb-2">{featured.date}</p>
+              <h3 className="text-2xl font-semibold text-navy-900 group-hover:text-gold-600 transition-colors leading-tight">
+                {featured.title}
+              </h3>
+            </Link>
+          </motion.article>
+
+          {/* Other posts - stacked */}
+          <div className="space-y-8">
+            {rest.map((post, index) => (
+              <motion.article
+                key={post.slug}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group"
+              >
+                <Link href={`/blog/${post.slug}`} className="flex gap-6">
+                  <div className="w-32 h-24 relative flex-shrink-0 overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="128px"
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-gray-500 text-sm mb-1">{post.date}</p>
+                    <h3 className="text-lg font-semibold text-navy-900 group-hover:text-gold-600 transition-colors leading-snug line-clamp-2">
+                      {post.title}
+                    </h3>
+                  </div>
+                </Link>
+              </motion.article>
+            ))}
+          </div>
+        </div>
       </Container>
     </section>
   );

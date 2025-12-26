@@ -4,58 +4,62 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/Button";
 
 export default function CTA() {
   return (
-    <section className="py-24 bg-gradient-gold relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full filter blur-[100px]" />
-        <div className="absolute bottom-0 right-0 w-72 h-72 bg-white rounded-full filter blur-[80px]" />
-      </div>
-
-      <Container className="relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center"
-        >
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-6">
-            Ready to Shape the Future of Global Business?
-          </h2>
-          <p className="text-lg text-navy-800/80 mb-10 max-w-2xl mx-auto">
-            Join world leaders, innovators, and industry pioneers at the United
-            World Summit 2026. Be part of the conversation that drives global
-            change.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button
-                variant="secondary"
-                size="lg"
-                className="group bg-navy-900 hover:bg-navy-800"
-              >
-                Register Your Interest
-                <ArrowRight
-                  size={20}
-                  className="ml-2 group-hover:translate-x-1 transition-transform"
-                />
-              </Button>
+    <section className="py-32 bg-navy-900">
+      <Container>
+        <div className="max-w-3xl">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-6"
+          >
+            Summit 2026
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8"
+          >
+            Ready to join the
+            <br />
+            conversation?
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-gray-400 text-lg mb-10 max-w-xl"
+          >
+            Attendance is by invitation only. Submit your interest
+            and our team will review your application within 48 hours.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="flex flex-col sm:flex-row gap-6"
+          >
+            <Link
+              href="/contact"
+              className="group inline-flex items-center gap-3 bg-gold-500 text-navy-900 px-8 py-4 font-semibold hover:bg-gold-400 transition-colors"
+            >
+              Request Invitation
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link href="/summit">
-              <Button
-                variant="ghost"
-                size="lg"
-                className="text-navy-900 hover:bg-navy-900/10"
-              >
-                Explore Summit Details
-              </Button>
+            <Link
+              href="/summit"
+              className="inline-flex items-center text-white hover:text-gold-400 transition-colors py-4 border-b border-white/20 hover:border-gold-400"
+            >
+              Learn more about the summit
             </Link>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </Container>
     </section>
   );

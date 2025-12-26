@@ -3,12 +3,11 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { navigation, siteConfig } from "@/lib/constants";
+import { navigation } from "@/lib/constants";
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/Button";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,7 +16,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -30,59 +29,50 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled
-          ? "bg-navy-900/95 backdrop-blur-md shadow-lg py-3"
-          : "bg-transparent py-5"
+          ? "bg-navy-900/95 backdrop-blur-sm py-4"
+          : "bg-transparent py-6"
       )}
     >
       <Container>
         <nav className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center text-navy-900 font-bold text-xl group-hover:bg-gold-400 transition-colors">
-              U
-            </div>
-            <div className="hidden sm:block">
-              <span className="text-white font-bold text-lg tracking-tight">
-                {siteConfig.name.split(" ")[0]}
-              </span>
-              <span className="text-gold-500 font-bold text-lg tracking-tight ml-1">
-                {siteConfig.name.split(" ").slice(1).join(" ")}
-              </span>
-            </div>
+          {/* Logo - text only, cleaner */}
+          <Link href="/" className="group">
+            <span className="text-white text-lg tracking-tight">
+              United
+            </span>
+            <span className="text-gold-500 text-lg tracking-tight ml-1">
+              World Summit
+            </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          {/* Desktop Navigation - minimal */}
+          <div className="hidden lg:flex items-center gap-10">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium transition-colors relative py-2",
+                  "text-sm transition-colors",
                   pathname === item.href
                     ? "text-gold-500"
-                    : "text-gray-300 hover:text-white"
+                    : "text-gray-400 hover:text-white"
                 )}
               >
                 {item.name}
-                {pathname === item.href && (
-                  <motion.div
-                    layoutId="activeNav"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold-500"
-                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                  />
-                )}
               </Link>
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* CTA - simple text link */}
           <div className="hidden lg:block">
-            <Button variant="primary" size="sm">
-              Get in Touch
-            </Button>
+            <Link
+              href="/contact"
+              className="text-sm text-white hover:text-gold-400 transition-colors"
+            >
+              Contact
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,33 +90,34 @@ export default function Header() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden bg-navy-900/98 backdrop-blur-md border-t border-navy-700"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="lg:hidden absolute top-full left-0 right-0 bg-navy-900 border-t border-navy-800"
           >
             <Container>
-              <div className="py-4 space-y-1">
+              <div className="py-6 space-y-1">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
                     className={cn(
-                      "block py-3 px-4 rounded-lg text-base font-medium transition-colors",
+                      "block py-3 text-base transition-colors",
                       pathname === item.href
-                        ? "bg-navy-800 text-gold-500"
-                        : "text-gray-300 hover:bg-navy-800 hover:text-white"
+                        ? "text-gold-500"
+                        : "text-gray-400 hover:text-white"
                     )}
                   >
                     {item.name}
                   </Link>
                 ))}
-                <div className="pt-4 px-4">
-                  <Button variant="primary" size="md" className="w-full">
-                    Get in Touch
-                  </Button>
-                </div>
+                <Link
+                  href="/contact"
+                  className="block py-3 text-base text-gold-500"
+                >
+                  Contact
+                </Link>
               </div>
             </Container>
           </motion.div>

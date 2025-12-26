@@ -1,121 +1,86 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
-import {
-  Fuel,
-  Mountain,
-  Landmark,
-  Globe,
-  MapPin,
-  Package,
-  LucideIcon,
-} from "lucide-react";
+import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
-import SectionHeader from "@/components/ui/SectionHeader";
-import { sectors } from "@/lib/constants";
 
-const iconMap: Record<string, LucideIcon> = {
-  Fuel,
-  Mountain,
-  Landmark,
-  Globe,
-  MapPin,
-  Package,
-};
-
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 20, scale: 0.9 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      type: "spring" as const,
-      stiffness: 100,
-    },
-  },
-};
+const sectors = [
+  "Oil & Gas",
+  "Mining & Minerals",
+  "Banking & Finance",
+  "International Trade",
+  "Infrastructure",
+  "Logistics & Supply Chain",
+  "Healthcare",
+  "Technology",
+  "Real Estate",
+  "Tourism & Hospitality",
+  "Agriculture",
+  "Renewable Energy",
+];
 
 export default function Sectors() {
   return (
-    <section className="py-24 bg-gradient-navy overflow-hidden relative">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-          className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] border border-gold-500/10 rounded-full"
-        />
-        <motion.div
-          animate={{ rotate: -360 }}
-          transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
-          className="absolute -bottom-1/2 -left-1/4 w-[600px] h-[600px] border border-gold-500/5 rounded-full"
-        />
-      </div>
+    <section className="py-24 bg-navy-900 overflow-hidden">
+      <Container>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left side - intro text */}
+          <div>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4"
+            >
+              Industries We Serve
+            </motion.p>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
+            >
+              19 Sectors,
+              <br />
+              <span className="text-gold-500">One Platform</span>
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-gray-400 text-lg leading-relaxed max-w-md"
+            >
+              Cross-industry collaboration creates unexpected synergies.
+              Our curated matchmaking connects complementary businesses
+              and investment opportunities.
+            </motion.p>
+          </div>
 
-      <Container className="relative z-10">
-        <SectionHeader
-          title="Sectors in Focus"
-          subtitle="Connecting leaders across diverse industries to forge new opportunities"
-          light
-        />
-
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
-        >
-          {sectors.map((sector, index) => {
-            const Icon = iconMap[sector.icon];
-            return (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                whileHover={{ y: -10, scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group cursor-pointer"
+          {/* Right side - sector tags in organic layout */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="flex flex-wrap gap-3"
+          >
+            {sectors.map((sector, index) => (
+              <motion.span
+                key={sector}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.05 * index }}
+                className="px-5 py-2.5 border border-gray-700 text-gray-300 text-sm hover:border-gold-500 hover:text-gold-400 transition-colors cursor-default"
               >
-                <div className="relative bg-navy-800 rounded-2xl p-6 text-center h-full border border-navy-700 hover:border-gold-500 transition-all duration-300 overflow-hidden">
-                  {/* Glow effect */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="absolute inset-0 bg-linear-to-t from-gold-500/20 via-transparent to-transparent" />
-                  </div>
-
-                  {/* Shine sweep */}
-                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/10 to-transparent" />
-
-                  <motion.div
-                    whileHover={{ rotate: 360 }}
-                    transition={{ duration: 0.6 }}
-                    className="relative w-14 h-14 mx-auto rounded-xl bg-navy-700 flex items-center justify-center mb-4 group-hover:bg-gold-500 transition-colors duration-300"
-                  >
-                    {Icon && (
-                      <Icon
-                        size={26}
-                        className="text-gold-500 group-hover:text-navy-900 transition-colors duration-300"
-                      />
-                    )}
-                  </motion.div>
-                  <h3 className="relative text-sm font-medium text-white group-hover:text-gold-300 transition-colors">
-                    {sector.name}
-                  </h3>
-                </div>
-              </motion.div>
-            );
-          })}
-        </motion.div>
+                {sector}
+              </motion.span>
+            ))}
+            <span className="px-5 py-2.5 bg-gold-500 text-navy-900 text-sm font-semibold">
+              +7 more
+            </span>
+          </motion.div>
+        </div>
       </Container>
     </section>
   );

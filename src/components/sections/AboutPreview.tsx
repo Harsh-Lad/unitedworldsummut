@@ -3,131 +3,125 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Award, Users, Globe } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/Button";
-import { founderInfo } from "@/lib/constants";
 
 export default function AboutPreview() {
   return (
-    <section className="py-24 bg-off-white overflow-hidden">
+    <section className="py-32 bg-white overflow-hidden">
       <Container>
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Image Side */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative"
-          >
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl"
-            >
-              <Image
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80"
-                alt="Business Leader"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-linear-to-t from-navy-900/60 via-transparent to-transparent" />
-            </motion.div>
-
-            {/* Experience Badge */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+        {/* Offset grid layout for visual tension */}
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          {/* Text content - spans 5 columns, offset from top */}
+          <div className="lg:col-span-5 lg:pt-16">
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              whileHover={{ scale: 1.05, rotate: 2 }}
-              className="absolute -bottom-6 -right-6 bg-gold-500 text-navy-900 rounded-2xl p-6 shadow-xl cursor-default"
+              className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4"
             >
-              <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.5, type: "spring" }}
-                className="text-4xl font-bold"
-              >
-                {founderInfo.experience}
-              </motion.div>
-              <div className="text-sm font-medium">Years Experience</div>
-            </motion.div>
+              About the Summit
+            </motion.p>
 
-            {/* Decorative element */}
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="absolute -top-8 -left-8 w-24 h-24 border-2 border-dashed border-gold-500/30 rounded-full"
-            />
-          </motion.div>
-
-          {/* Content Side */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <motion.span
-              initial={{ opacity: 0, y: 10 }}
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-gold-600 font-medium text-sm uppercase tracking-wider"
+              transition={{ delay: 0.1 }}
+              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-navy-900 leading-tight mb-6"
             >
-              About United World Summit
-            </motion.span>
-            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mt-4 mb-6">
-              Leading Global Business{" "}
-              <span className="text-gold-500">Transformation</span>
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              {founderInfo.bio}
-            </p>
+              Two Decades of
+              <br />
+              Global Impact
+            </motion.h2>
 
-            {/* Features */}
-            <div className="grid sm:grid-cols-3 gap-6 mb-10">
-              {[
-                { icon: Award, label: "Expert Leadership" },
-                { icon: Users, label: "Global Network" },
-                { icon: Globe, label: "Market Access" },
-              ].map((feature, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
-                  whileHover={{ y: -5, scale: 1.02 }}
-                  className="flex items-center gap-3 cursor-default"
-                >
-                  <motion.div
-                    whileHover={{ rotate: 10 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                    className="w-12 h-12 rounded-xl bg-navy-900 flex items-center justify-center"
-                  >
-                    <feature.icon size={22} className="text-gold-500" />
-                  </motion.div>
-                  <span className="text-navy-900 font-medium text-sm">
-                    {feature.label}
-                  </span>
-                </motion.div>
-              ))}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="text-gray-600 text-lg leading-relaxed mb-8"
+            >
+              Founded in 2004, the United World Summit has evolved from
+              a regional business forum into the preeminent gathering for
+              cross-border collaboration. We facilitate dialogue between
+              governments, Fortune 500 executives, and emerging market leaders.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="space-y-4 mb-10"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-px h-12 bg-gold-500 mt-1" />
+                <div>
+                  <p className="text-navy-900 font-semibold">Policy Influence</p>
+                  <p className="text-gray-500 text-sm">Direct access to decision-makers across 100+ nations</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-px h-12 bg-gold-500 mt-1" />
+                <div>
+                  <p className="text-navy-900 font-semibold">Deal Flow</p>
+                  <p className="text-gray-500 text-sm">$4.2B in partnerships facilitated since inception</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+            >
+              <Link
+                href="/about"
+                className="group inline-flex items-center gap-2 text-navy-900 font-semibold hover:text-gold-600 transition-colors"
+              >
+                Our full story
+                <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </Link>
+            </motion.div>
+          </div>
+
+          {/* Image composition - spans 7 columns */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="lg:col-span-7 relative"
+          >
+            {/* Main image */}
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <Image
+                src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200&q=80"
+                alt="Summit gathering"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 60vw"
+              />
             </div>
 
-            <Link href="/about">
-              <Button variant="secondary" size="lg" className="group">
-                Learn More About Us
-                <ArrowRight
-                  size={20}
-                  className="ml-2 group-hover:translate-x-1 transition-transform"
-                />
-              </Button>
-            </Link>
+            {/* Overlapping accent image */}
+            <div className="hidden lg:block absolute -bottom-12 -left-12 w-48 h-64 overflow-hidden border-4 border-white shadow-lg">
+              <Image
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+                alt="Summit speaker"
+                fill
+                className="object-cover"
+                sizes="200px"
+              />
+            </div>
+
+            {/* Experience badge - positioned off-grid */}
+            <div className="absolute -top-6 right-8 bg-navy-900 text-white px-6 py-4">
+              <p className="text-3xl font-bold text-gold-500">20+</p>
+              <p className="text-xs tracking-wide uppercase">Years</p>
+            </div>
           </motion.div>
         </div>
       </Container>
