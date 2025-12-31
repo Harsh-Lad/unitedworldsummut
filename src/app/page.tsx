@@ -1,10 +1,9 @@
-import Hero from "@/components/sections/Hero";
 import AboutPreview from "@/components/sections/AboutPreview";
+import CTA from "@/components/sections/CTA";
+import GalleryPreview from "@/components/sections/GalleryPreview";
+import Hero from "@/components/sections/Hero";
 import Highlights from "@/components/sections/Highlights";
 import Sectors from "@/components/sections/Sectors";
-import GalleryPreview from "@/components/sections/GalleryPreview";
-import BlogPreview from "@/components/sections/BlogPreview";
-import CTA from "@/components/sections/CTA";
 
 export default function Home() {
   return (
@@ -14,11 +13,8 @@ export default function Home() {
       <Highlights />
       <Sectors />
       <GalleryPreview />
-      <BlogPreview />
+      {/* <BlogPreview /> */}
       <CTA />
     </>
   );
 }
-
-
-

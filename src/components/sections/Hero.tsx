@@ -16,7 +16,7 @@ export default function Hero() {
           alt="Global Summit Conference"
           fill
           priority
-          className="object-cover opacity-[0.07]"
+          className="object-cover brightness-50 opacity-50"
           sizes="100vw"
         />
       </div>
@@ -32,7 +32,7 @@ export default function Hero() {
               transition={{ duration: 0.8 }}
               className="text-gold-400 text-sm tracking-[0.2em] uppercase mb-6"
             >
-              Dubai · March 2026
+              Dubai · 10 April 2026
             </motion.p>
 
             {/* Main Headline - large, impactful, left-aligned */}

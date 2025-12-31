@@ -11,75 +11,75 @@ const categories = ["All", "Conferences", "Networking", "Ceremonies"];
 const galleryImages = [
   {
     id: 1,
-    title: "Opening Ceremony 2024",
+    title: "Gallery Image 1",
     category: "Ceremonies",
-    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+    src: "/gallery/1.webp",
   },
   {
     id: 2,
-    title: "Panel Discussion",
+    title: "Gallery Image 2",
     category: "Conferences",
-    src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
+    src: "/gallery/2.webp",
   },
   {
     id: 3,
-    title: "Networking Session",
+    title: "Gallery Image 3",
     category: "Networking",
-    src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80",
+    src: "/gallery/3.webp",
   },
   {
     id: 4,
-    title: "Exhibition Hall",
+    title: "Gallery Image 4",
     category: "Conferences",
-    src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80",
+    src: "/gallery/4.webp",
   },
   {
     id: 5,
-    title: "Award Ceremony",
+    title: "Gallery Image 5",
     category: "Ceremonies",
-    src: "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=800&q=80",
+    src: "/gallery/5.webp",
   },
   {
     id: 6,
-    title: "Keynote Speech",
+    title: "Gallery Image 6",
     category: "Conferences",
-    src: "https://images.unsplash.com/photo-1558008258-3256797b43f3?w=800&q=80",
+    src: "/gallery/6.webp",
   },
   {
     id: 7,
-    title: "Business Meetup",
+    title: "Gallery Image 7",
     category: "Networking",
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+    src: "/gallery/7.webp",
   },
   {
     id: 8,
-    title: "Gala Dinner",
+    title: "Gallery Image 8",
     category: "Ceremonies",
-    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
+    src: "/gallery/8.webp",
   },
   {
     id: 9,
-    title: "Workshop Session",
+    title: "Gallery Image 9",
     category: "Conferences",
-    src: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
+    src: "/gallery/9.webp",
   },
   {
     id: 10,
-    title: "VIP Reception",
+    title: "Gallery Image 10",
     category: "Networking",
-    src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&q=80",
+    src: "/gallery/10.webp",
   },
   {
     id: 11,
-    title: "Innovation Display",
+    title: "Gallery Image 11",
     category: "Conferences",
-    src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    src: "/gallery/11.webp",
   },
   {
     id: 12,
-    title: "Closing Ceremony",
+    title: "Gallery Image 12",
     category: "Ceremonies",
-    src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
+    src: "/gallery/12.webp",
   },
 ];
 
@@ -187,9 +187,9 @@ export default function GalleryPage() {
                   />
                   <div className="absolute inset-0 bg-brown-950/0 group-hover:bg-brown-950/40 transition-colors" />
                   <div className="absolute inset-x-0 bottom-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <p className="text-white text-sm font-medium">
+                    {/* <p className="text-white text-sm font-medium">
                       {image.title}
-                    </p>
+                    </p> */}
                     <p className="text-gray-300 text-xs">{image.category}</p>
                   </div>
                 </motion.div>
@@ -265,4 +265,3 @@ export default function GalleryPage() {
     </>
   );
 }
-

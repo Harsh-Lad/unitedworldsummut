@@ -8,23 +8,23 @@ import Link from "next/link";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
-    alt: "Summit 2024 Opening",
+    src: "/gallery/7.webp",
+    alt: "Summit Opening",
   },
   {
-    src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&q=80",
+    src: "/gallery/3.webp",
     alt: "Networking Session",
   },
   {
-    src: "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=600&q=80",
+    src: "/gallery/5.webp",
     alt: "Awards Gala",
   },
   {
-    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
+    src: "/gallery/2.webp",
     alt: "Delegate Dinner",
   },
   {
-    src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80",
+    src: "/gallery/4.webp",
     alt: "Panel Discussion",
   },
 ];
@@ -49,7 +49,7 @@ export default function GalleryPreview() {
               viewport={{ once: true }}
               className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-950"
             >
-              Moments from Past Summits
+              Moments from the Summit
             </motion.h2>
           </div>
           <motion.div

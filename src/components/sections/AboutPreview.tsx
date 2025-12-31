@@ -107,7 +107,7 @@ export default function AboutPreview() {
             {/* Main image */}
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200&q=80"
+                src="/gallery/1.webp"
                 alt="Summit gathering"
                 fill
                 className="object-cover"
@@ -118,7 +118,7 @@ export default function AboutPreview() {
             {/* Overlapping accent image */}
             <div className="hidden lg:block absolute -bottom-12 -left-12 w-48 h-64 overflow-hidden border-4 border-white shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+                src="/sachin-katarnawre.jpeg"
                 alt="Summit speaker"
                 fill
                 className="object-cover"

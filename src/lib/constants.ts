@@ -6,7 +6,7 @@ export const siteConfig = {
   url: "https://www.unitedworldsummit.com",
   email: "info@unitedworldsummit.com",
   location: "Dubai, UAE",
-  eventDate: "2026",
+  eventDate: "April 10, 2026",
 };
 
 export const navigation = [
@@ -14,7 +14,7 @@ export const navigation = [
   { name: "About Us", href: "/about" },
   { name: "Summit 2026", href: "/summit" },
   { name: "Gallery", href: "/gallery" },
-  { name: "Blog", href: "/blog" },
+  // { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
