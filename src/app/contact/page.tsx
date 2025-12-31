@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { Send, CheckCircle } from "lucide-react";
 import Container from "@/components/ui/Container";
 import { siteConfig } from "@/lib/constants";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { motion } from "framer-motion";
+import { CheckCircle, Send } from "lucide-react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -41,7 +41,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-navy-900">
+      <section className="pt-52 pb-16 bg-brown-900">
         <Container>
           <div className="max-w-3xl">
             <motion.p
@@ -74,7 +74,7 @@ export default function ContactPage() {
                   <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">
                     Location
                   </p>
-                  <p className="text-navy-900">{siteConfig.location}</p>
+                  <p className="text-brown-900">{siteConfig.location}</p>
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">
@@ -82,7 +82,7 @@ export default function ContactPage() {
                   </p>
                   <a
                     href={`mailto:${siteConfig.email}`}
-                    className="text-navy-900 hover:text-gold-600 transition-colors"
+                    className="text-brown-900 hover:text-gold-600 transition-colors"
                   >
                     {siteConfig.email}
                   </a>
@@ -91,7 +91,7 @@ export default function ContactPage() {
                   <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">
                     Response Time
                   </p>
-                  <p className="text-navy-900">Within 48 hours</p>
+                  <p className="text-brown-900">Within 48 hours</p>
                 </div>
               </div>
             </div>
@@ -104,8 +104,11 @@ export default function ContactPage() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="text-center py-16"
                 >
-                  <CheckCircle size={48} className="mx-auto text-green-500 mb-4" />
-                  <h3 className="text-xl font-semibold text-navy-900 mb-2">
+                  <CheckCircle
+                    size={48}
+                    className="mx-auto text-gold-500 mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-brown-900 mb-2">
                     Message sent
                   </h3>
                   <p className="text-gray-600">
@@ -128,7 +131,7 @@ export default function ContactPage() {
                         {...register("name")}
                         className={`w-full px-0 py-3 border-b ${
                           errors.name ? "border-red-500" : "border-gray-200"
-                        } focus:outline-none focus:border-navy-900 transition-colors bg-transparent`}
+                        } focus:outline-none focus:border-brown-800 transition-colors bg-transparent`}
                         placeholder="Your name"
                       />
                       {errors.name && (
@@ -151,7 +154,7 @@ export default function ContactPage() {
                         {...register("email")}
                         className={`w-full px-0 py-3 border-b ${
                           errors.email ? "border-red-500" : "border-gray-200"
-                        } focus:outline-none focus:border-navy-900 transition-colors bg-transparent`}
+                        } focus:outline-none focus:border-brown-800 transition-colors bg-transparent`}
                         placeholder="your@email.com"
                       />
                       {errors.email && (
@@ -173,7 +176,7 @@ export default function ContactPage() {
                       id="company"
                       type="text"
                       {...register("company")}
-                      className="w-full px-0 py-3 border-b border-gray-200 focus:outline-none focus:border-navy-900 transition-colors bg-transparent"
+                      className="w-full px-0 py-3 border-b border-gray-200 focus:outline-none focus:border-brown-800 transition-colors bg-transparent"
                       placeholder="Your company"
                     />
                   </div>
@@ -191,7 +194,7 @@ export default function ContactPage() {
                       {...register("message")}
                       className={`w-full px-0 py-3 border-b ${
                         errors.message ? "border-red-500" : "border-gray-200"
-                      } focus:outline-none focus:border-navy-900 transition-colors bg-transparent resize-none`}
+                      } focus:outline-none focus:border-brown-800 transition-colors bg-transparent resize-none`}
                       placeholder="Tell us about your inquiry..."
                     />
                     {errors.message && (
@@ -204,7 +207,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="inline-flex items-center gap-3 bg-gold-500 text-navy-900 px-8 py-4 font-semibold hover:bg-gold-400 transition-colors disabled:opacity-50"
+                    className="inline-flex items-center gap-3 bg-gold-500 text-brown-950 px-8 py-4 font-semibold hover:bg-gold-400 transition-colors disabled:opacity-50"
                   >
                     {isSubmitting ? (
                       "Sending..."
@@ -223,9 +226,13 @@ export default function ContactPage() {
       </section>
 
       {/* Map placeholder */}
-      <section className="h-80 bg-off-white flex items-center justify-center">
-        <p className="text-gray-400">Dubai, United Arab Emirates</p>
-      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462561.6574537445!2d55.22748795!3d25.076022449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1767184340031!5m2!1sen!2sin"
+        className="min-h-[50svh] w-full"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
     </>
   );
 }
+

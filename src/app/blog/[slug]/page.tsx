@@ -1,21 +1,20 @@
 "use client";
 
+import Badge from "@/components/ui/Badge";
+import Card from "@/components/ui/Card";
+import Container from "@/components/ui/Container";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { useParams } from "next/navigation";
 import {
-  Calendar,
   ArrowLeft,
-  Share2,
-  Linkedin,
-  Twitter,
+  Calendar,
   Facebook,
   FileText,
+  Linkedin,
+  Share2,
+  Twitter,
 } from "lucide-react";
-import Container from "@/components/ui/Container";
-import Card from "@/components/ui/Card";
-import Button from "@/components/ui/Button";
-import Badge from "@/components/ui/Badge";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 
 const blogPosts = [
   {
@@ -96,7 +95,7 @@ export default function BlogPostPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-navy">
+      <section className="pt-32 pb-20 bg-gradient-brown">
         <Container size="narrow">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -141,7 +140,7 @@ export default function BlogPostPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="-mt-16 mb-12"
           >
-            <div className="aspect-video rounded-2xl bg-navy-800 overflow-hidden flex items-center justify-center">
+            <div className="aspect-video rounded-2xl bg-brown-950 overflow-hidden flex items-center justify-center">
               <FileText size={80} className="text-gold-500/30" />
             </div>
           </motion.div>
@@ -158,7 +157,7 @@ export default function BlogPostPage() {
             className="prose prose-lg max-w-none"
           >
             <div
-              className="text-gray-700 leading-relaxed space-y-6 [&>h2]:font-[family-name:var(--font-playfair)] [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-navy-900 [&>h2]:mt-10 [&>h2]:mb-4 [&>p]:text-gray-600"
+              className="text-gray-700 leading-relaxed space-y-6 [&>h2]:font-[family-name:var(--font-playfair)] [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-brown-950 [&>h2]:mt-10 [&>h2]:mb-4 [&>p]:text-gray-600"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </motion.div>
@@ -171,11 +170,11 @@ export default function BlogPostPage() {
             className="mt-12 pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center gap-6"
           >
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-navy-800 flex items-center justify-center text-gold-500 font-bold">
+              <div className="w-12 h-12 rounded-full bg-brown-950 flex items-center justify-center text-gold-400 font-bold">
                 U
               </div>
               <div>
-                <p className="font-medium text-navy-900">{post.author}</p>
+                <p className="font-medium text-brown-950">{post.author}</p>
                 <p className="text-sm text-gray-500">Author</p>
               </div>
             </div>
@@ -189,7 +188,7 @@ export default function BlogPostPage() {
                 {[Linkedin, Twitter, Facebook].map((Icon, index) => (
                   <button
                     key={index}
-                    className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gold-500 hover:text-navy-900 transition-colors"
+                    className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gold-500 hover:text-brown-900 transition-colors"
                   >
                     <Icon size={18} />
                   </button>
@@ -207,7 +206,7 @@ export default function BlogPostPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-navy-900 text-center mb-12"
+            className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-brown-950 text-center mb-12"
           >
             Related Articles
           </motion.h2>
@@ -226,13 +225,13 @@ export default function BlogPostPage() {
                 >
                   <Link href={`/blog/${relatedPost.slug}`}>
                     <Card variant="bordered" className="h-full group">
-                      <div className="aspect-video rounded-xl bg-navy-800 mb-6 overflow-hidden flex items-center justify-center">
+                      <div className="aspect-video rounded-xl bg-brown-800 mb-6 overflow-hidden flex items-center justify-center">
                         <FileText size={40} className="text-gold-500/30" />
                       </div>
-                      <Badge variant="navy" className="mb-4">
+                      <Badge variant="gold" className="mb-4">
                         {relatedPost.category}
                       </Badge>
-                      <h3 className="text-lg font-bold text-navy-900 group-hover:text-gold-600 transition-colors line-clamp-2">
+                      <h3 className="text-lg font-bold text-brown-800 group-hover:text-gold-600 transition-colors line-clamp-2">
                         {relatedPost.title}
                       </h3>
                     </Card>

@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
+import { motion } from "framer-motion";
 
 const themes = [
   {
@@ -35,7 +35,7 @@ export default function Highlights() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4"
+              className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4"
             >
               Focus Areas
             </motion.p>
@@ -43,7 +43,7 @@ export default function Highlights() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-navy-900 leading-tight mb-6"
+              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-950 leading-tight mb-6"
             >
               Summit
               <br />
@@ -56,9 +56,8 @@ export default function Highlights() {
               transition={{ delay: 0.1 }}
               className="text-gray-600 leading-relaxed"
             >
-              Each summit centers on pressing global challenges,
-              with dedicated tracks and working groups that produce
-              actionable outcomes.
+              Each summit centers on pressing global challenges, with dedicated
+              tracks and working groups that produce actionable outcomes.
             </motion.p>
           </div>
 
@@ -79,7 +78,7 @@ export default function Highlights() {
                       {theme.number}
                     </span>
                     <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-semibold text-navy-900 mb-3 group-hover:text-gold-600 transition-colors cursor-default">
+                      <h3 className="text-xl md:text-2xl font-semibold text-brown-950 mb-3 group-hover:text-gold-600 transition-colors cursor-default">
                         {theme.title}
                       </h3>
                       <p className="text-gray-500 leading-relaxed max-w-xl">

@@ -1,9 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import Container from "@/components/ui/Container";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const themes = [
   {
@@ -38,7 +38,7 @@ export default function SummitPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-navy-900">
+      <section className="pt-52 pb-20 bg-brown-900">
         <Container>
           <div className="max-w-4xl">
             <motion.p
@@ -112,7 +112,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-navy-900 leading-tight"
+                className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-900 leading-tight"
               >
                 Key Themes
               </motion.h2>
@@ -133,7 +133,7 @@ export default function SummitPage() {
                       {theme.number}
                     </span>
                     <div>
-                      <h3 className="text-xl font-semibold text-navy-900 mb-2">
+                      <h3 className="text-xl font-semibold text-brown-900 mb-2">
                         {theme.title}
                       </h3>
                       <p className="text-gray-500">{theme.description}</p>
@@ -163,7 +163,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-navy-900 leading-tight mb-6"
+                className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-900 leading-tight mb-6"
               >
                 Supporting UN
                 <br />
@@ -202,7 +202,7 @@ export default function SummitPage() {
       </section>
 
       {/* UAE Vision */}
-      <section className="py-24 bg-navy-900">
+      <section className="py-24 bg-brown-900">
         <Container>
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
@@ -257,7 +257,7 @@ export default function SummitPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-navy-900 mb-6"
+              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-900 mb-6"
             >
               Attendance is by
               <br />
@@ -281,10 +281,13 @@ export default function SummitPage() {
             >
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-3 bg-gold-500 text-navy-900 px-8 py-4 font-semibold hover:bg-gold-400 transition-colors"
+                className="group inline-flex items-center gap-3 bg-gold-500 text-brown-950 px-8 py-4 font-semibold hover:bg-gold-400 transition-colors"
               >
                 Request an Invitation
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
               </Link>
             </motion.div>
           </div>
@@ -293,3 +296,4 @@ export default function SummitPage() {
     </>
   );
 }
+

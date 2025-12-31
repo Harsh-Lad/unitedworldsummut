@@ -1,10 +1,10 @@
 "use client";
 
+import Container from "@/components/ui/Container";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-import Container from "@/components/ui/Container";
 
 const galleryImages = [
   {
@@ -39,7 +39,7 @@ export default function GalleryPreview() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4"
+              className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4"
             >
               Gallery
             </motion.p>
@@ -47,7 +47,7 @@ export default function GalleryPreview() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-navy-900"
+              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-950"
             >
               Moments from Past Summits
             </motion.h2>
@@ -59,10 +59,13 @@ export default function GalleryPreview() {
           >
             <Link
               href="/gallery"
-              className="group inline-flex items-center gap-2 text-navy-900 font-semibold hover:text-gold-600 transition-colors"
+              className="group inline-flex items-center gap-2 text-brown-950 font-semibold hover:text-gold-600 transition-colors"
             >
               View all photos
-              <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              <ArrowUpRight
+                size={18}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+              />
             </Link>
           </motion.div>
         </div>
@@ -83,7 +86,7 @@ export default function GalleryPreview() {
               className="object-cover group-hover:scale-105 transition-transform duration-700"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-navy-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute inset-0 bg-linear-to-t from-brown-950/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             <p className="absolute bottom-4 left-4 text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
               {galleryImages[0].alt}
             </p>

@@ -7,7 +7,7 @@ import { type ReactNode } from "react";
 interface CardProps {
   children: ReactNode;
   className?: string;
-  variant?: "default" | "elevated" | "bordered" | "navy" | "glass";
+  variant?: "default" | "elevated" | "bordered" | "dark" | "glass";
   hover?: boolean;
   glow?: boolean;
 }
@@ -28,9 +28,11 @@ export default function Card({
         {
           "bg-white": variant === "default",
           "bg-white shadow-lg hover:shadow-2xl": variant === "elevated",
-          "bg-white border border-gray-200 hover:border-gold-500/50": variant === "bordered",
-          "bg-navy-800 text-white": variant === "navy",
-          "bg-white/10 backdrop-blur-lg border border-white/20": variant === "glass",
+          "bg-white border border-gray-200 hover:border-gold-500/50":
+            variant === "bordered",
+          "bg-brown-950 text-white": variant === "dark",
+          "bg-white/10 backdrop-blur-lg border border-white/20":
+            variant === "glass",
         },
         glow && "hover:shadow-gold-500/20 hover:shadow-xl",
         className

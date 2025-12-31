@@ -20,7 +20,7 @@ export default function SectionHeader({
       <h2
         className={cn(
           "font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold mb-4",
-          light ? "text-white" : "text-navy-900"
+          light ? "text-white" : "text-brown-950"
         )}
       >
         {title}

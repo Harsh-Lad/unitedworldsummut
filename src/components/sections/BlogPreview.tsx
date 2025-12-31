@@ -1,31 +1,34 @@
 "use client";
 
+import Container from "@/components/ui/Container";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-import Container from "@/components/ui/Container";
 
 const posts = [
   {
     title: "MOU Signing Ceremony Marks New Chapter in Global Trade",
     date: "Dec 2024",
     slug: "conference-mou-signing",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
     featured: true,
   },
   {
     title: "Vision 2030: Aligning Summit Goals with UAE's Future",
     date: "Dec 2024",
     slug: "vision-2030-conference",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
     featured: false,
   },
   {
     title: "How the Summit Advances UN Sustainable Development Goals",
     date: "Nov 2024",
     slug: "sustainable-development-goals",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
     featured: false,
   },
 ];
@@ -42,7 +45,7 @@ export default function BlogPreview() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4"
+              className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4"
             >
               News & Insights
             </motion.p>
@@ -50,7 +53,7 @@ export default function BlogPreview() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-navy-900"
+              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-950"
             >
               Latest Updates
             </motion.h2>
@@ -62,10 +65,13 @@ export default function BlogPreview() {
           >
             <Link
               href="/blog"
-              className="group inline-flex items-center gap-2 text-navy-900 font-semibold hover:text-gold-600 transition-colors"
+              className="group inline-flex items-center gap-2 text-brown-950 font-semibold hover:text-gold-600 transition-colors"
             >
               All articles
-              <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              <ArrowUpRight
+                size={18}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+              />
             </Link>
           </motion.div>
         </div>
@@ -88,7 +94,7 @@ export default function BlogPreview() {
                 />
               </div>
               <p className="text-gray-500 text-sm mb-2">{featured.date}</p>
-              <h3 className="text-2xl font-semibold text-navy-900 group-hover:text-gold-600 transition-colors leading-tight">
+              <h3 className="text-2xl font-semibold text-brown-950 group-hover:text-gold-600 transition-colors leading-tight">
                 {featured.title}
               </h3>
             </Link>
@@ -117,7 +123,7 @@ export default function BlogPreview() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-gray-500 text-sm mb-1">{post.date}</p>
-                    <h3 className="text-lg font-semibold text-navy-900 group-hover:text-gold-600 transition-colors leading-snug line-clamp-2">
+                    <h3 className="text-lg font-semibold text-brown-950 group-hover:text-gold-600 transition-colors leading-snug line-clamp-2">
                       {post.title}
                     </h3>
                   </div>

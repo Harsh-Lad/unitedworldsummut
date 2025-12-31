@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
 import Container from "@/components/ui/Container";
 import { stats } from "@/lib/constants";
+import { motion, useInView } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 function AnimatedNumber({ value }: { value: string }) {
   const [displayValue, setDisplayValue] = useState("0");
@@ -41,7 +41,7 @@ function AnimatedNumber({ value }: { value: string }) {
 
 export default function Stats() {
   return (
-    <section className="py-16 bg-navy-800">
+    <section className="py-16 bg-brown-950">
       <Container>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -53,10 +53,14 @@ export default function Stats() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className={`text-4xl md:text-5xl font-bold mb-2 ${index % 2 === 0 ? 'text-green-500' : 'text-gold-500'}`}>
+              <div
+                className={`text-4xl md:text-5xl font-bold mb-2 ${
+                  index % 2 === 0 ? "text-gold-400" : "text-gold-500"
+                }`}
+              >
                 <AnimatedNumber value={stat.value} />
               </div>
-              <div className="text-gray-400 text-sm md:text-base">
+              <div className="text-gold-200 text-sm md:text-base">
                 {stat.label}
               </div>
             </motion.div>

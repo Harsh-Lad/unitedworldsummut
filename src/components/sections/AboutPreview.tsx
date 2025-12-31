@@ -1,10 +1,10 @@
 "use client";
 
+import Container from "@/components/ui/Container";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-import Container from "@/components/ui/Container";
 
 export default function AboutPreview() {
   return (
@@ -18,7 +18,7 @@ export default function AboutPreview() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4"
+              className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4"
             >
               About the Summit
             </motion.p>
@@ -28,7 +28,7 @@ export default function AboutPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-navy-900 leading-tight mb-6"
+              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-brown-950 leading-tight mb-6"
             >
               Two Decades of
               <br />
@@ -42,8 +42,8 @@ export default function AboutPreview() {
               transition={{ delay: 0.2 }}
               className="text-gray-600 text-lg leading-relaxed mb-8"
             >
-              Founded in 2004, the United World Summit has evolved from
-              a regional business forum into the preeminent gathering for
+              Founded in 2004, the United World Summit has evolved from a
+              regional business forum into the preeminent gathering for
               cross-border collaboration. We facilitate dialogue between
               governments, Fortune 500 executives, and emerging market leaders.
             </motion.p>
@@ -58,15 +58,21 @@ export default function AboutPreview() {
               <div className="flex items-start gap-4">
                 <div className="w-px h-12 bg-gold-500 mt-1" />
                 <div>
-                  <p className="text-navy-900 font-semibold">Policy Influence</p>
-                  <p className="text-gray-500 text-sm">Direct access to decision-makers across 100+ nations</p>
+                  <p className="text-brown-950 font-semibold">
+                    Policy Influence
+                  </p>
+                  <p className="text-brown-700 text-sm">
+                    Direct access to decision-makers across 100+ nations
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-px h-12 bg-gold-500 mt-1" />
                 <div>
-                  <p className="text-navy-900 font-semibold">Deal Flow</p>
-                  <p className="text-gray-500 text-sm">$4.2B in partnerships facilitated since inception</p>
+                  <p className="text-brown-950 font-semibold">Deal Flow</p>
+                  <p className="text-brown-700 text-sm">
+                    $4.2B in partnerships facilitated since inception
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -79,10 +85,13 @@ export default function AboutPreview() {
             >
               <Link
                 href="/about"
-                className="group inline-flex items-center gap-2 text-navy-900 font-semibold hover:text-gold-600 transition-colors"
+                className="group inline-flex items-center gap-2 text-brown-950 font-semibold hover:text-gold-600 transition-colors"
               >
                 Our full story
-                <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <ArrowUpRight
+                  size={18}
+                  className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                />
               </Link>
             </motion.div>
           </div>
@@ -118,8 +127,8 @@ export default function AboutPreview() {
             </div>
 
             {/* Experience badge - positioned off-grid */}
-            <div className="absolute -top-6 right-8 bg-navy-900 text-white px-6 py-4">
-              <p className="text-3xl font-bold text-gold-500">20+</p>
+            <div className="absolute -top-6 right-8 bg-brown-950 text-white px-6 py-4">
+              <p className="text-3xl font-bold text-gold-400">20+</p>
               <p className="text-xs tracking-wide uppercase">Years</p>
             </div>
           </motion.div>

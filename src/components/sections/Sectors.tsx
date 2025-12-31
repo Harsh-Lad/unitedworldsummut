@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
+import { motion } from "framer-motion";
 
 const sectors = [
   "Oil & Gas",
@@ -20,7 +20,7 @@ const sectors = [
 
 export default function Sectors() {
   return (
-    <section className="py-24 bg-navy-900 overflow-hidden">
+    <section className="py-24 bg-brown-950 overflow-hidden">
       <Container>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left side - intro text */}
@@ -29,7 +29,7 @@ export default function Sectors() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4"
+              className="text-gold-400 text-sm tracking-[0.15em] uppercase mb-4"
             >
               Industries We Serve
             </motion.p>
@@ -39,7 +39,7 @@ export default function Sectors() {
               viewport={{ once: true }}
               className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
             >
-              <span className="text-green-500">19</span> Sectors,
+              <span className="text-gold-400">19</span> Sectors,
               <br />
               <span className="text-gold-500">One Platform</span>
             </motion.h2>
@@ -48,11 +48,11 @@ export default function Sectors() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-gray-400 text-lg leading-relaxed max-w-md"
+              className="text-gold-100 text-lg leading-relaxed max-w-md"
             >
-              Cross-industry collaboration creates unexpected synergies.
-              Our curated matchmaking connects complementary businesses
-              and investment opportunities.
+              Cross-industry collaboration creates unexpected synergies. Our
+              curated matchmaking connects complementary businesses and
+              investment opportunities.
             </motion.p>
           </div>
 
@@ -71,12 +71,16 @@ export default function Sectors() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.05 * index }}
-                className={`px-5 py-2.5 border border-gray-700 text-gray-300 text-sm transition-colors cursor-default ${index % 2 === 0 ? 'hover:border-green-500 hover:text-green-400' : 'hover:border-gold-500 hover:text-gold-400'}`}
+                className={`px-5 py-2.5 border border-brown-800 text-gold-100 text-sm transition-colors cursor-default ${
+                  index % 2 === 0
+                    ? "hover:border-gold-400 hover:text-gold-300"
+                    : "hover:border-gold-500 hover:text-gold-400"
+                }`}
               >
                 {sector}
               </motion.span>
             ))}
-            <span className="px-5 py-2.5 bg-green-500 text-white text-sm font-semibold">
+            <span className="px-5 py-2.5 bg-gold-500 text-brown-950 text-sm font-semibold">
               +7 more
             </span>
           </motion.div>

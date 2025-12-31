@@ -2,10 +2,10 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { type ReactNode, type MouseEventHandler } from "react";
+import { type MouseEventHandler, type ReactNode } from "react";
 
 interface ButtonProps {
-  variant?: "primary" | "secondary" | "outline" | "ghost" | "green" | "green-outline";
+  variant?: "primary" | "secondary" | "outline" | "ghost" | "gold-outline";
   size?: "sm" | "md" | "lg";
   children: ReactNode;
   className?: string;
@@ -37,18 +37,16 @@ export default function Button({
         "disabled:opacity-50 disabled:cursor-not-allowed",
         {
           // Variants
-          "bg-gold-500 text-white hover:bg-gold-400 focus:ring-gold-500 hover:shadow-lg hover:shadow-gold-500/25":
+          "bg-gold-500 text-brown-950 hover:bg-gold-400 focus:ring-gold-500 hover:shadow-lg hover:shadow-gold-500/25":
             variant === "primary",
-          "bg-navy-800 text-white hover:bg-navy-700 focus:ring-navy-700 hover:shadow-lg hover:shadow-navy-800/25":
+          "bg-brown-950 text-white hover:bg-brown-900 focus:ring-brown-800 hover:shadow-lg hover:shadow-brown-950/25":
             variant === "secondary",
-          "border-2 border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white focus:ring-gold-500":
+          "border-2 border-gold-500 text-gold-600 hover:bg-gold-500 hover:text-brown-950 focus:ring-gold-500":
             variant === "outline",
-          "text-gold-500 hover:text-gold-400 hover:bg-navy-800/50 focus:ring-gold-500":
+          "text-gold-500 hover:text-gold-400 hover:bg-brown-950/50 focus:ring-gold-500":
             variant === "ghost",
-          "bg-green-500 text-white hover:bg-green-400 focus:ring-green-500 hover:shadow-lg hover:shadow-green-500/25":
-            variant === "green",
-          "border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white focus:ring-green-500":
-            variant === "green-outline",
+          "border-2 border-gold-400 text-gold-500 hover:bg-gold-400 hover:text-brown-950 focus:ring-gold-400 bg-gold-50/10":
+            variant === "gold-outline",
           // Sizes
           "px-4 py-2 text-sm": size === "sm",
           "px-6 py-3 text-base": size === "md",

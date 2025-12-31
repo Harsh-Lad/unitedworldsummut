@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useState } from "react";
 
 interface PlaceholderImageProps {
   src: string;
@@ -34,14 +34,14 @@ export default function PlaceholderImage({
   const [hasError, setHasError] = useState(false);
 
   return (
-    <div className={cn("relative overflow-hidden bg-navy-800", className)}>
+    <div className={cn("relative overflow-hidden bg-brown-950", className)}>
       {/* Loading skeleton */}
       {isLoading && (
         <motion.div
           initial={{ opacity: 0.5 }}
           animate={{ opacity: [0.5, 0.8, 0.5] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
-          className="absolute inset-0 bg-linear-to-r from-navy-800 via-navy-700 to-navy-800"
+          className="absolute inset-0 bg-linear-to-r from-brown-950 via-brown-800 to-brown-950"
         />
       )}
 
@@ -70,8 +70,8 @@ export default function PlaceholderImage({
           }}
         />
       ) : (
-        <div className="absolute inset-0 flex items-center justify-center bg-navy-800">
-          <span className="text-gray-500 text-sm">{alt}</span>
+        <div className="absolute inset-0 flex items-center justify-center bg-brown-950">
+          <span className="text-brown-700 text-sm">{alt}</span>
         </div>
       )}
 
@@ -80,10 +80,12 @@ export default function PlaceholderImage({
         <motion.div
           initial={{ opacity: 0 }}
           whileHover={{ opacity: 1 }}
-          className="absolute inset-0 bg-navy-900/60 flex items-center justify-center transition-opacity"
+          className="absolute inset-0 bg-brown-950/60 flex items-center justify-center transition-opacity"
         >
           {overlayText && (
-            <span className="text-white font-medium text-sm">{overlayText}</span>
+            <span className="text-white font-medium text-sm">
+              {overlayText}
+            </span>
           )}
         </motion.div>
       )}
