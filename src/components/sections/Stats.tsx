@@ -53,7 +53,7 @@ export default function Stats() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-bold text-gold-500 mb-2">
+              <div className={`text-4xl md:text-5xl font-bold mb-2 ${index % 2 === 0 ? 'text-green-500' : 'text-gold-500'}`}>
                 <AnimatedNumber value={stat.value} />
               </div>
               <div className="text-gray-400 text-sm md:text-base">

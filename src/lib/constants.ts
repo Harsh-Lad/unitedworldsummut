@@ -15,7 +15,6 @@ export const navigation = [
   { name: "Summit 2026", href: "/summit" },
   { name: "Gallery", href: "/gallery" },
   { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact" },
 ];
 
 export const stats = [

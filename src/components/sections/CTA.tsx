@@ -14,7 +14,7 @@ export default function CTA() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-6"
+            className="text-green-500 text-sm tracking-[0.15em] uppercase mb-6"
           >
             Summit 2026
           </motion.p>
@@ -54,7 +54,7 @@ export default function CTA() {
             </Link>
             <Link
               href="/summit"
-              className="inline-flex items-center text-white hover:text-gold-400 transition-colors py-4 border-b border-white/20 hover:border-gold-400"
+              className="inline-flex items-center text-white hover:text-green-400 transition-colors py-4 border-b border-white/20 hover:border-green-400"
             >
               Learn more about the summit
             </Link>

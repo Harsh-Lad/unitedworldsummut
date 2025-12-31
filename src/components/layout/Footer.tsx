@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { navigation, siteConfig } from "@/lib/constants";
 import Container from "@/components/ui/Container";
+import logo from "../../../public/logo.png"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,8 +15,13 @@ export default function Footer() {
             {/* Brand */}
             <div className="lg:col-span-5">
               <Link href="/" className="inline-block mb-6">
-                <span className="text-white text-lg">United</span>
-                <span className="text-gold-500 text-lg ml-1">World Summit</span>
+                <Image
+                  src={logo}
+                  alt="United World Summit"
+                  width={180}
+                  height={45}
+                  className="h-24 w-auto"
+                />
               </Link>
               <p className="text-gray-500 max-w-sm leading-relaxed">
                 Connecting global leaders, fostering collaboration,
@@ -50,7 +57,7 @@ export default function Footer() {
                 <p>{siteConfig.location}</p>
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="block hover:text-gold-500 transition-colors"
+                  className="block hover:text-green-500 transition-colors"
                 >
                   {siteConfig.email}
                 </a>

@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { navigation } from "@/lib/constants";
 import Container from "@/components/ui/Container";
+import logo from "../../../public/logo1.png"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,20 +33,22 @@ export default function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled
-          ? "bg-navy-900/95 backdrop-blur-sm py-4"
-          : "bg-transparent py-6"
+          ? "bg-white backdrop-blur-sm py-4"
+          : "bg-white py-3 md:py-6"
       )}
     >
       <Container>
         <nav className="flex items-center justify-between">
-          {/* Logo - text only, cleaner */}
+          {/* Logo */}
           <Link href="/" className="group">
-            <span className="text-white text-lg tracking-tight">
-              United
-            </span>
-            <span className="text-gold-500 text-lg tracking-tight ml-1">
-              World Summit
-            </span>
+            <Image
+              src={logo}
+              alt="United World Summit"
+              width={160}
+              height={40}
+              className="h-16 w-auto rounded-full"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation - minimal */}
@@ -69,7 +73,7 @@ export default function Header() {
           <div className="hidden lg:block">
             <Link
               href="/contact"
-              className="text-sm text-white hover:text-gold-400 transition-colors"
+              className="text-sm text-white bg-gold-500 p-4 rounded-xl hover:text-green-400 transition-colors"
             >
               Contact
             </Link>
@@ -78,7 +82,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-white hover:text-gold-500 transition-colors"
+            className="lg:hidden p-2 text-gold-500 hover:text-green-500 transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -114,7 +118,7 @@ export default function Header() {
                 ))}
                 <Link
                   href="/contact"
-                  className="block py-3 text-base text-gold-500"
+                  className="block py-3 text-base text-green-500"
                 >
                   Contact
                 </Link>

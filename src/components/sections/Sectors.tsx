@@ -39,7 +39,7 @@ export default function Sectors() {
               viewport={{ once: true }}
               className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
             >
-              19 Sectors,
+              <span className="text-green-500">19</span> Sectors,
               <br />
               <span className="text-gold-500">One Platform</span>
             </motion.h2>
@@ -71,12 +71,12 @@ export default function Sectors() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.05 * index }}
-                className="px-5 py-2.5 border border-gray-700 text-gray-300 text-sm hover:border-gold-500 hover:text-gold-400 transition-colors cursor-default"
+                className={`px-5 py-2.5 border border-gray-700 text-gray-300 text-sm transition-colors cursor-default ${index % 2 === 0 ? 'hover:border-green-500 hover:text-green-400' : 'hover:border-gold-500 hover:text-gold-400'}`}
               >
                 {sector}
               </motion.span>
             ))}
-            <span className="px-5 py-2.5 bg-gold-500 text-navy-900 text-sm font-semibold">
+            <span className="px-5 py-2.5 bg-green-500 text-white text-sm font-semibold">
               +7 more
             </span>
           </motion.div>

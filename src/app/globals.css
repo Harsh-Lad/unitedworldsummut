@@ -1,17 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  /* Navy Palette */
-  --navy-900: #0A1628;
-  --navy-800: #1E3A5F;
-  --navy-700: #2D4A6F;
-  --navy-600: #3D5A7F;
+  /* UAE Flag Color Scheme */
 
-  /* Gold Palette */
-  --gold-500: #C9A962;
-  --gold-400: #D4B872;
-  --gold-300: #E5D4A1;
-  --gold-600: #B89952;
+  /* Black Palette (Dark backgrounds) */
+  --navy-900: #000000;
+  --navy-800: #1A1A1A;
+  --navy-700: #2D2D2D;
+  --navy-600: #404040;
+
+  /* Red Palette (Primary accent - UAE Red) */
+  --gold-600: #8B001A;
+  --gold-500: #BE0027;
+  --gold-400: #D41C3C;
+  --gold-300: #E85A73;
+
+  /* Green Palette (Secondary accent - UAE Green) */
+  --green-600: #006B29;
+  --green-500: #009739;
+  --green-400: #2DB553;
+  --green-300: #5FD47A;
 
   /* Neutrals */
   --white: #FFFFFF;
@@ -34,15 +42,23 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
+  /* Black/Dark colors (replacing navy) */
   --color-navy-900: var(--navy-900);
   --color-navy-800: var(--navy-800);
   --color-navy-700: var(--navy-700);
   --color-navy-600: var(--navy-600);
 
+  /* UAE Red (primary accent, replacing gold) */
   --color-gold-600: var(--gold-600);
   --color-gold-500: var(--gold-500);
   --color-gold-400: var(--gold-400);
   --color-gold-300: var(--gold-300);
+
+  /* UAE Green (secondary accent) */
+  --color-green-600: var(--green-600);
+  --color-green-500: var(--green-500);
+  --color-green-400: var(--green-400);
+  --color-green-300: var(--green-300);
 
   --color-off-white: var(--off-white);
 
@@ -117,12 +133,28 @@ body {
   background-clip: text;
 }
 
+.text-gradient-green {
+  background: linear-gradient(135deg, var(--green-400) 0%, var(--green-500) 50%, var(--green-600) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .bg-gradient-navy {
   background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
 }
 
 .bg-gradient-gold {
   background: linear-gradient(135deg, var(--gold-500) 0%, var(--gold-600) 100%);
+}
+
+.bg-gradient-green {
+  background: linear-gradient(135deg, var(--green-500) 0%, var(--green-600) 100%);
+}
+
+/* UAE Flag stripe gradient */
+.bg-gradient-uae {
+  background: linear-gradient(180deg, var(--green-500) 0%, var(--green-500) 33%, var(--white) 33%, var(--white) 66%, var(--navy-900) 66%, var(--navy-900) 100%);
 }
 
 /* Animation utilities */

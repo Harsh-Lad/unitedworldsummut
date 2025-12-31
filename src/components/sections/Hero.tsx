@@ -42,7 +42,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-[family-name:var(--font-playfair)] text-[clamp(2.5rem,8vw,5.5rem)] font-bold text-white leading-[1.1] mb-8"
             >
-              Where Global
+              Where <span className="text-green-500">Global</span>
               <br />
               Leaders <span className="text-gold-500">Converge</span>
             </motion.h1>
@@ -75,7 +75,7 @@ export default function Hero() {
               </Link>
               <Link
                 href="/summit"
-                className="text-white hover:text-gold-400 transition-colors py-4 text-base border-b border-white/20 hover:border-gold-400"
+                className="text-white hover:text-green-400 transition-colors py-4 text-base border-b border-white/20 hover:border-green-400"
               >
                 Learn about Summit 2026
               </Link>
@@ -92,7 +92,7 @@ export default function Hero() {
             <Container>
               <div className="flex flex-wrap gap-x-12 gap-y-4 text-sm">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-gold-500 text-2xl font-bold">100+</span>
+                  <span className="text-green-500 text-2xl font-bold">100+</span>
                   <span className="text-gray-500">Countries</span>
                 </div>
                 <div className="flex items-baseline gap-2">
@@ -100,7 +100,7 @@ export default function Hero() {
                   <span className="text-gray-500">Delegates</span>
                 </div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-gold-500 text-2xl font-bold">19</span>
+                  <span className="text-green-500 text-2xl font-bold">19</span>
                   <span className="text-gray-500">Industry Sectors</span>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function Hero() {
       </Container>
 
       {/* Subtle vertical line accent */}
-      <div className="hidden lg:block absolute left-[10%] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold-500/20 to-transparent" />
+      <div className="hidden lg:block absolute left-[10%] top-0 bottom-0 w-px bg-linear-to-b from-transparent via-green-500/20 to-transparent" />
     </section>
   );
 }
