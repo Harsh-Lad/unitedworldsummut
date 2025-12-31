@@ -101,7 +101,7 @@ export default function AboutPage() {
             >
               <div className="aspect-4/5 relative overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80"
+                  src="https://scontent.fbom12-1.fna.fbcdn.net/v/t39.30808-6/463874150_27181465744835320_8816708337424550213_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=piHG53qVrzEQ7kNvwGZZJ1s&_nc_oc=Adk8-h68jHCCBWamD8q2cgutl4gTuMxoauMgeoUP0naUgAp_ngHkbDp5WWlwb9wLnMk&_nc_zt=23&_nc_ht=scontent.fbom12-1.fna&_nc_gid=Dw9tnU4fz_WxSbeRQLtUtQ&oh=00_AflktLNoKKX-0zuiKebXfMtQITaRhT4RbbrCxRCqx1qsuw&oe=695B0C8D"
                   alt="Mr. Sachin Katarnawre"
                   fill
                   className="object-cover"
@@ -242,4 +242,3 @@ export default function AboutPage() {
     </>
   );
 }
-
