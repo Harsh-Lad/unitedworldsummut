@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* Custom Brand Colors */
-/* Brown: #2b0101 (dark brown for backgrounds) */
+/* Red: #d71921 (UAE red for backgrounds) */
 /* Gold: #C9961A (warm gold for accents) */
 
 :root {
@@ -15,13 +15,13 @@
   --font-sans: var(--font-inter);
   --font-display: var(--font-playfair);
 
-  /* Custom Brand Colors */
-  --color-brown-950: #2b0101;
-  --color-brown-900: #3d0202;
-  --color-brown-800: #500303;
-  --color-brown-700: #620404;
-  --color-brown-600: #750505;
-  --color-brown-500: #871f1f;
+  /* Custom Brand Colors - UAE Red */
+  --color-brown-950: #a01118;
+  --color-brown-900: #b51519;
+  --color-brown-800: #d71921;
+  --color-brown-700: #e02a32;
+  --color-brown-600: #e84249;
+  --color-brown-500: #ef5a60;
 
   --color-gold-600: #a87c15;
   --color-gold-500: #C9961A;

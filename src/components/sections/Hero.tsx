@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-brown-950">
+    <section className="relative min-h-screen bg-brown-950/80">
       {/* Background Image - subtle, not overwhelming */}
       <div className="absolute inset-0">
         <Image
