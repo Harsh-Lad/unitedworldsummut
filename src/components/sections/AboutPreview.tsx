@@ -42,9 +42,9 @@ export default function AboutPreview() {
               transition={{ delay: 0.2 }}
               className="text-gray-600 text-lg leading-relaxed mb-8"
             >
-              Founded in 2004, the United World Summit has evolved from a
-              regional business forum into the preeminent gathering for
-              cross-border collaboration. We facilitate dialogue between
+              Founded in 2014, the United World Summit has evolved from a
+              regional business forum into a premier global platform for
+              cross-border collaboration. We facilitate meaningful dialogue among
               governments, Fortune 500 executives, and emerging market leaders.
             </motion.p>
 

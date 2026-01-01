@@ -55,7 +55,7 @@ export default function BlogPreview() {
               viewport={{ once: true }}
               className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-950"
             >
-              Latest Updates
+              Latest News & Insights
             </motion.h2>
           </div>
           <motion.div

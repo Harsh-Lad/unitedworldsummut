@@ -83,7 +83,7 @@ export default function SummitPage() {
                 <p className="text-gray-500">Countries</p>
               </div>
               <div>
-                <p className="text-gold-500 text-2xl font-bold">19</p>
+                <p className="text-gold-500 text-2xl font-bold">19+</p>
                 <p className="text-gray-500">Sectors</p>
               </div>
               <div>

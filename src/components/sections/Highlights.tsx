@@ -8,7 +8,7 @@ const themes = [
     number: "01",
     title: "Sustainable Employment",
     description:
-      "Addressing workforce transformation in the age of AI and automation. Creating frameworks for job creation across emerging economies.",
+      "Addressing workforce transformation in the age of AI and automation and creating frameworks for job creation across emerging economies.",
   },
   {
     number: "02",
@@ -56,8 +56,8 @@ export default function Highlights() {
               transition={{ delay: 0.1 }}
               className="text-gray-600 leading-relaxed"
             >
-              Each summit centers on pressing global challenges, with dedicated
-              tracks and working groups that produce actionable outcomes.
+              Each summit focuses on pressing global challenges, featuring dedicated
+              tracks and working groups that deliver actionable outcomes.
             </motion.p>
           </div>
 

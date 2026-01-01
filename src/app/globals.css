@@ -2,7 +2,7 @@
 
 /* Custom Brand Colors */
 /* Brown: #2b0101 (dark brown for backgrounds) */
-/* Gold: #dfb473 (warm gold for accents) */
+/* Gold: #C9961A (warm gold for accents) */
 
 :root {
   /* Design System Variables */
@@ -23,13 +23,13 @@
   --color-brown-600: #750505;
   --color-brown-500: #871f1f;
 
-  --color-gold-600: #c29858;
-  --color-gold-500: #dfb473;
-  --color-gold-400: #e5c28f;
-  --color-gold-300: #ebd0ab;
-  --color-gold-200: #f1dec7;
-  --color-gold-100: #f7ece3;
-  --color-gold-50: #fdf9f5;
+  --color-gold-600: #a87c15;
+  --color-gold-500: #C9961A;
+  --color-gold-400: #d4a73d;
+  --color-gold-300: #dfb860;
+  --color-gold-200: #eaca83;
+  --color-gold-100: #f5dba6;
+  --color-gold-50: #fdf5e6;
 
   /* Animations */
   --animate-shimmer: shimmer 2s infinite;

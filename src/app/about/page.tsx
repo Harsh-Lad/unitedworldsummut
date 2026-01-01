@@ -66,10 +66,10 @@ export default function AboutPage() {
                 className="space-y-6 text-gray-600 text-lg leading-relaxed"
               >
                 <p>
-                  Founded in 2004, the United World Summit began as a regional
+                  Founded in 2014, the United World Summit began as a regional
                   business forum connecting entrepreneurs across the Gulf
                   region. What started as a modest gathering of 50 delegates has
-                  grown into the preeminent platform for cross-border
+                  grown into a premier global platform for cross-border
                   collaboration.
                 </p>
                 <p>

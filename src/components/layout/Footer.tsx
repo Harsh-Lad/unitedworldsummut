@@ -24,8 +24,8 @@ export default function Footer() {
                 />
               </Link>
               <p className="text-gold-200 max-w-sm leading-relaxed">
-                Connecting global leaders, fostering collaboration, and driving
-                sustainable development across borders.
+                Connecting global leaders, fostering collaboration, and
+                advancing sustainable development across borders.
               </p>
             </div>
 
@@ -71,14 +71,14 @@ export default function Footer() {
           <p className="text-white text-sm">
             &copy; {currentYear} United World Summit
           </p>
-          <div className="flex gap-8 text-sm text-white">
+          {/* <div className="flex gap-8 text-sm text-white">
             <Link href="#" className="hover:text-gold-100 transition-colors">
               Privacy
             </Link>
             <Link href="#" className="hover:text-gold-100 transition-colors">
               Terms
             </Link>
-          </div>
+          </div> */}
         </div>
       </Container>
     </footer>

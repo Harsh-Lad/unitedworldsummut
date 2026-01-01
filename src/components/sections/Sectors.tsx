@@ -39,7 +39,7 @@ export default function Sectors() {
               viewport={{ once: true }}
               className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
             >
-              <span className="text-gold-400">19</span> Sectors,
+              <span className="text-gold-400">19+</span> Sectors,
               <br />
               <span className="text-gold-500">One Platform</span>
             </motion.h2>
@@ -50,9 +50,9 @@ export default function Sectors() {
               transition={{ delay: 0.1 }}
               className="text-gold-100 text-lg leading-relaxed max-w-md"
             >
-              Cross-industry collaboration creates unexpected synergies. Our
-              curated matchmaking connects complementary businesses and
-              investment opportunities.
+              Cross-industry collaboration fosters powerful synergies. Our
+              curated matchmaking connects complementary businesses with
+              strategic investment opportunities.
             </motion.p>
           </div>
 

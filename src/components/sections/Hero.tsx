@@ -100,12 +100,12 @@ export default function Hero() {
                 </div>
                 <div className="flex items-baseline gap-2">
                   <span className="text-gold-500 text-2xl font-bold">
-                    1,200
+                    1,200+
                   </span>
                   <span className="text-gold-200">Delegates</span>
                 </div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-gold-400 text-2xl font-bold">19</span>
+                  <span className="text-gold-400 text-2xl font-bold">19+</span>
                   <span className="text-gold-200">Industry Sectors</span>
                 </div>
               </div>
