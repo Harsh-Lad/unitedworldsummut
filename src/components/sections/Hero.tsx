@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-brown-950">
+    <section className="relative min-h-screen">
       {/* Background Image - subtle, not overwhelming */}
       <div className="absolute inset-0">
         <Image
@@ -16,7 +16,7 @@ export default function Hero() {
           alt="Global Summit Conference"
           fill
           priority
-          className="object-cover scale-x-[-1] object-center opacity-25"
+          className="object-cover scale-x-[-1] object-center brightness-75"
           sizes="100vw"
         />
       </div>
