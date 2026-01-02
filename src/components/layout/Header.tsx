@@ -113,7 +113,7 @@ export default function Header() {
                       "block py-3 text-base font-medium transition-colors",
                       pathname === item.href
                         ? "text-gold-400"
-                        : "text-yellow-900 hover:text-gold-400"
+                        : "text-white hover:text-gold-400"
                     )}
                   >
                     {item.name}
