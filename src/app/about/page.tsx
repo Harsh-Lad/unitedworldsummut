@@ -16,7 +16,7 @@ export default function AboutPage() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-gold-500 text-sm tracking-[0.2em] uppercase mb-6"
+              className="text-gold-500 text-sm tracking-[0.2em] uppercase mb-6 font-black"
             >
               About Us
             </motion.p>

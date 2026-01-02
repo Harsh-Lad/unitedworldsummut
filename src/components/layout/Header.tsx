@@ -61,7 +61,7 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors",
+                    "text-sm font-bold transition-colors",
                     pathname === item.href
                       ? "text-gold-400"
                       : "text-white hover:text-gold-400"
@@ -76,7 +76,7 @@ export default function Header() {
           <div className="hidden lg:block">
             <Link
               href="/contact"
-              className="text-sm font-medium text-brown-950 bg-gold-400 px-6 py-3 rounded-xl hover:bg-gold-500 transition-colors"
+              className="text-sm font-bold text-brown-950 bg-gold-400 px-6 py-3 rounded-xl hover:bg-gold-500 transition-colors"
             >
               Contact
             </Link>
