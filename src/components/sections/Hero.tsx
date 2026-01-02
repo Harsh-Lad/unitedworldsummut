@@ -12,13 +12,15 @@ export default function Hero() {
       {/* Background Image - subtle, not overwhelming */}
       <div className="absolute inset-0">
         <Image
-          src="/hero.jpg"
+          src="/summit.jpg"
           alt="Global Summit Conference"
           fill
           priority
-          className="object-cover scale-x-[-1] object-center brightness-75"
+          className="object-cover object-center"
           sizes="100vw"
         />
+        {/* Dark overlay for text contrast */}
+        <div className="absolute inset-0 bg-linear-to-r from-black/50 via-black/30 to-transparent"></div>
       </div>
 
       <Container className="relative z-10">
@@ -42,7 +44,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-[family-name:var(--font-playfair)] text-[clamp(2.5rem,8vw,5.5rem)] font-bold text-white leading-[1.1] mb-8"
             >
-              Where <span className="text-gold-400">Global</span>
+              Where <span className="text-gold-400 font-semibold">Global</span>
               <br />
               Leaders <span className="text-gold-500">Converge</span>
             </motion.h1>
@@ -52,7 +54,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-gold-100 text-lg md:text-xl max-w-xl mb-12 leading-relaxed"
+              className="text-white font-semibold text-lg md:text-xl max-w-xl mb-12 leading-relaxed"
             >
               The United World Summit brings together heads of state, industry
               pioneers, and changemakers to shape the future of sustainable
@@ -78,7 +80,7 @@ export default function Hero() {
               </Link>
               <Link
                 href="/summit"
-                className="text-white hover:text-gold-400 transition-colors py-4 text-base border-b border-white/20 hover:border-gold-400"
+                className="text-white transition-colors py-4 text-base border-b border-white/20 hover:border-gold-400"
               >
                 Learn about Summit 2026
               </Link>
@@ -94,19 +96,21 @@ export default function Hero() {
           >
             <Container>
               <div className="flex flex-wrap gap-x-12 gap-y-4 text-sm">
-                <div className="flex items-baseline gap-2">
+                <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-md">
                   <span className="text-gold-400 text-2xl font-bold">100+</span>
-                  <span className="text-gold-200">Countries</span>
+                  <span className="text-gold-400 font-semibold">Countries</span>
                 </div>
-                <div className="flex items-baseline gap-2">
+                <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-md">
                   <span className="text-gold-500 text-2xl font-bold">
                     1,200+
                   </span>
-                  <span className="text-gold-200">Delegates</span>
+                  <span className="text-gold-400 font-semibold">Delegates</span>
                 </div>
-                <div className="flex items-baseline gap-2">
+                <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-md">
                   <span className="text-gold-400 text-2xl font-bold">19+</span>
-                  <span className="text-gold-200">Industry Sectors</span>
+                  <span className="text-gold-400 font-semibold">
+                    Industry Sectors
+                  </span>
                 </div>
               </div>
             </Container>
