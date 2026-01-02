@@ -8,15 +8,15 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-stone-950">
+    <section className="relative min-h-screen bg-brown-950">
       {/* Background Image - subtle, not overwhelming */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
+          src="/hero.jpg"
           alt="Global Summit Conference"
           fill
           priority
-          className="object-cover brightness-50 opacity-50"
+          className="object-cover scale-x-[-1] object-center opacity-25"
           sizes="100vw"
         />
       </div>
@@ -112,9 +112,6 @@ export default function Hero() {
             </Container>
           </motion.div>
         </div>
-
-        {/* Subtle vertical line accent */}
-        <div className="hidden -left-8 mr-8 lg:block absolute top-0 bottom-0 w-px bg-linear-to-b from-transparent via-gold-500/20 to-transparent" />
       </Container>
     </section>
   );
