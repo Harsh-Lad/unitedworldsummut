@@ -30,9 +30,9 @@ export default function AboutPreview() {
               transition={{ delay: 0.1 }}
               className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-brown-950 leading-tight mb-6"
             >
-              Two Decades of
+              The Inaugural
               <br />
-              Global Impact
+              Global Summit
             </motion.h2>
 
             <motion.p
@@ -42,10 +42,10 @@ export default function AboutPreview() {
               transition={{ delay: 0.2 }}
               className="text-gray-600 text-lg leading-relaxed mb-8"
             >
-              Founded in 2014, the United World Summit has evolved from a
-              regional business forum into a premier global platform for
-              cross-border collaboration. We facilitate meaningful dialogue among
-              governments, Fortune 500 executives, and emerging market leaders.
+              The United World Summit 2026 marks the first gathering of global
+              leaders, entrepreneurs, and innovators in Abu Dhabi. We facilitate
+              meaningful dialogue among governments, Fortune 500 executives, and
+              emerging market leaders to shape sustainable global development.
             </motion.p>
 
             <motion.div
@@ -71,7 +71,7 @@ export default function AboutPreview() {
                 <div>
                   <p className="text-brown-950 font-semibold">Deal Flow</p>
                   <p className="text-brown-700 text-sm">
-                    $4.2B in partnerships facilitated since inception
+                    Facilitating partnerships across 19+ industry sectors
                   </p>
                 </div>
               </div>
@@ -128,8 +128,8 @@ export default function AboutPreview() {
 
             {/* Experience badge - positioned off-grid */}
             <div className="absolute -top-6 right-8 bg-brown-950 text-white px-6 py-4">
-              <p className="text-3xl font-bold text-gold-400">20+</p>
-              <p className="text-xs tracking-wide uppercase">Years</p>
+              <p className="text-3xl font-bold text-gold-400">1st</p>
+              <p className="text-xs tracking-wide uppercase">Edition</p>
             </div>
           </motion.div>
         </div>

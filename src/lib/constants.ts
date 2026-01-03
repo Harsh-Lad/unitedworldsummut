@@ -5,7 +5,7 @@ export const siteConfig = {
     "A Premier Global Leadership Summit bringing together 1000+ leaders from 100+ countries",
   url: "https://www.unitedworldsummit.com",
   email: "info@unitedworldsummit.com",
-  location: "Dubai, UAE",
+  location: "Abu Dhabi, UAE",
   eventDate: "April 10, 2026",
 };
 
@@ -19,8 +19,8 @@ export const navigation = [
 ];
 
 export const stats = [
-  { value: "20+", label: "Years in Service" },
-  { value: "1000+", label: "UWS Attendees" },
+  { value: "1st", label: "Inaugural Summit" },
+  { value: "1000+", label: "Expected Attendees" },
   { value: "19", label: "Industry Sectors" },
   { value: "100+", label: "Countries" },
 ];

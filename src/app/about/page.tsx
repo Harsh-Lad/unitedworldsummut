@@ -53,9 +53,9 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-900 leading-tight mb-6"
               >
-                Two decades of
+                The Inaugural
                 <br />
-                global impact
+                Global Summit
               </motion.h2>
             </div>
             <div className="lg:col-span-7">
@@ -66,22 +66,21 @@ export default function AboutPage() {
                 className="space-y-6 text-gray-600 text-lg leading-relaxed"
               >
                 <p>
-                  Founded in 2014, the United World Summit began as a regional
-                  business forum connecting entrepreneurs across the Gulf
-                  region. What started as a modest gathering of 50 delegates has
-                  grown into a premier global platform for cross-border
-                  collaboration.
+                  The United World Summit 2026 marks the inaugural gathering of
+                  global leaders, entrepreneurs, and innovators in Abu Dhabi.
+                  This landmark event represents a bold new platform for
+                  cross-border collaboration and sustainable development.
                 </p>
                 <p>
-                  Today, we convene heads of state, Fortune 500 executives, and
-                  emerging market leaders from over 100 countries. Our summits
-                  have facilitated more than $4.2 billion in partnerships and
-                  directly influenced policy decisions affecting millions.
+                  We are bringing together heads of state, Fortune 500
+                  executives, and emerging market leaders from over 100
+                  countries to forge meaningful partnerships and shape policy
+                  decisions affecting millions worldwide.
                 </p>
                 <p>
-                  We remain committed to our founding principle: that meaningful
-                  dialogue between diverse stakeholders is the catalyst for
-                  sustainable global development.
+                  Our founding principle is clear: meaningful dialogue between
+                  diverse stakeholders is the catalyst for sustainable global
+                  development aligned with the UN Sustainable Development Goals.
                 </p>
               </motion.div>
             </div>
@@ -110,7 +109,7 @@ export default function AboutPage() {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-brown-900 text-white px-8 py-6">
                 <p className="text-3xl font-bold text-gold-500">20+</p>
-                <p className="text-sm text-gray-400">Years Experience</p>
+                <p className="text-sm text-gray-400">Years in Business</p>
               </div>
             </motion.div>
 

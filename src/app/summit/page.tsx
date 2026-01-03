@@ -46,7 +46,7 @@ export default function SummitPage() {
               animate={{ opacity: 1 }}
               className="text-gold-500 text-sm tracking-[0.2em] uppercase mb-6 font-black"
             >
-              Dubai · 10 April 2026
+              Abu Dhabi · 10 April 2026
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}

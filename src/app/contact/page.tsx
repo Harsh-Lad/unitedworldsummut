@@ -225,9 +225,9 @@ export default function ContactPage() {
         </Container>
       </section>
 
-      {/* Map placeholder */}
+      {/* Map */}
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462561.6574537445!2d55.22748795!3d25.076022449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1767184340031!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232858.0079772785!2d54.31478035!3d24.453884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1767184340031!5m2!1sen!2sin"
         className="min-h-[50svh] w-full"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
