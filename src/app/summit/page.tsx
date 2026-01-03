@@ -44,7 +44,7 @@ export default function SummitPage() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-gold-500 text-sm tracking-[0.2em] uppercase mb-6 font-black"
+              className="text-yellow-300 text-sm tracking-[0.2em] uppercase mb-6 font-black"
             >
               Abu Dhabi · 10 April 2026
             </motion.p>
@@ -56,13 +56,13 @@ export default function SummitPage() {
             >
               United World Summit
               <br />
-              <span className="text-gold-500">2026</span>
+              <span className="text-yellow-400">2026</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-gray-400 text-lg max-w-2xl mb-10"
+              className="text-yellow-100 text-lg max-w-2xl mb-10"
             >
               A global gathering for innovation, sustainability, and digital
               transformation aligned with the United Nations Sustainable
@@ -75,20 +75,20 @@ export default function SummitPage() {
               className="flex flex-wrap gap-8 text-sm"
             >
               <div>
-                <p className="text-gold-500 text-2xl font-bold">1,200+</p>
-                <p className="text-gray-500">Delegates</p>
+                <p className="text-yellow-300 text-2xl font-bold">1,200+</p>
+                <p className="text-yellow-100">Delegates</p>
               </div>
               <div>
-                <p className="text-gold-500 text-2xl font-bold">100+</p>
-                <p className="text-gray-500">Countries</p>
+                <p className="text-yellow-300 text-2xl font-bold">100+</p>
+                <p className="text-yellow-100">Countries</p>
               </div>
               <div>
-                <p className="text-gold-500 text-2xl font-bold">19+</p>
-                <p className="text-gray-500">Sectors</p>
+                <p className="text-yellow-300 text-2xl font-bold">19+</p>
+                <p className="text-yellow-100">Sectors</p>
               </div>
               <div>
-                <p className="text-gold-500 text-2xl font-bold">34</p>
-                <p className="text-gray-500">Round Tables</p>
+                <p className="text-yellow-300 text-2xl font-bold">34</p>
+                <p className="text-yellow-100">Round Tables</p>
               </div>
             </motion.div>
           </div>
@@ -98,7 +98,7 @@ export default function SummitPage() {
       {/* Themes */}
       <section className="py-24 bg-white">
         <Container>
-          <div className="grid lg:grid-cols-12 gap-16">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
             <div className="lg:col-span-4">
               <motion.p
                 initial={{ opacity: 0 }}
@@ -149,7 +149,7 @@ export default function SummitPage() {
       {/* SDGs */}
       <section className="py-24 bg-off-white">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
             <div>
               <motion.p
                 initial={{ opacity: 0 }}
@@ -204,7 +204,7 @@ export default function SummitPage() {
       {/* UAE Vision */}
       <section className="py-24 bg-brown-900">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
             <div>
               <motion.p
                 initial={{ opacity: 0 }}
@@ -281,7 +281,7 @@ export default function SummitPage() {
             >
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-3 bg-gold-500 text-brown-950 px-8 py-4 font-semibold hover:bg-gold-400 transition-colors"
+                className="group inline-flex items-center gap-3 bg-gold-400 text-brown-950 px-8 py-4 font-semibold hover:bg-gold-500 transition-colors"
               >
                 Request an Invitation
                 <ArrowRight

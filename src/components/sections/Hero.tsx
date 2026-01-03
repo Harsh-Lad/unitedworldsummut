@@ -16,17 +16,17 @@ export default function Hero() {
           alt="Global Summit Conference"
           fill
           priority
-          className="object-cover object-center"
-          sizes="100vw"
+          className="object-cover object-center max-md:brightness-75"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1920px"
         />
         {/* Dark overlay for text contrast */}
-        <div className="absolute inset-0 bg-linear-to-r from-black/50 via-black/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-b md:bg-linear-to-r from-black/70 md:from-black/50 via-black/30 to-transparent"></div>
       </div>
 
       <Container className="relative z-10">
-        <div className="min-h-screen flex flex-col justify-center py-20 lg:py-0">
+        <div className="min-h-screen flex flex-col justify-center py-16 pb-32 sm:pb-36 lg:py-0 lg:pb-0">
           {/* Asymmetric layout - content pushed left on desktop */}
-          <div className="lg:max-w-3xl">
+          <div className="max-w-xl sm:max-w-2xl lg:max-w-3xl">
             {/* Small eyebrow text - understated */}
             <motion.p
               initial={{ opacity: 0 }}
@@ -92,24 +92,32 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="absolute bottom-12 left-0 right-0"
+            className="absolute bottom-6 sm:bottom-8 lg:bottom-12 left-0 right-0 z-20"
           >
             <Container>
-              <div className="flex flex-wrap gap-x-12 gap-y-4 text-sm">
-                <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-md">
-                  <span className="text-gold-400 text-2xl font-bold">100+</span>
-                  <span className="text-gold-400 font-semibold">Countries</span>
+              <div className="flex flex-wrap gap-2 sm:gap-4 lg:gap-8 text-sm">
+                <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
+                  <span className="text-gold-400 text-lg sm:text-2xl font-bold">
+                    100+
+                  </span>
+                  <span className="text-gold-400 text-xs sm:text-base font-semibold">
+                    Countries
+                  </span>
                 </div>
-                <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-md">
-                  <span className="text-gold-500 text-2xl font-bold">
+                <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
+                  <span className="text-gold-500 text-lg sm:text-2xl font-bold">
                     1,200+
                   </span>
-                  <span className="text-gold-400 font-semibold">Delegates</span>
+                  <span className="text-gold-400 text-xs sm:text-base font-semibold">
+                    Delegates
+                  </span>
                 </div>
-                <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-md">
-                  <span className="text-gold-400 text-2xl font-bold">19+</span>
-                  <span className="text-gold-400 font-semibold">
-                    Industry Sectors
+                <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
+                  <span className="text-gold-400 text-lg sm:text-2xl font-bold">
+                    19+
+                  </span>
+                  <span className="text-gold-400 text-xs sm:text-base font-semibold">
+                    Sectors
                   </span>
                 </div>
               </div>

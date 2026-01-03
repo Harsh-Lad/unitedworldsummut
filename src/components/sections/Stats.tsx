@@ -16,27 +16,34 @@ function AnimatedNumber({ value }: { value: string }) {
     const numericValue = parseInt(value.replace(/\D/g, ""));
     const suffix = value.replace(/[0-9]/g, "");
     const duration = 2000;
-    const steps = 60;
-    const stepDuration = duration / steps;
-    let currentStep = 0;
+    let startTime: number | null = null;
+    let animationFrameId: number;
 
-    const timer = setInterval(() => {
-      currentStep++;
-      const progress = currentStep / steps;
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
       const currentValue = Math.floor(numericValue * easeOutQuart);
       setDisplayValue(currentValue + suffix);
 
-      if (currentStep >= steps) {
-        clearInterval(timer);
+      if (progress < 1) {
+        animationFrameId = requestAnimationFrame(animate);
+      } else {
         setDisplayValue(value);
       }
-    }, stepDuration);
+    };
 
-    return () => clearInterval(timer);
+    animationFrameId = requestAnimationFrame(animate);
+
+    return () => cancelAnimationFrame(animationFrameId);
   }, [isInView, value]);
 
-  return <span ref={ref}>{displayValue}</span>;
+  return (
+    <span ref={ref} aria-live="polite">
+      {displayValue}
+    </span>
+  );
 }
 
 export default function Stats() {

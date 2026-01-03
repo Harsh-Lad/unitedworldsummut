@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="bg-brown-950 border-t border-brown-800">
       <Container>
         <div className="py-16">
-          <div className="grid lg:grid-cols-12 gap-12">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
             {/* Brand */}
             <div className="lg:col-span-5">
               <Link href="/" className="inline-block mb-6 group">
@@ -71,14 +71,6 @@ export default function Footer() {
           <p className="text-white text-sm">
             &copy; {currentYear} United World Summit
           </p>
-          {/* <div className="flex gap-8 text-sm text-white">
-            <Link href="#" className="hover:text-gold-100 transition-colors">
-              Privacy
-            </Link>
-            <Link href="#" className="hover:text-gold-100 transition-colors">
-              Terms
-            </Link>
-          </div> */}
         </div>
       </Container>
     </footer>

@@ -4,7 +4,7 @@ import Container from "@/components/ui/Container";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const categories = ["All", "Conferences", "Networking", "Ceremonies"];
 
@@ -92,7 +92,7 @@ export default function GalleryPage() {
       ? galleryImages
       : galleryImages.filter((img) => img.category === activeCategory);
 
-  const handlePrevious = () => {
+  const handlePrevious = useCallback(() => {
     if (selectedImage === null) return;
     const currentIndex = filteredImages.findIndex(
       (img) => img.id === selectedImage
@@ -100,20 +100,36 @@ export default function GalleryPage() {
     const prevIndex =
       (currentIndex - 1 + filteredImages.length) % filteredImages.length;
     setSelectedImage(filteredImages[prevIndex].id);
-  };
+  }, [selectedImage, filteredImages]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (selectedImage === null) return;
     const currentIndex = filteredImages.findIndex(
       (img) => img.id === selectedImage
     );
     const nextIndex = (currentIndex + 1) % filteredImages.length;
     setSelectedImage(filteredImages[nextIndex].id);
-  };
+  }, [selectedImage, filteredImages]);
 
   const selectedImageData = galleryImages.find(
     (img) => img.id === selectedImage
   );
+
+  // Keyboard navigation for lightbox
+  const handleKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      if (selectedImage === null) return;
+      if (e.key === "Escape") setSelectedImage(null);
+      if (e.key === "ArrowLeft") handlePrevious();
+      if (e.key === "ArrowRight") handleNext();
+    },
+    [selectedImage, handlePrevious, handleNext]
+  );
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [handleKeyDown]);
 
   return (
     <>
@@ -206,18 +222,20 @@ export default function GalleryPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-brown-950/95 flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 bg-brown-950/95 flex items-center justify-center p-2 sm:p-4"
             onClick={() => setSelectedImage(null)}
           >
             <button
-              className="absolute top-6 right-6 w-12 h-12 flex items-center justify-center text-white hover:text-gold-500 transition-colors"
+              aria-label="Close lightbox"
+              className="absolute top-4 right-4 sm:top-6 sm:right-6 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-white hover:text-gold-500 transition-colors"
               onClick={() => setSelectedImage(null)}
             >
               <X size={24} />
             </button>
 
             <button
-              className="absolute left-4 md:left-8 w-12 h-12 flex items-center justify-center text-white hover:text-gold-500 transition-colors"
+              aria-label="Previous image"
+              className="absolute left-2 sm:left-4 md:left-8 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-white hover:text-gold-500 transition-colors"
               onClick={(e) => {
                 e.stopPropagation();
                 handlePrevious();
@@ -227,7 +245,8 @@ export default function GalleryPage() {
             </button>
 
             <button
-              className="absolute right-4 md:right-8 w-12 h-12 flex items-center justify-center text-white hover:text-gold-500 transition-colors"
+              aria-label="Next image"
+              className="absolute right-2 sm:right-4 md:right-8 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-white hover:text-gold-500 transition-colors"
               onClick={(e) => {
                 e.stopPropagation();
                 handleNext();

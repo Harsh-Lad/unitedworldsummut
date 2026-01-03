@@ -13,7 +13,6 @@ export default function Home() {
       <Highlights />
       <Sectors />
       <GalleryPreview />
-      {/* <BlogPreview /> */}
       <CTA />
     </>
   );

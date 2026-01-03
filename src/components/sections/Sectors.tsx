@@ -22,7 +22,7 @@ export default function Sectors() {
   return (
     <section className="py-24 bg-brown-950 overflow-hidden">
       <Container>
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left side - intro text */}
           <div>
             <motion.p
@@ -80,7 +80,10 @@ export default function Sectors() {
                 {sector}
               </motion.span>
             ))}
-            <span className="px-5 py-2.5 bg-gold-500 text-brown-950 text-sm font-semibold">
+            <span
+              aria-label="7 additional industry sectors"
+              className="px-5 py-2.5 bg-gold-500 text-brown-950 text-sm font-semibold"
+            >
               +7 more
             </span>
           </motion.div>

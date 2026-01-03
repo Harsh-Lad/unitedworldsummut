@@ -107,9 +107,9 @@ export default function AboutPage() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-brown-900 text-white px-8 py-6">
-                <p className="text-3xl font-bold text-gold-500">20+</p>
-                <p className="text-sm text-gray-400">Years in Business</p>
+              <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 md:-bottom-6 md:-right-6 bg-brown-900 text-white px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6">
+                <p className="text-2xl sm:text-3xl font-bold text-gold-500">20+</p>
+                <p className="text-xs sm:text-sm text-gray-400">Years in Business</p>
               </div>
             </motion.div>
 
