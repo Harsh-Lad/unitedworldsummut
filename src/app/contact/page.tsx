@@ -226,8 +226,8 @@ export default function ContactPage() {
 
       {/* Map */}
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232858.0079772785!2d54.31478035!3d24.453884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1767184340031!5m2!1sen!2sin"
-        title="United World Summit location - Abu Dhabi, UAE"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1944279990926!2d55.27037407537706!3d25.197195777673056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sae!4v1736086340031!5m2!1sen!2sae"
+        title="United World Summit office - Burj Khalifa, Dubai"
         className="min-h-[50svh] w-full"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

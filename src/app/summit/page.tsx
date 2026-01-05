@@ -46,7 +46,7 @@ export default function SummitPage() {
               animate={{ opacity: 1 }}
               className="text-yellow-300 text-sm tracking-[0.2em] uppercase mb-6 font-black"
             >
-              Abu Dhabi · 10 April 2026
+              10-12 April 2026 · UAE
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -64,10 +64,22 @@ export default function SummitPage() {
               transition={{ delay: 0.2 }}
               className="text-yellow-100 text-lg max-w-2xl mb-10"
             >
-              A global gathering for innovation, sustainability, and digital
+              A three-day global gathering for innovation, sustainability, and digital
               transformation aligned with the United Nations Sustainable
               Development Goals and UAE Vision 2030.
             </motion.p>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.25 }}
+              className="bg-yellow-900/20 border border-yellow-700/30 p-6 mb-10 rounded-lg"
+            >
+              <h3 className="text-yellow-300 font-semibold mb-3">Event Schedule</h3>
+              <div className="space-y-2 text-yellow-100">
+                <p><span className="text-yellow-300 font-semibold">April 10:</span> Emirates Palace, Abu Dhabi</p>
+                <p><span className="text-yellow-300 font-semibold">April 11-12:</span> Dubai</p>
+              </div>
+            </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

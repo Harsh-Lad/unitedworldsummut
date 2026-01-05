@@ -34,7 +34,7 @@ export default function Hero() {
               transition={{ duration: 0.8 }}
               className="text-gold-400 text-sm tracking-[0.2em] uppercase mb-6"
             >
-              Abu Dhabi · 10 April 2026
+              Emirates Palace, Abu Dhabi · 10 April 2026
             </motion.p>
 
             {/* Main Headline - large, impactful, left-aligned */}
