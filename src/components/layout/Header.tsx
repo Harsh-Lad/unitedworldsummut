@@ -42,14 +42,19 @@ export default function Header() {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="group">
-            <Image
-              src={logo}
-              alt="United World Summit"
-              width={160}
-              height={40}
-              className="h-16 w-auto rounded-full transition-transform group-hover:scale-105"
-              priority
-            />
+            <figure className="flex items-center gap-x-2">
+              <Image
+                src={logo}
+                alt="United World Summit"
+                width={160}
+                height={40}
+                className="h-16 w-auto rounded-full transition-transform group-hover:scale-105"
+                priority
+              />
+              <figcaption className="text-white font-bold">
+                United World Summit
+              </figcaption>
+            </figure>
           </Link>
 
           {/* Desktop Navigation - minimal */}

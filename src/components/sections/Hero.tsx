@@ -32,9 +32,9 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="text-gold-400 text-sm tracking-[0.2em] uppercase mb-6"
+              className="text-gold-400 text-sm tracking-[0.05em] sm:tracking-[0.15em] md:tracking-[0.2em] uppercase mb-6"
             >
-              Emirates Palace, Abu Dhabi · 10 April 2026
+              Emirates Palace, Abu Dhabi · 10th April 2026
             </motion.p>
 
             {/* Main Headline - large, impactful, left-aligned */}
