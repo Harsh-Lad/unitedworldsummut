@@ -52,7 +52,7 @@ export default function SummitPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8"
+              className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight mb-6"
             >
               United World Summit
               <br />
@@ -62,10 +62,10 @@ export default function SummitPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-yellow-100 text-lg max-w-2xl mb-10"
+              className="text-yellow-100 text-sm md:text-base max-w-2xl mb-8"
             >
-              A three-day global gathering for innovation, sustainability, and digital
-              transformation aligned with the United Nations Sustainable
+              A three-day global gathering for innovation, sustainability, and
+              digital transformation aligned with the United Nations Sustainable
               Development Goals and UAE Vision 2030.
             </motion.p>
             <motion.div
@@ -74,10 +74,22 @@ export default function SummitPage() {
               transition={{ delay: 0.25 }}
               className="bg-yellow-900/20 border border-yellow-700/30 p-6 mb-10 rounded-lg"
             >
-              <h3 className="text-yellow-300 font-semibold mb-3">Event Schedule</h3>
+              <h3 className="text-yellow-300 font-semibold mb-3">
+                Event Schedule
+              </h3>
               <div className="space-y-2 text-yellow-100">
-                <p><span className="text-yellow-300 font-semibold">April 10:</span> Emirates Palace, Abu Dhabi</p>
-                <p><span className="text-yellow-300 font-semibold">April 11-12:</span> Dubai</p>
+                <p>
+                  <span className="text-yellow-300 font-semibold">
+                    April 10:
+                  </span>{" "}
+                  Emirates Palace, Abu Dhabi
+                </p>
+                <p>
+                  <span className="text-yellow-300 font-semibold">
+                    April 11-12:
+                  </span>{" "}
+                  Dubai
+                </p>
               </div>
             </motion.div>
             <motion.div
@@ -87,19 +99,27 @@ export default function SummitPage() {
               className="flex flex-wrap gap-8 text-sm"
             >
               <div>
-                <p className="text-yellow-300 text-2xl font-bold">1,200+</p>
+                <p className="text-yellow-300 text-base md:text-lg font-bold">
+                  1,200+
+                </p>
                 <p className="text-yellow-100">Delegates</p>
               </div>
               <div>
-                <p className="text-yellow-300 text-2xl font-bold">100+</p>
+                <p className="text-yellow-300 text-base md:text-lg font-bold">
+                  100+
+                </p>
                 <p className="text-yellow-100">Countries</p>
               </div>
               <div>
-                <p className="text-yellow-300 text-2xl font-bold">19+</p>
+                <p className="text-yellow-300 text-base md:text-lg font-bold">
+                  19+
+                </p>
                 <p className="text-yellow-100">Sectors</p>
               </div>
               <div>
-                <p className="text-yellow-300 text-2xl font-bold">34</p>
+                <p className="text-yellow-300 text-base md:text-lg font-bold">
+                  34
+                </p>
                 <p className="text-yellow-100">Round Tables</p>
               </div>
             </motion.div>
@@ -124,7 +144,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-900 leading-tight"
+                className="text-lg md:text-xl font-bold text-brown-900 leading-tight"
               >
                 Key Themes
               </motion.h2>
@@ -145,7 +165,7 @@ export default function SummitPage() {
                       {theme.number}
                     </span>
                     <div>
-                      <h3 className="text-xl font-semibold text-brown-900 mb-2">
+                      <h3 className="text-base md:text-lg font-semibold text-brown-900 mb-2">
                         {theme.title}
                       </h3>
                       <p className="text-gray-500">{theme.description}</p>
@@ -175,7 +195,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-900 leading-tight mb-6"
+                className="text-lg md:text-xl font-bold text-brown-900 leading-tight mb-6"
               >
                 Supporting UN
                 <br />
@@ -230,7 +250,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-white leading-tight"
+                className="text-lg md:text-xl font-bold text-white leading-tight"
               >
                 UAE Vision 2030
                 <br />
@@ -269,7 +289,7 @@ export default function SummitPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-900 mb-6"
+              className="text-lg md:text-xl font-bold text-brown-900 mb-6"
             >
               Attendance is by
               <br />

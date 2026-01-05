@@ -1,10 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { Home, ArrowLeft } from "lucide-react";
-import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import Container from "@/components/ui/Container";
+import { motion } from "framer-motion";
+import { ArrowLeft, Home } from "lucide-react";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -28,11 +28,12 @@ export default function NotFound() {
             </span>
           </motion.div>
 
-          <h1 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-white mb-4">
+          <h1 className="text-xl md:text-2xl font-bold text-white mb-4">
             Page Not Found
           </h1>
-          <p className="text-gray-400 text-lg mb-10">
-            Sorry, the page you are looking for doesn&apos;t exist or has been moved.
+          <p className="text-gray-400 text-sm md:text-base mb-8">
+            Sorry, the page you are looking for doesn&apos;t exist or has been
+            moved.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -56,4 +57,3 @@ export default function NotFound() {
     </section>
   );
 }
-

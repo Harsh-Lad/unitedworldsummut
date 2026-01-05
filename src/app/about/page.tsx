@@ -24,7 +24,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
+              className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight"
             >
               Building bridges
               <br />
@@ -51,7 +51,7 @@ export default function AboutPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-900 leading-tight mb-6"
+                className="text-lg md:text-xl font-bold text-brown-900 leading-tight mb-6"
               >
                 The Inaugural
                 <br />
@@ -63,7 +63,7 @@ export default function AboutPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="space-y-6 text-gray-600 text-lg leading-relaxed"
+                className="space-y-6 text-gray-600 text-sm md:text-base leading-relaxed"
               >
                 <p>
                   The United World Summit 2026 marks the inaugural gathering of
@@ -108,8 +108,12 @@ export default function AboutPage() {
                 />
               </div>
               <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 md:-bottom-6 md:-right-6 bg-brown-900 text-white px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6">
-                <p className="text-2xl sm:text-3xl font-bold text-gold-500">20+</p>
-                <p className="text-xs sm:text-sm text-gray-400">Years in Business</p>
+                <p className="text-xl md:text-2xl font-bold text-gold-500">
+                  20+
+                </p>
+                <p className="text-xs sm:text-sm text-gray-400">
+                  Years in Business
+                </p>
               </div>
             </motion.div>
 
@@ -122,7 +126,7 @@ export default function AboutPage() {
               <p className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4">
                 Founder & Chairman
               </p>
-              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-900 mb-6">
+              <h2 className="text-lg md:text-xl font-bold text-brown-900 mb-6">
                 Mr. Sachin Katarnawre
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
@@ -170,7 +174,7 @@ export default function AboutPage() {
               <p className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4">
                 Mission
               </p>
-              <h3 className="text-2xl font-bold text-white mb-4">
+              <h3 className="text-base md:text-lg font-bold text-white mb-4">
                 Creating platforms for change
               </h3>
               <p className="text-gray-400 leading-relaxed">
@@ -190,7 +194,7 @@ export default function AboutPage() {
               <p className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4">
                 Vision
               </p>
-              <h3 className="text-2xl font-bold text-white mb-4">
+              <h3 className="text-base md:text-lg font-bold text-white mb-4">
                 Shaping the future of global commerce
               </h3>
               <p className="text-gray-400 leading-relaxed">
@@ -212,7 +216,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-900 mb-6"
+              className="text-lg md:text-xl font-bold text-brown-900 mb-6"
             >
               Ready to be part of
               <br />

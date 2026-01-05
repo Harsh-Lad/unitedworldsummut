@@ -43,7 +43,7 @@ export default function Highlights() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-950 leading-tight mb-6"
+              className="text-lg md:text-xl font-bold text-brown-950 leading-tight mb-6"
             >
               Summit
               <br />
@@ -56,8 +56,9 @@ export default function Highlights() {
               transition={{ delay: 0.1 }}
               className="text-gray-600 leading-relaxed"
             >
-              Each summit focuses on pressing global challenges, featuring dedicated
-              tracks and working groups that deliver actionable outcomes.
+              Each summit focuses on pressing global challenges, featuring
+              dedicated tracks and working groups that deliver actionable
+              outcomes.
             </motion.p>
           </div>
 
@@ -78,7 +79,7 @@ export default function Highlights() {
                       {theme.number}
                     </span>
                     <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-semibold text-brown-950 mb-3 group-hover:text-gold-600 transition-colors cursor-default">
+                      <h3 className="text-base md:text-lg font-semibold text-brown-950 mb-3 group-hover:text-gold-600 transition-colors cursor-default">
                         {theme.title}
                       </h3>
                       <p className="text-gray-500 leading-relaxed max-w-xl">

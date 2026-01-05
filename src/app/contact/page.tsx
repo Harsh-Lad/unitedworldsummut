@@ -54,7 +54,7 @@ export default function ContactPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
+              className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight"
             >
               Get in touch
             </motion.h1>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                     size={48}
                     className="mx-auto text-gold-500 mb-4"
                   />
-                  <h3 className="text-xl font-semibold text-brown-900 mb-2">
+                  <h3 className="text-base md:text-lg font-semibold text-brown-900 mb-2">
                     Message sent
                   </h3>
                   <p className="text-gray-600">

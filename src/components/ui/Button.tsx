@@ -50,7 +50,7 @@ export default function Button({
           // Sizes
           "px-4 py-2 text-sm": size === "sm",
           "px-6 py-3 text-base": size === "md",
-          "px-8 py-4 text-lg": size === "lg",
+          "px-8 py-4 text-base": size === "lg",
         },
         className
       )}

@@ -47,7 +47,7 @@ export default function GalleryPreview() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-950"
+              className="text-lg md:text-xl font-bold text-brown-950"
             >
               Moments from the Summit
             </motion.h2>

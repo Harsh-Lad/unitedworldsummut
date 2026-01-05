@@ -37,7 +37,7 @@ export default function Sectors() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
+              className="text-lg md:text-xl lg:text-2xl font-bold text-white leading-tight mb-6"
             >
               <span className="text-gold-400">19+</span> Sectors,
               <br />
@@ -48,7 +48,7 @@ export default function Sectors() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-gold-100 text-lg leading-relaxed max-w-md"
+              className="text-gold-100 text-sm md:text-base leading-relaxed max-w-md"
             >
               Cross-industry collaboration fosters powerful synergies. Our
               curated matchmaking connects complementary businesses with

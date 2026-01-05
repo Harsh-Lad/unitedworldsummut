@@ -53,7 +53,7 @@ export default function BlogPreview() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-bold text-brown-950"
+              className="text-lg md:text-xl font-bold text-brown-950"
             >
               Latest News & Insights
             </motion.h2>
@@ -94,7 +94,7 @@ export default function BlogPreview() {
                 />
               </div>
               <p className="text-gray-500 text-sm mb-2">{featured.date}</p>
-              <h3 className="text-2xl font-semibold text-brown-950 group-hover:text-gold-600 transition-colors leading-tight">
+              <h3 className="text-base md:text-lg font-semibold text-brown-950 group-hover:text-gold-600 transition-colors leading-tight">
                 {featured.title}
               </h3>
             </Link>
@@ -123,7 +123,7 @@ export default function BlogPreview() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-gray-500 text-sm mb-1">{post.date}</p>
-                    <h3 className="text-lg font-semibold text-brown-950 group-hover:text-gold-600 transition-colors leading-snug line-clamp-2">
+                    <h3 className="text-base md:text-lg font-semibold text-brown-950 group-hover:text-gold-600 transition-colors leading-snug line-clamp-2">
                       {post.title}
                     </h3>
                   </div>

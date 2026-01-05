@@ -23,7 +23,7 @@ export default function Footer() {
                   className="h-24 w-auto rounded-full transition-opacity group-hover:opacity-80"
                 />
               </Link>
-              <p className="text-gold-200 max-w-sm leading-relaxed">
+              <p className="text-gold-200 text-xs md:text-sm max-w-sm leading-relaxed">
                 Connecting global leaders, fostering collaboration, and
                 advancing sustainable development across borders.
               </p>
@@ -31,7 +31,7 @@ export default function Footer() {
 
             {/* Links */}
             <div className="lg:col-span-3">
-              <p className="text-white text-sm uppercase tracking-wider mb-4 font-semibold">
+              <p className="text-white text-xs uppercase tracking-wider mb-4 font-semibold">
                 Navigate
               </p>
               <ul className="space-y-3">
@@ -39,7 +39,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="text-gold-100 hover:text-gold-400 transition-colors"
+                      className="text-gold-100 text-xs md:text-sm hover:text-gold-400 transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -50,10 +50,10 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="lg:col-span-4">
-              <p className="text-white text-sm uppercase tracking-wider mb-4 font-semibold">
+              <p className="text-white text-xs uppercase tracking-wider mb-4 font-semibold">
                 Contact
               </p>
-              <div className="space-y-3 text-gold-100">
+              <div className="space-y-3 text-gold-100 text-xs md:text-sm">
                 <p>{siteConfig.location}</p>
                 <a
                   href={`mailto:${siteConfig.email}`}
@@ -68,7 +68,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="py-6 border-t border-brown-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white text-sm">
+          <p className="text-white text-xs">
             &copy; {currentYear} United World Summit
           </p>
         </div>

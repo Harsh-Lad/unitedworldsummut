@@ -51,7 +51,7 @@ export default function Header() {
                 className="h-16 w-auto rounded-full transition-transform group-hover:scale-105"
                 priority
               />
-              <figcaption className="text-white font-bold">
+              <figcaption className="text-gold-500 text-xs md:text-sm font-bold">
                 United World Summit
               </figcaption>
             </figure>
@@ -66,7 +66,7 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "text-sm font-bold transition-colors",
+                    "text-xs font-bold transition-colors",
                     pathname === item.href
                       ? "text-gold-400"
                       : "text-white hover:text-gold-400"
@@ -81,7 +81,7 @@ export default function Header() {
           <div className="hidden lg:block">
             <Link
               href="/contact"
-              className="text-sm font-bold text-brown-950 bg-gold-400 px-6 py-3 rounded-xl hover:bg-gold-500 transition-colors"
+              className="text-xs font-bold text-brown-950 bg-gold-400 px-6 py-3 rounded-xl hover:bg-gold-500 transition-colors"
             >
               Contact
             </Link>
@@ -115,7 +115,7 @@ export default function Header() {
                     key={item.name}
                     href={item.href}
                     className={cn(
-                      "block py-3 text-base font-medium transition-colors",
+                      "block py-3 text-sm font-medium transition-colors",
                       pathname === item.href
                         ? "text-gold-400"
                         : "text-white hover:text-gold-400"
@@ -126,7 +126,7 @@ export default function Header() {
                 ))}
                 <Link
                   href="/contact"
-                  className="block py-3 text-base font-medium text-gold-400 hover:text-gold-500 transition-colors"
+                  className="block py-3 text-sm font-medium text-gold-400 hover:text-gold-500 transition-colors"
                 >
                   Contact
                 </Link>

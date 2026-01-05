@@ -148,7 +148,7 @@ export default function GalleryPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
+              className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight"
             >
               Moments from
               <br />
@@ -270,7 +270,7 @@ export default function GalleryPage() {
                 sizes="100vw"
               />
               <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-brown-950 to-transparent p-6">
-                <h3 className="text-white text-xl font-semibold">
+                <h3 className="text-white text-base md:text-lg font-semibold">
                   {selectedImageData.title}
                 </h3>
                 <p className="text-gray-400 text-sm">

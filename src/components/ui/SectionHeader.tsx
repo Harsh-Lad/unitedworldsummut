@@ -19,7 +19,7 @@ export default function SectionHeader({
     <div className={cn(centered && "text-center", "mb-12", className)}>
       <h2
         className={cn(
-          "font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold mb-4",
+          "text-lg md:text-xl lg:text-2xl font-bold mb-4",
           light ? "text-white" : "text-brown-950"
         )}
       >
@@ -28,7 +28,7 @@ export default function SectionHeader({
       {subtitle && (
         <p
           className={cn(
-            "text-lg md:text-xl max-w-3xl",
+            "text-sm md:text-base max-w-3xl",
             centered && "mx-auto",
             light ? "text-gray-300" : "text-gray-600"
           )}

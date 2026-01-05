@@ -22,7 +22,7 @@ export default function CTA() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8"
+            className="text-lg md:text-xl lg:text-2xl font-bold text-white leading-tight mb-6"
           >
             Ready to join the
             <br />
@@ -33,7 +33,7 @@ export default function CTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-gold-100 text-lg mb-10 max-w-xl"
+            className="text-gold-100 text-sm md:text-base mb-8 max-w-xl"
           >
             Attendance is by invitation only. Submit your interest and our team
             will review your application within 48 hours.

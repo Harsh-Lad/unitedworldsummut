@@ -95,7 +95,7 @@ export default function BlogPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
+              className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight"
             >
               Latest updates
             </motion.h1>
@@ -165,7 +165,7 @@ export default function BlogPage() {
                     <p className="text-gray-500 text-sm mb-2">
                       {featured.date} · {featured.category}
                     </p>
-                    <h2 className="text-2xl md:text-3xl font-semibold text-brown-900 group-hover:text-gold-600 transition-colors leading-tight mb-3">
+                    <h2 className="text-base md:text-lg font-semibold text-brown-900 group-hover:text-gold-600 transition-colors leading-tight mb-3">
                       {featured.title}
                     </h2>
                     <p className="text-gray-600 leading-relaxed">
@@ -201,7 +201,7 @@ export default function BlogPage() {
                         <p className="text-gray-500 text-sm mb-1">
                           {post.date} · {post.category}
                         </p>
-                        <h3 className="text-lg font-semibold text-brown-900 group-hover:text-gold-600 transition-colors leading-snug line-clamp-2">
+                        <h3 className="text-base md:text-lg font-semibold text-brown-900 group-hover:text-gold-600 transition-colors leading-snug line-clamp-2">
                           {post.title}
                         </h3>
                       </div>

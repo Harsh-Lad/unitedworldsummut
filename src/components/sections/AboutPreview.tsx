@@ -28,7 +28,7 @@ export default function AboutPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-brown-950 leading-tight mb-6"
+              className="text-lg md:text-xl lg:text-2xl font-bold text-brown-950 leading-tight mb-6"
             >
               The Inaugural
               <br />
@@ -40,7 +40,7 @@ export default function AboutPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-gray-600 text-lg leading-relaxed mb-8"
+              className="text-gray-600 text-sm md:text-base leading-relaxed mb-6"
             >
               The United World Summit 2026 marks the first gathering of global
               leaders, entrepreneurs, and innovators in Abu Dhabi. We facilitate
@@ -128,7 +128,7 @@ export default function AboutPreview() {
 
             {/* Experience badge - positioned off-grid */}
             <div className="absolute -top-4 right-4 sm:-top-6 sm:right-8 bg-brown-950 text-white px-4 py-3 sm:px-6 sm:py-4">
-              <p className="text-3xl font-bold text-gold-400">1st</p>
+              <p className="text-xl md:text-2xl font-bold text-gold-400">1st</p>
               <p className="text-xs tracking-wide uppercase">Edition</p>
             </div>
           </motion.div>

@@ -42,7 +42,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-[family-name:var(--font-playfair)] text-[clamp(2.5rem,8vw,5.5rem)] font-bold text-white leading-[1.1] mb-8"
+              className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-8"
             >
               Where <span className="text-gold-400 font-semibold">Global</span>
               <br />
@@ -54,7 +54,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-white font-semibold text-lg md:text-xl max-w-xl mb-12 leading-relaxed"
+              className="text-white font-semibold text-sm md:text-base max-w-xl mb-8 leading-relaxed"
             >
               The United World Summit brings together heads of state, industry
               pioneers, and changemakers to shape the future of sustainable
@@ -97,7 +97,7 @@ export default function Hero() {
             <Container>
               <div className="flex flex-wrap gap-2 sm:gap-4 lg:gap-8 text-sm">
                 <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
-                  <span className="text-gold-400 text-lg sm:text-2xl font-bold">
+                  <span className="text-gold-400 text-base md:text-lg font-bold">
                     100+
                   </span>
                   <span className="text-gold-400 text-xs sm:text-base font-semibold">
@@ -105,7 +105,7 @@ export default function Hero() {
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
-                  <span className="text-gold-500 text-lg sm:text-2xl font-bold">
+                  <span className="text-gold-500 text-base md:text-lg font-bold">
                     1,200+
                   </span>
                   <span className="text-gold-400 text-xs sm:text-base font-semibold">
@@ -113,7 +113,7 @@ export default function Hero() {
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
-                  <span className="text-gold-400 text-lg sm:text-2xl font-bold">
+                  <span className="text-gold-400 text-base md:text-lg font-bold">
                     19+
                   </span>
                   <span className="text-gold-400 text-xs sm:text-base font-semibold">

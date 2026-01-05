@@ -122,11 +122,11 @@ export default function BlogPostPage() {
               </span>
             </div>
 
-            <h1 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-6">
               {post.title}
             </h1>
 
-            <p className="text-lg text-gray-300">{post.excerpt}</p>
+            <p className="text-sm md:text-base text-gray-300">{post.excerpt}</p>
           </motion.div>
         </Container>
       </section>
@@ -157,7 +157,7 @@ export default function BlogPostPage() {
             className="prose prose-lg max-w-none"
           >
             <div
-              className="text-gray-700 leading-relaxed space-y-6 [&>h2]:font-[family-name:var(--font-playfair)] [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-brown-950 [&>h2]:mt-10 [&>h2]:mb-4 [&>p]:text-gray-600"
+              className="text-gray-700 leading-relaxed space-y-6 [&>h2]:text-base [&>h2]:md:text-lg [&>h2]:font-bold [&>h2]:text-brown-950 [&>h2]:mt-10 [&>h2]:mb-4 [&>p]:text-gray-600"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </motion.div>
@@ -206,7 +206,7 @@ export default function BlogPostPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-brown-950 text-center mb-12"
+            className="text-lg md:text-xl font-bold text-brown-950 text-center mb-12"
           >
             Related Articles
           </motion.h2>
@@ -231,7 +231,7 @@ export default function BlogPostPage() {
                       <Badge variant="gold" className="mb-4">
                         {relatedPost.category}
                       </Badge>
-                      <h3 className="text-lg font-bold text-brown-800 group-hover:text-gold-600 transition-colors line-clamp-2">
+                      <h3 className="text-base md:text-lg font-bold text-brown-800 group-hover:text-gold-600 transition-colors line-clamp-2">
                         {relatedPost.title}
                       </h3>
                     </Card>
