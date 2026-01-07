@@ -82,7 +82,7 @@ export default function Sectors() {
             ))}
             <span
               aria-label="7 additional industry sectors"
-              className="font-(family-name:--font-good-times) px-5 py-2.5 bg-gold-500 text-brown-950 text-sm font-semibold"
+              className="px-5 py-2.5 bg-gold-500 text-brown-950 text-sm font-semibold"
             >
               +7 more
             </span>

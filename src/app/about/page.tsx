@@ -111,7 +111,7 @@ export default function AboutPage() {
                 <p className="font-(family-name:--font-good-times) text-xl md:text-2xl font-bold text-gold-500">
                   20+
                 </p>
-                <p className="text-xs sm:text-sm text-gray-400">
+                <p className="text-xs sm:text-sm text-gray-100">
                   Years in Business
                 </p>
               </div>
@@ -177,7 +177,7 @@ export default function AboutPage() {
               <h3 className="font-(family-name:--font-good-times) text-base md:text-lg font-bold text-white mb-4">
                 Creating platforms for change
               </h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-200 leading-relaxed">
                 To create a dynamic platform that brings together global
                 leaders, entrepreneurs, and innovators to foster sustainable
                 economic growth, drive digital transformation, and promote
@@ -197,7 +197,7 @@ export default function AboutPage() {
               <h3 className="font-(family-name:--font-good-times) text-base md:text-lg font-bold text-white mb-4">
                 Shaping the future of global commerce
               </h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-200 leading-relaxed">
                 To become the world&apos;s most influential business summit,
                 recognized for catalyzing meaningful partnerships, driving
                 innovation, and shaping the future of global commerce in

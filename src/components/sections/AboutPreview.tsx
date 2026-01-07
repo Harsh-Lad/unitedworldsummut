@@ -58,9 +58,9 @@ export default function AboutPreview() {
               <div className="flex items-start gap-4">
                 <div className="w-px h-12 bg-gold-500 mt-1" />
                 <div>
-                  <p className="text-brown-950 font-semibold">
+                  <h4 className="font-(family-name:--font-good-times) text-brown-950 font-semibold">
                     Policy Influence
-                  </p>
+                  </h4>
                   <p className="text-brown-700 text-sm">
                     Direct access to decision-makers across 100+ nations
                   </p>
@@ -69,9 +69,9 @@ export default function AboutPreview() {
               <div className="flex items-start gap-4">
                 <div className="w-px h-12 bg-gold-500 mt-1" />
                 <div>
-                  <p className="font-(family-name:--font-good-times) text-brown-950 font-semibold">
+                  <h4 className="font-(family-name:--font-good-times) text-brown-950 font-semibold">
                     Deal Flow
-                  </p>
+                  </h4>
                   <p className="text-brown-700 text-sm">
                     Facilitating partnerships across 19+ industry sectors
                   </p>
