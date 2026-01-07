@@ -18,7 +18,7 @@ export default function AboutPreview() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4"
+              className="text-gold-500 text-sm tracking-[0.15em] mb-4"
             >
               About the Summit
             </motion.p>
@@ -28,7 +28,7 @@ export default function AboutPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg md:text-xl lg:text-2xl font-bold text-brown-950 leading-tight mb-6"
+              className="font-(family-name:--font-good-times) text-lg md:text-xl lg:text-2xl font-bold text-brown-950 leading-tight mb-6"
             >
               The Inaugural
               <br />
@@ -69,7 +69,9 @@ export default function AboutPreview() {
               <div className="flex items-start gap-4">
                 <div className="w-px h-12 bg-gold-500 mt-1" />
                 <div>
-                  <p className="text-brown-950 font-semibold">Deal Flow</p>
+                  <p className="font-(family-name:--font-good-times) text-brown-950 font-semibold">
+                    Deal Flow
+                  </p>
                   <p className="text-brown-700 text-sm">
                     Facilitating partnerships across 19+ industry sectors
                   </p>
@@ -85,7 +87,7 @@ export default function AboutPreview() {
             >
               <Link
                 href="/about"
-                className="group inline-flex items-center gap-2 text-brown-950 font-semibold hover:text-gold-600 transition-colors"
+                className="font-(family-name:--font-good-times) group inline-flex items-center gap-2 text-brown-950 font-semibold hover:text-gold-600 transition-colors"
               >
                 Our full story
                 <ArrowUpRight
@@ -128,8 +130,10 @@ export default function AboutPreview() {
 
             {/* Experience badge - positioned off-grid */}
             <div className="absolute -top-4 right-4 sm:-top-6 sm:right-8 bg-brown-950 text-white px-4 py-3 sm:px-6 sm:py-4">
-              <p className="text-xl md:text-2xl font-bold text-gold-400">1st</p>
-              <p className="text-xs tracking-wide uppercase">Edition</p>
+              <p className="font-(family-name:--font-good-times) text-xl md:text-2xl font-bold text-gold-400">
+                1st
+              </p>
+              <p className="text-xs tracking-wide">Edition</p>
             </div>
           </motion.div>
         </div>

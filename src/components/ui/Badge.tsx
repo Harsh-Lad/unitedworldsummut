@@ -15,7 +15,7 @@ export default function Badge({
   return (
     <span
       className={cn(
-        "inline-flex items-center px-3 py-1 rounded-full text-xs font-medium",
+        "font-(family-name:--font-good-times) inline-flex items-center px-3 py-1 rounded-full text-xs font-medium",
         {
           "bg-gold-500 text-brown-950": variant === "gold",
           "bg-brown-950 text-white": variant === "dark",

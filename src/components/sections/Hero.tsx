@@ -34,7 +34,7 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                className="text-gold-400 text-xs md:text-sm tracking-[0.05em] sm:tracking-[0.15em] md:tracking-[0.2em] uppercase mb-6"
+                className="text-gold-400 text-xs md:text-sm tracking-[0.05em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6"
               >
                 Emirates Palace, Abu Dhabi · 10th April 2026
               </motion.p>
@@ -44,10 +44,12 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-8"
+                className="font-(family-name:--font-good-times) text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-8"
               >
                 Where{" "}
-                <span className="text-gold-400 font-semibold">Global</span>
+                <span className="font-(family-name:--font-good-times) text-gold-400 font-semibold">
+                  Global
+                </span>
                 <br />
                 Leaders <span className="text-gold-500">Converge</span>
               </motion.h1>
@@ -73,7 +75,7 @@ export default function Hero() {
               >
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center gap-3 bg-gold-500 text-brown-950 px-8 py-4 text-base font-semibold hover:bg-gold-400 transition-colors"
+                  className="font-(family-name:--font-good-times) group inline-flex items-center gap-3 bg-gold-500 text-brown-950 px-8 py-4 text-base font-semibold hover:bg-gold-400 transition-colors"
                 >
                   Request an Invitation
                   <ArrowRight
@@ -100,26 +102,26 @@ export default function Hero() {
           >
             <div className="flex flex-wrap gap-2 sm:gap-4 lg:gap-8">
               <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
-                <span className="text-gold-400 text-base md:text-lg font-bold">
+                <span className="font-(family-name:--font-good-times) text-gold-400 text-base md:text-lg font-bold">
                   100+
                 </span>
-                <span className="text-gold-400 text-xs sm:text-base font-semibold">
+                <span className="font-(family-name:--font-good-times) text-gold-400 text-xs sm:text-base font-semibold">
                   Countries
                 </span>
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
-                <span className="text-gold-500 text-base md:text-lg font-bold">
+                <span className="font-(family-name:--font-good-times) text-gold-500 text-base md:text-lg font-bold">
                   1,200+
                 </span>
-                <span className="text-gold-400 text-xs sm:text-base font-semibold">
+                <span className="font-(family-name:--font-good-times) text-gold-400 text-xs sm:text-base font-semibold">
                   Delegates
                 </span>
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
-                <span className="text-gold-400 text-base md:text-lg font-bold">
+                <span className="font-(family-name:--font-good-times) text-gold-400 text-base md:text-lg font-bold">
                   19+
                 </span>
-                <span className="text-gold-400 text-xs sm:text-base font-semibold">
+                <span className="font-(family-name:--font-good-times) text-gold-400 text-xs sm:text-base font-semibold">
                   Sectors
                 </span>
               </div>

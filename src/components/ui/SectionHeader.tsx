@@ -19,7 +19,7 @@ export default function SectionHeader({
     <div className={cn(centered && "text-center", "mb-12", className)}>
       <h2
         className={cn(
-          "text-lg md:text-xl lg:text-2xl font-bold mb-4",
+          "font-(family-name:--font-good-times) text-lg md:text-xl lg:text-2xl font-bold mb-4",
           light ? "text-white" : "text-brown-950"
         )}
       >

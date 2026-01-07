@@ -122,7 +122,7 @@ export default function BlogPostPage() {
               </span>
             </div>
 
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-6">
+            <h1 className="font-(family-name:--font-good-times) text-xl md:text-2xl lg:text-3xl font-bold text-white mb-6">
               {post.title}
             </h1>
 
@@ -174,7 +174,9 @@ export default function BlogPostPage() {
                 U
               </div>
               <div>
-                <p className="font-medium text-brown-950">{post.author}</p>
+                <p className="font-(family-name:--font-good-times) font-medium text-brown-950">
+                  {post.author}
+                </p>
                 <p className="text-sm text-gray-500">Author</p>
               </div>
             </div>
@@ -231,7 +233,7 @@ export default function BlogPostPage() {
                       <Badge variant="gold" className="mb-4">
                         {relatedPost.category}
                       </Badge>
-                      <h3 className="text-base md:text-lg font-bold text-brown-800 group-hover:text-gold-600 transition-colors line-clamp-2">
+                      <h3 className="font-(family-name:--font-good-times) text-base md:text-lg font-bold text-brown-800 group-hover:text-gold-600 transition-colors line-clamp-2">
                         {relatedPost.title}
                       </h3>
                     </Card>

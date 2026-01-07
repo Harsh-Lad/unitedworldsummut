@@ -31,7 +31,7 @@ export default function Footer() {
 
             {/* Links */}
             <div className="lg:col-span-3">
-              <p className="text-white text-xs uppercase tracking-wider mb-4 font-semibold">
+              <p className="font-(family-name:--font-good-times) text-white text-xs tracking-wider mb-4 font-semibold">
                 Navigate
               </p>
               <ul className="space-y-3">
@@ -50,7 +50,7 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="lg:col-span-4">
-              <p className="text-white text-xs uppercase tracking-wider mb-4 font-semibold">
+              <p className="font-(family-name:--font-good-times) text-white text-xs tracking-wider mb-4 font-semibold">
                 Contact
               </p>
               <div className="space-y-3 text-gold-100 text-xs md:text-sm">

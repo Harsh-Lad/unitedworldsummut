@@ -1,12 +1,19 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const goodTimes = localFont({
   src: "./GoodTimesRg-Regular.woff2",
   display: "swap",
+  variable: "--font-good-times",
 });
 
 export const metadata: Metadata = {
@@ -41,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${goodTimes.className} antialiased min-h-screen flex flex-col`}
+        className={`${inter.className} ${goodTimes.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header />
         <main className="flex-1">{children}</main>

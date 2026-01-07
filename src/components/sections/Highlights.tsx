@@ -35,7 +35,7 @@ export default function Highlights() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4"
+              className="text-gold-500 text-sm tracking-[0.15em] mb-4"
             >
               Focus Areas
             </motion.p>
@@ -43,7 +43,7 @@ export default function Highlights() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-lg md:text-xl font-bold text-brown-950 leading-tight mb-6"
+              className="font-(family-name:--font-good-times) text-lg md:text-xl font-bold text-brown-950 leading-tight mb-6"
             >
               Summit
               <br />
@@ -79,7 +79,7 @@ export default function Highlights() {
                       {theme.number}
                     </span>
                     <div className="flex-1">
-                      <h3 className="text-base md:text-lg font-semibold text-brown-950 mb-3 group-hover:text-gold-600 transition-colors cursor-default">
+                      <h3 className="font-(family-name:--font-good-times) text-base md:text-lg font-semibold text-brown-950 mb-3 group-hover:text-gold-600 transition-colors cursor-default">
                         {theme.title}
                       </h3>
                       <p className="text-gray-500 leading-relaxed max-w-xl">

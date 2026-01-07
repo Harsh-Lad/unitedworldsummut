@@ -14,7 +14,7 @@ export default function CTA() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-gold-400 text-sm tracking-[0.15em] uppercase mb-6"
+            className="text-gold-400 text-sm tracking-[0.15em] mb-6"
           >
             Summit 2026
           </motion.p>
@@ -22,7 +22,7 @@ export default function CTA() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-lg md:text-xl lg:text-2xl font-bold text-white leading-tight mb-6"
+            className="font-(family-name:--font-good-times) text-lg md:text-xl lg:text-2xl font-bold text-white leading-tight mb-6"
           >
             Ready to join the
             <br />
@@ -47,7 +47,7 @@ export default function CTA() {
           >
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-3 bg-gold-500 text-brown-950 px-8 py-4 font-semibold hover:bg-gold-400 transition-colors"
+              className="font-(family-name:--font-good-times) group inline-flex items-center gap-3 bg-gold-500 text-brown-950 px-8 py-4 font-semibold hover:bg-gold-400 transition-colors"
             >
               Request Invitation
               <ArrowRight

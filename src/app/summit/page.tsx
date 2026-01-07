@@ -44,7 +44,7 @@ export default function SummitPage() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-yellow-300 text-sm tracking-[0.2em] uppercase mb-6 font-black"
+              className="text-yellow-300 text-sm tracking-[0.2em] mb-6 font-black"
             >
               10-12 April 2026 · UAE
             </motion.p>
@@ -52,7 +52,7 @@ export default function SummitPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight mb-6"
+              className="font-(family-name:--font-good-times) text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight mb-6"
             >
               United World Summit
               <br />
@@ -74,18 +74,18 @@ export default function SummitPage() {
               transition={{ delay: 0.25 }}
               className="bg-yellow-900/20 border border-yellow-700/30 p-6 mb-10 rounded-lg"
             >
-              <h3 className="text-yellow-300 font-semibold mb-3">
+              <h3 className="font-(family-name:--font-good-times) text-yellow-300 font-semibold mb-3">
                 Event Schedule
               </h3>
               <div className="space-y-2 text-yellow-100">
                 <p>
-                  <span className="text-yellow-300 font-semibold">
+                  <span className="font-(family-name:--font-good-times) text-yellow-300 font-semibold">
                     April 10:
                   </span>{" "}
                   Emirates Palace, Abu Dhabi
                 </p>
                 <p>
-                  <span className="text-yellow-300 font-semibold">
+                  <span className="font-(family-name:--font-good-times) text-yellow-300 font-semibold">
                     April 11-12:
                   </span>{" "}
                   Dubai
@@ -99,25 +99,25 @@ export default function SummitPage() {
               className="flex flex-wrap gap-8 text-sm"
             >
               <div>
-                <p className="text-yellow-300 text-base md:text-lg font-bold">
+                <p className="font-(family-name:--font-good-times) text-yellow-300 text-base md:text-lg font-bold">
                   1,200+
                 </p>
                 <p className="text-yellow-100">Delegates</p>
               </div>
               <div>
-                <p className="text-yellow-300 text-base md:text-lg font-bold">
+                <p className="font-(family-name:--font-good-times) text-yellow-300 text-base md:text-lg font-bold">
                   100+
                 </p>
                 <p className="text-yellow-100">Countries</p>
               </div>
               <div>
-                <p className="text-yellow-300 text-base md:text-lg font-bold">
+                <p className="font-(family-name:--font-good-times) text-yellow-300 text-base md:text-lg font-bold">
                   19+
                 </p>
                 <p className="text-yellow-100">Sectors</p>
               </div>
               <div>
-                <p className="text-yellow-300 text-base md:text-lg font-bold">
+                <p className="font-(family-name:--font-good-times) text-yellow-300 text-base md:text-lg font-bold">
                   34
                 </p>
                 <p className="text-yellow-100">Round Tables</p>
@@ -136,7 +136,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4"
+                className="text-gold-600 text-sm tracking-[0.15em] mb-4"
               >
                 Agenda
               </motion.p>
@@ -144,7 +144,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-lg md:text-xl font-bold text-brown-900 leading-tight"
+                className="font-(family-name:--font-good-times) text-lg md:text-xl font-bold text-brown-900 leading-tight"
               >
                 Key Themes
               </motion.h2>
@@ -165,7 +165,7 @@ export default function SummitPage() {
                       {theme.number}
                     </span>
                     <div>
-                      <h3 className="text-base md:text-lg font-semibold text-brown-900 mb-2">
+                      <h3 className="font-(family-name:--font-good-times) text-base md:text-lg font-semibold text-brown-900 mb-2">
                         {theme.title}
                       </h3>
                       <p className="text-gray-500">{theme.description}</p>
@@ -187,7 +187,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4"
+                className="text-gold-600 text-sm tracking-[0.15em] mb-4"
               >
                 Global Alignment
               </motion.p>
@@ -195,7 +195,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-lg md:text-xl font-bold text-brown-900 leading-tight mb-6"
+                className="font-(family-name:--font-good-times) text-lg md:text-xl font-bold text-brown-900 leading-tight mb-6"
               >
                 Supporting UN
                 <br />
@@ -242,7 +242,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4"
+                className="text-gold-500 text-sm tracking-[0.15em] mb-4"
               >
                 Regional Focus
               </motion.p>
@@ -250,7 +250,7 @@ export default function SummitPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-lg md:text-xl font-bold text-white leading-tight"
+                className="font-(family-name:--font-good-times) text-lg md:text-xl font-bold text-white leading-tight"
               >
                 UAE Vision 2030
                 <br />
@@ -289,7 +289,7 @@ export default function SummitPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-lg md:text-xl font-bold text-brown-900 mb-6"
+              className="font-(family-name:--font-good-times) text-lg md:text-xl font-bold text-brown-900 mb-6"
             >
               Attendance is by
               <br />
@@ -313,7 +313,7 @@ export default function SummitPage() {
             >
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-3 bg-gold-400 text-brown-950 px-8 py-4 font-semibold hover:bg-gold-500 transition-colors"
+                className="font-(family-name:--font-good-times) group inline-flex items-center gap-3 bg-gold-400 text-brown-950 px-8 py-4 font-semibold hover:bg-gold-500 transition-colors"
               >
                 Request an Invitation
                 <ArrowRight

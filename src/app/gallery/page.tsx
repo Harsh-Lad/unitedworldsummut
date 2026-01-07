@@ -140,7 +140,7 @@ export default function GalleryPage() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-gold-500 text-sm tracking-[0.2em] uppercase mb-6 font-black"
+              className="text-gold-500 text-sm tracking-[0.2em] mb-6 font-black"
             >
               Gallery
             </motion.p>
@@ -148,7 +148,7 @@ export default function GalleryPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight"
+              className="font-(family-name:--font-good-times) text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight"
             >
               Moments from
               <br />
@@ -270,7 +270,7 @@ export default function GalleryPage() {
                 sizes="100vw"
               />
               <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-brown-950 to-transparent p-6">
-                <h3 className="text-white text-base md:text-lg font-semibold">
+                <h3 className="font-(family-name:--font-good-times) text-white text-base md:text-lg font-semibold">
                   {selectedImageData.title}
                 </h3>
                 <p className="text-gray-400 text-sm">

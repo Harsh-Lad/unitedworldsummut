@@ -46,7 +46,7 @@ export default function ContactPage() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-gold-500 text-sm tracking-[0.2em] uppercase mb-6 font-black"
+              className="text-gold-500 text-sm tracking-[0.2em] mb-6 font-black"
             >
               Contact
             </motion.p>
@@ -54,7 +54,7 @@ export default function ContactPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight"
+              className="font-(family-name:--font-good-times) text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight"
             >
               Get in touch
             </motion.h1>
@@ -70,13 +70,13 @@ export default function ContactPage() {
             <div className="lg:col-span-4">
               <div className="space-y-8">
                 <div>
-                  <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">
+                  <p className="text-gray-500 text-sm tracking-wider mb-2">
                     Location
                   </p>
                   <p className="text-brown-900">{siteConfig.location}</p>
                 </div>
                 <div>
-                  <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">
+                  <p className="text-gray-500 text-sm tracking-wider mb-2">
                     Email
                   </p>
                   <a
@@ -87,7 +87,7 @@ export default function ContactPage() {
                   </a>
                 </div>
                 <div>
-                  <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">
+                  <p className="text-gray-500 text-sm tracking-wider mb-2">
                     Response Time
                   </p>
                   <p className="text-brown-900">Within 48 hours</p>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                     size={48}
                     className="mx-auto text-gold-500 mb-4"
                   />
-                  <h3 className="text-base md:text-lg font-semibold text-brown-900 mb-2">
+                  <h3 className="font-(family-name:--font-good-times) text-base md:text-lg font-semibold text-brown-900 mb-2">
                     Message sent
                   </h3>
                   <p className="text-gray-600">

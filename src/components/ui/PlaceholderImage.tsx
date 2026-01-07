@@ -83,7 +83,7 @@ export default function PlaceholderImage({
           className="absolute inset-0 bg-brown-950/60 flex items-center justify-center transition-opacity"
         >
           {overlayText && (
-            <span className="text-white font-medium text-sm">
+            <span className="font-(family-name:--font-good-times) text-white font-medium text-sm">
               {overlayText}
             </span>
           )}

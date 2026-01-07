@@ -23,12 +23,12 @@ export default function NotFound() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mb-8"
           >
-            <span className="text-[150px] md:text-[200px] font-bold text-gradient-gold leading-none">
+            <span className="font-(family-name:--font-good-times) text-[150px] md:text-[200px] font-bold text-gradient-gold leading-none">
               404
             </span>
           </motion.div>
 
-          <h1 className="text-xl md:text-2xl font-bold text-white mb-4">
+          <h1 className="font-(family-name:--font-good-times) text-xl md:text-2xl font-bold text-white mb-4">
             Page Not Found
           </h1>
           <p className="text-gray-400 text-sm md:text-base mb-8">

@@ -16,7 +16,7 @@ export default function AboutPage() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-gold-500 text-sm tracking-[0.2em] uppercase mb-6 font-black"
+              className="text-gold-500 text-sm tracking-[0.2em] mb-6 font-black"
             >
               About Us
             </motion.p>
@@ -24,7 +24,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight"
+              className="font-(family-name:--font-good-times) text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight"
             >
               Building bridges
               <br />
@@ -43,7 +43,7 @@ export default function AboutPage() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4"
+                className="text-gold-600 text-sm tracking-[0.15em] mb-4"
               >
                 Our Story
               </motion.p>
@@ -51,7 +51,7 @@ export default function AboutPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-lg md:text-xl font-bold text-brown-900 leading-tight mb-6"
+                className="font-(family-name:--font-good-times) text-lg md:text-xl font-bold text-brown-900 leading-tight mb-6"
               >
                 The Inaugural
                 <br />
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 md:-bottom-6 md:-right-6 bg-brown-900 text-white px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6">
-                <p className="text-xl md:text-2xl font-bold text-gold-500">
+                <p className="font-(family-name:--font-good-times) text-xl md:text-2xl font-bold text-gold-500">
                   20+
                 </p>
                 <p className="text-xs sm:text-sm text-gray-400">
@@ -123,10 +123,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="lg:pt-12"
             >
-              <p className="text-gold-600 text-sm tracking-[0.15em] uppercase mb-4">
+              <p className="text-gold-600 text-sm tracking-[0.15em] mb-4">
                 Founder & Chairman
               </p>
-              <h2 className="text-lg md:text-xl font-bold text-brown-900 mb-6">
+              <h2 className="font-(family-name:--font-good-times) text-lg md:text-xl font-bold text-brown-900 mb-6">
                 Mr. Sachin Katarnawre
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
@@ -144,16 +144,16 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="space-y-3 border-l-2 border-gold-500 pl-6">
-                <p className="text-brown-900 font-medium">
+                <p className="font-(family-name:--font-good-times) text-brown-900 font-medium">
                   Strategic Advisory Services
                 </p>
-                <p className="text-brown-900 font-medium">
+                <p className="font-(family-name:--font-good-times) text-brown-900 font-medium">
                   Government Relations
                 </p>
-                <p className="text-brown-900 font-medium">
+                <p className="font-(family-name:--font-good-times) text-brown-900 font-medium">
                   International Trade Facilitation
                 </p>
-                <p className="text-brown-900 font-medium">
+                <p className="font-(family-name:--font-good-times) text-brown-900 font-medium">
                   Cross-Border Investment
                 </p>
               </div>
@@ -171,10 +171,10 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <p className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4">
+              <p className="text-gold-500 text-sm tracking-[0.15em] mb-4">
                 Mission
               </p>
-              <h3 className="text-base md:text-lg font-bold text-white mb-4">
+              <h3 className="font-(family-name:--font-good-times) text-base md:text-lg font-bold text-white mb-4">
                 Creating platforms for change
               </h3>
               <p className="text-gray-400 leading-relaxed">
@@ -191,10 +191,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <p className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4">
+              <p className="text-gold-500 text-sm tracking-[0.15em] mb-4">
                 Vision
               </p>
-              <h3 className="text-base md:text-lg font-bold text-white mb-4">
+              <h3 className="font-(family-name:--font-good-times) text-base md:text-lg font-bold text-white mb-4">
                 Shaping the future of global commerce
               </h3>
               <p className="text-gray-400 leading-relaxed">
@@ -216,7 +216,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-lg md:text-xl font-bold text-brown-900 mb-6"
+              className="font-(family-name:--font-good-times) text-lg md:text-xl font-bold text-brown-900 mb-6"
             >
               Ready to be part of
               <br />
@@ -230,7 +230,7 @@ export default function AboutPage() {
             >
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-2 text-gold-600 font-semibold hover:text-gold-500 transition-colors"
+                className="font-(family-name:--font-good-times) group inline-flex items-center gap-2 text-gold-600 font-semibold hover:text-gold-500 transition-colors"
               >
                 Get in touch
                 <ArrowUpRight

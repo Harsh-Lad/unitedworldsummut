@@ -61,7 +61,7 @@ export default function Stats() {
               className="text-center"
             >
               <div
-                className={`text-xl md:text-2xl font-bold mb-2 ${
+                className={`font-(family-name:--font-good-times) text-xl md:text-2xl font-bold mb-2 ${
                   index % 2 === 0 ? "text-gold-400" : "text-gold-500"
                 }`}
               >

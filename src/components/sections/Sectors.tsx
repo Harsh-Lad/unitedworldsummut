@@ -29,7 +29,7 @@ export default function Sectors() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-400 text-sm tracking-[0.15em] uppercase mb-4"
+              className="text-gold-400 text-sm tracking-[0.15em] mb-4"
             >
               Industries We Serve
             </motion.p>
@@ -37,7 +37,7 @@ export default function Sectors() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-lg md:text-xl lg:text-2xl font-bold text-white leading-tight mb-6"
+              className="font-(family-name:--font-good-times) text-lg md:text-xl lg:text-2xl font-bold text-white leading-tight mb-6"
             >
               <span className="text-gold-400">19+</span> Sectors,
               <br />
@@ -82,7 +82,7 @@ export default function Sectors() {
             ))}
             <span
               aria-label="7 additional industry sectors"
-              className="px-5 py-2.5 bg-gold-500 text-brown-950 text-sm font-semibold"
+              className="font-(family-name:--font-good-times) px-5 py-2.5 bg-gold-500 text-brown-950 text-sm font-semibold"
             >
               +7 more
             </span>

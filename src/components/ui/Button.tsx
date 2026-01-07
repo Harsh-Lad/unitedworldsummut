@@ -31,7 +31,7 @@ export default function Button({
       whileTap={{ scale: disabled ? 1 : 0.98 }}
       transition={{ type: "spring", stiffness: 400, damping: 17 }}
       className={cn(
-        "relative inline-flex items-center justify-center font-medium rounded-lg overflow-hidden",
+        "font-(family-name:--font-good-times) relative inline-flex items-center justify-center font-medium rounded-lg overflow-hidden",
         "focus:outline-none focus:ring-2 focus:ring-offset-2",
         "transition-all duration-300",
         "disabled:opacity-50 disabled:cursor-not-allowed",

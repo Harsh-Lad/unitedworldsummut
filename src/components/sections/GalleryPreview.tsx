@@ -39,7 +39,7 @@ export default function GalleryPreview() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-500 text-sm tracking-[0.15em] uppercase mb-4"
+              className="text-gold-500 text-sm tracking-[0.15em] mb-4"
             >
               Gallery
             </motion.p>
@@ -47,7 +47,7 @@ export default function GalleryPreview() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-lg md:text-xl font-bold text-brown-950"
+              className="font-(family-name:--font-good-times) text-lg md:text-xl font-bold text-brown-950"
             >
               Moments from the Summit
             </motion.h2>
@@ -59,7 +59,7 @@ export default function GalleryPreview() {
           >
             <Link
               href="/gallery"
-              className="group inline-flex items-center gap-2 text-brown-950 font-semibold hover:text-gold-600 transition-colors"
+              className="font-(family-name:--font-good-times) group inline-flex items-center gap-2 text-brown-950 font-semibold hover:text-gold-600 transition-colors"
             >
               View all photos
               <ArrowUpRight
