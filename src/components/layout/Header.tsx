@@ -110,28 +110,20 @@ export default function Header() {
           >
             <Container>
               <div className="py-6 space-y-1">
-                {navigation
-                  .filter((nav) => nav.name !== "Contact")
-                  .map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className={cn(
-                        "block py-3 text-sm font-medium transition-colors font-(family-name:--font-good-times)",
-                        pathname === item.href
-                          ? "text-gold-400"
-                          : "text-white hover:text-gold-400"
-                      )}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                <Link
-                  href="/contact"
-                  className="block py-3 text-sm font-medium text-gold-400 hover:text-gold-500 transition-colors"
-                >
-                  Contact
-                </Link>
+                {navigation.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={cn(
+                      "block py-3 text-sm font-medium transition-colors font-(family-name:--font-good-times)",
+                      pathname === item.href
+                        ? "text-gold-400"
+                        : "text-white hover:text-gold-400"
+                    )}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
               </div>
             </Container>
           </motion.div>

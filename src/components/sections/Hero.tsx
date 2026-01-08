@@ -24,7 +24,7 @@ export default function Hero() {
       </div>
 
       <Container className="relative z-10">
-        <div className="min-h-screen flex flex-col justify-between pb-6 sm:pb-8 py-20">
+        <div className="min-h-screen flex flex-col pb-6 sm:pb-8 py-20">
           {/* Content section */}
           <div className="flex-1 flex flex-col justify-center">
             {/* Asymmetric layout - content pushed left on desktop */}
@@ -102,26 +102,26 @@ export default function Hero() {
           >
             <div className="flex flex-wrap gap-2 sm:gap-4 lg:gap-8">
               <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
-                <span className="font-(family-name:--font-good-times) text-gold-400 text-base md:text-lg font-bold">
+                <span className="font-(family-name:--font-good-times) text-gold-400 text-xs md:text-lg font-bold">
                   100+
                 </span>
-                <span className="font-(family-name:--font-good-times) text-gold-400 text-xs sm:text-base font-semibold">
+                <span className="text-gold-400 text-xs sm:text-base font-semibold">
                   Countries
                 </span>
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
-                <span className="font-(family-name:--font-good-times) text-gold-500 text-base md:text-lg font-bold">
+                <span className="font-(family-name:--font-good-times) text-gold-400 text-xs md:text-lg font-bold">
                   1,200+
                 </span>
-                <span className="font-(family-name:--font-good-times) text-gold-400 text-xs sm:text-base font-semibold">
+                <span className="text-gold-400 text-xs sm:text-base font-semibold">
                   Delegates
                 </span>
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-md">
-                <span className="font-(family-name:--font-good-times) text-gold-400 text-base md:text-lg font-bold">
+                <span className="font-(family-name:--font-good-times) text-gold-400 text-xs md:text-lg font-bold">
                   19+
                 </span>
-                <span className="font-(family-name:--font-good-times) text-gold-400 text-xs sm:text-base font-semibold">
+                <span className="text-gold-400 text-xs sm:text-base font-semibold">
                   Sectors
                 </span>
               </div>
