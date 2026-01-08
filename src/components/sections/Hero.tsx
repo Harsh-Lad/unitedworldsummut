@@ -29,12 +29,12 @@ export default function Hero() {
           <div className="flex-1 flex flex-col justify-center">
             {/* Asymmetric layout - content pushed left on desktop */}
             <div className="max-w-xl sm:max-w-2xl lg:max-w-3xl">
-              {/* Small eyebrow text - understated */}
+              {/* Small eyebrow text - enhanced visibility */}
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                className="text-gold-400 text-xs md:text-sm tracking-[0.05em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6"
+                className="text-brown-800 bg-white/90 backdrop-blur-sm text-xs md:text-sm tracking-[0.05em] sm:tracking-[0.15em] md:tracking-[0.2em] mb-6 px-4 py-2 rounded-full border border-gold-400/30 shadow-lg inline-block font-semibold"
               >
                 Emirates Palace, Abu Dhabi · 10th April 2026
               </motion.p>
