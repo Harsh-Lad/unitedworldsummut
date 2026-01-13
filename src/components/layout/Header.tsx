@@ -34,8 +34,8 @@ export default function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled
-          ? "bg-brown-950/95 backdrop-blur-sm py-4 shadow-lg"
-          : "bg-brown-950 py-3 md:py-6"
+          ? "bg-brown-950/95 backdrop-blur-sm py-3 shadow-lg"
+          : "bg-brown-950 py-3 md:py-3"
       )}
     >
       <Container>
@@ -48,11 +48,11 @@ export default function Header() {
                 alt="United World Summit"
                 width={160}
                 height={40}
-                className="h-16 w-auto rounded-full transition-transform group-hover:scale-105"
+                className="h-20 w-auto rounded-full transition-transform group-hover:scale-105"
                 priority
               />
               <figcaption className="text-gold-500 font-(family-name:--font-good-times) text-xs md:text-sm font-bold">
-                United World Summit
+                
               </figcaption>
             </figure>
           </Link>
