@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "A Premier Global Leadership Summit bringing together 1000+ leaders from 100+ countries",
   url: "https://www.unitedworldsummit.com",
-  email: "skipvt@gmail.com",
+  email: "info@unitedworldsummit.com",
   location: "Dubai, Burj Khalifa",
   eventDate: "April 10-12, 2026",
 };

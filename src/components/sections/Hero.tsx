@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-white overflow-hidden">
+    <section className="relative min-h-screen bg-white overflow-hidden pt-24">
       {/* Main grid layout */}
       <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">
         {/* Top bar */}
@@ -49,7 +49,10 @@ export default function Hero() {
                 className="font-(family-name:--font-good-times) group inline-flex items-center gap-2 bg-gold-500 text-brown-950 px-6 py-3.5 text-sm font-semibold hover:bg-gold-400 transition-colors"
               >
                 Request Invitation
-                <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <ArrowUpRight
+                  size={16}
+                  className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                />
               </Link>
               <Link
                 href="/summit"
@@ -76,15 +79,23 @@ export default function Hero() {
                 <div className="flex gap-6 mb-4">
                   <div>
                     <div className="text-2xl font-bold text-gold-400">100+</div>
-                    <div className="text-xs text-white/60 uppercase tracking-wide">Countries</div>
+                    <div className="text-xs text-white/60 uppercase tracking-wide">
+                      Countries
+                    </div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-gold-400">1.2k+</div>
-                    <div className="text-xs text-white/60 uppercase tracking-wide">Delegates</div>
+                    <div className="text-2xl font-bold text-gold-400">
+                      1.2k+
+                    </div>
+                    <div className="text-xs text-white/60 uppercase tracking-wide">
+                      Delegates
+                    </div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-gold-400">19+</div>
-                    <div className="text-xs text-white/60 uppercase tracking-wide">Sectors</div>
+                    <div className="text-xs text-white/60 uppercase tracking-wide">
+                      Sectors
+                    </div>
                   </div>
                 </div>
                 <div className="h-px bg-white/10 mb-4" />
@@ -101,17 +112,22 @@ export default function Hero() {
           <div className="flex items-center gap-6">
             <span className="text-xs text-brown-950/40">Featured Sectors</span>
             <div className="flex flex-wrap gap-2">
-              {["Technology", "Finance", "Energy", "Healthcare"].map((sector) => (
-                <span
-                  key={sector}
-                  className="text-xs px-3 py-1.5 bg-brown-950/5 text-brown-950/70"
-                >
-                  {sector}
-                </span>
-              ))}
+              {["Technology", "Finance", "Energy", "Healthcare"].map(
+                (sector) => (
+                  <span
+                    key={sector}
+                    className="text-xs px-3 py-1.5 bg-brown-950/5 text-brown-950/70"
+                  >
+                    {sector}
+                  </span>
+                )
+              )}
             </div>
           </div>
-          <Link href="/sectors" className="text-xs text-gold-500 hover:text-gold-600 transition-colors">
+          <Link
+            href="/sectors"
+            className="text-xs text-gold-500 hover:text-gold-600 transition-colors"
+          >
             View all 19 sectors →
           </Link>
         </div>
