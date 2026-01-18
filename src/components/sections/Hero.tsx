@@ -10,14 +10,14 @@ export default function Hero() {
       {/* Main grid layout */}
       <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">
         {/* Top bar */}
-        <div className="px-6 md:px-12 py-6 flex items-center justify-between border-b border-brown-950/5">
+        <div className="px-6 md:px-12 py-6 flex items-center justify-between border-b border-brown-950/50">
           <div className="flex items-center gap-3">
-            <div className="w-2 h-2 rounded-full bg-gold-500" />
-            <span className="text-xs text-brown-950/50 tracking-wide uppercase">
+            <div className="w-2 h-2 rounded-full bg-brown-950" />
+            <span className="text-xs text-brown-950 tracking-wide uppercase">
               April 10, 2026
             </span>
           </div>
-          <span className="text-xs text-brown-950/50 tracking-wide">
+          <span className="text-xs text-brown-950 tracking-wide">
             Emirates Palace, Abu Dhabi
           </span>
         </div>
@@ -120,7 +120,7 @@ export default function Hero() {
                   >
                     {sector}
                   </span>
-                )
+                ),
               )}
             </div>
           </div>
