@@ -35,7 +35,7 @@ export default function Header() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled
           ? "bg-brown-950/95 backdrop-blur-sm py-3 shadow-lg"
-          : "bg-brown-950 py-3 md:py-3"
+          : "bg-brown-950 py-3 md:py-3",
       )}
     >
       <Container>
@@ -46,9 +46,9 @@ export default function Header() {
               <Image
                 src={logo}
                 alt="United World Summit"
-                width={160}
-                height={40}
-                className="h-16 md:h-20 w-auto rounded-full transition-transform group-hover:scale-105"
+                width={200}
+                height={200}
+                className="h-16 md:h-20 xl:h-28 w-auto rounded-full transition-transform group-hover:scale-105"
                 priority
               />
               <figcaption className="text-gold-500 font-(family-name:--font-good-times) text-sm md:text-base font-bold">
@@ -69,7 +69,7 @@ export default function Header() {
                     "text-xs font-bold transition-colors font-(family-name:--font-good-times)",
                     pathname === item.href
                       ? "text-gold-400"
-                      : "text-white hover:text-gold-400"
+                      : "text-white hover:text-gold-400",
                   )}
                 >
                   {item.name}
@@ -118,7 +118,7 @@ export default function Header() {
                       "block py-3 text-sm font-medium transition-colors font-(family-name:--font-good-times)",
                       pathname === item.href
                         ? "text-gold-400"
-                        : "text-white hover:text-gold-400"
+                        : "text-white hover:text-gold-400",
                     )}
                   >
                     {item.name}
