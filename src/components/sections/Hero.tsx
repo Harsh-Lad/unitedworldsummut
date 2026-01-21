@@ -6,36 +6,30 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-white overflow-hidden pt-24 xl:pt-32">
+    <section className="relative min-h-screen bg-white overflow-hidden pt-28 xl:pt-32">
       {/* Main grid layout */}
       <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">
         {/* Top bar */}
-        <div className="relative px-6 md:px-12 py-8 flex max-md:flex-col items-center justify-between border-b border-brown-950/10 bg-white/95 backdrop-blur-sm overflow-hidden">
+        <div className="relative px-6 md:px-12 py-8 flex max-md:flex-col items-center justify-between my-1 bg-brown-950 backdrop-blur-sm overflow-hidden shadow-lg">
+          {/* Matrix effect background */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="matrix-rain"></div>
+          </div>
           {/* Moving background elements */}
-          <div className="absolute inset-0 bg-linear-to-r from-transparent via-gold-50/30 to-transparent animate-[shimmer_6s_ease-in-out_infinite]" />
-          <div className="absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-gold-400/60 to-transparent animate-[shimmer_4s_ease-in-out_infinite]" />
-
-          {/* Floating subtle particles */}
-          <div className="absolute top-4 left-1/4 w-1 h-1 bg-gold-400/40 rounded-full animate-[float_4s_ease-in-out_infinite]" />
-          <div className="absolute top-6 right-1/3 w-1 h-1 bg-gold-500/30 rounded-full animate-[float_5s_ease-in-out_infinite_1s]" />
-          <div className="absolute bottom-4 left-2/3 w-1 h-1 bg-gold-400/40 rounded-full animate-[float_4.5s_ease-in-out_infinite_2s]" />
+          <div className="absolute inset-0 bg-linear-to-r from-transparent via-gold-500/50 to-transparent animate-[shimmer_6s_ease-in-out_infinite]" />
+          <div className="absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-gold-400/80 to-transparent animate-[shimmer_4s_ease-in-out_infinite]" />
 
           <div className="relative flex items-center gap-4 group">
-            <div className="relative max-md:hidden">
-              <div className="w-3 h-3 rounded-full bg-gold-500 animate-pulse" />
-              <div className="absolute inset-0 w-3 h-3 rounded-full bg-gold-400/30 animate-ping" />
-            </div>
-            <span className="text-xs md:text-xl font-bold text-brown-950 tracking-wide uppercase group-hover:text-gold-600 transition-all duration-500 group-hover:scale-105 font-(family-name:--font-good-times)">
+            <span className="text-xs md:text-xl font-bold text-white tracking-wide uppercase transition-all duration-500 group-hover:scale-105">
               April 10, 2026
             </span>
           </div>
 
           <div className="relative group">
-            <div className="absolute inset-0 bg-linear-to-r from-transparent via-gold-100/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 animate-[shimmer_8s_ease-in-out_infinite]" />
-            <span className="relative text-xs md:text-xl font-bold text-brown-950/80 tracking-wide group-hover:text-gold-600 transition-all duration-500 group-hover:scale-105 font-(family-name:--font-good-times)">
+            <span className="relative text-xs md:text-xl font-bold text-white tracking-wide transition-all duration-500 group-hover:scale-105">
               Emirates Palace, Abu Dhabi
             </span>
-            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-gold-400 to-gold-600 group-hover:w-full transition-all duration-700" />
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-700" />
           </div>
         </div>
 

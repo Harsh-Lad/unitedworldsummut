@@ -48,10 +48,10 @@ export default function Header() {
                 alt="United World Summit"
                 width={200}
                 height={200}
-                className="h-16 md:h-20 xl:h-28 w-auto rounded-full transition-transform group-hover:scale-105"
+                className="h-24 xl:h-28 w-auto rounded-full transition-transform group-hover:scale-105"
                 priority
               />
-              <figcaption className="text-gold-500 font-(family-name:--font-good-times) text-sm md:text-base font-bold">
+              <figcaption className="text-gold-500 font-(family-name:--font-good-times) text-xs md:text-base font-bold">
                 United World Summit
               </figcaption>
             </figure>
