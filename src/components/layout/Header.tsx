@@ -9,7 +9,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import logo from "../../../public/logo1.png";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,11 +43,11 @@ export default function Header() {
           <Link href="/" className="group">
             <figure className="flex items-center gap-x-3">
               <Image
-                src={logo}
+                src={"/main.png"}
                 alt="United World Summit"
                 width={200}
                 height={200}
-                className="h-24 xl:h-28 w-auto rounded-full transition-transform group-hover:scale-105"
+                className="h-24 xl:h-28 w-auto transition-transform group-hover:scale-105 bg-white p-1 rounded-full"
                 priority
               />
               <figcaption className="text-gold-500 font-(family-name:--font-good-times) text-xs md:text-base font-bold">

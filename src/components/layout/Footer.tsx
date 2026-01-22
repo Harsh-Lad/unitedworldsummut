@@ -2,7 +2,6 @@ import Container from "@/components/ui/Container";
 import { navigation, siteConfig } from "@/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../public/logo1.png";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,11 +15,11 @@ export default function Footer() {
             <div className="lg:col-span-5">
               <Link href="/" className="inline-block mb-6 group">
                 <Image
-                  src={logo}
+                  src={"/main.png"}
                   alt="United World Summit"
                   width={180}
                   height={45}
-                  className="h-24 w-auto rounded-full transition-opacity group-hover:opacity-80"
+                  className="h-24 w-auto rounded-full transition-opacity group-hover:opacity-80 bg-white p-1"
                 />
               </Link>
               <p className="text-gold-200 text-xs md:text-sm max-w-sm leading-relaxed">

@@ -100,7 +100,7 @@ export default function AboutPage() {
             >
               <div className="aspect-4/5 relative overflow-hidden">
                 <Image
-                  src="/sachin-katarnawre.jpeg"
+                  src="/mr-sachin-katarnawre.jpeg"
                   alt="Mr. Sachin Katarnawre"
                   fill
                   className="object-cover"

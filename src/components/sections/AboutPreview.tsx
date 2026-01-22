@@ -118,7 +118,7 @@ export default function AboutPreview() {
             </div>
 
             {/* Overlapping accent image */}
-            <div className="hidden xl:block absolute -bottom-12 -left-12 w-48 h-64 overflow-hidden border-4 border-white shadow-lg">
+            {/* <div className="hidden xl:block absolute -bottom-12 -left-12 w-48 h-64 overflow-hidden border-4 border-white shadow-lg">
               <Image
                 src="/sachin-katarnawre.jpeg"
                 alt="Mr. Sachin Katarnawre, Founder and Chairman"
@@ -126,7 +126,7 @@ export default function AboutPreview() {
                 className="object-cover"
                 sizes="200px"
               />
-            </div>
+            </div> */}
 
             {/* Experience badge - positioned off-grid */}
             <div className="absolute -top-4 right-4 sm:-top-6 sm:right-8 bg-brown-950 text-white px-4 py-3 sm:px-6 sm:py-4">

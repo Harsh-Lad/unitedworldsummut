@@ -20,13 +20,13 @@ export default function Hero() {
           <div className="absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-gold-400/80 to-transparent animate-[shimmer_4s_ease-in-out_infinite]" />
 
           <div className="relative flex items-center gap-4 group">
-            <span className="text-xs md:text-xl font-bold text-white tracking-wide uppercase transition-all duration-500 group-hover:scale-105">
+            <span className="text-base md:text-xl xl:text-2xl font-black text-white tracking-wide uppercase transition-all duration-500 group-hover:scale-105">
               April 10, 2026
             </span>
           </div>
 
           <div className="relative group">
-            <span className="relative text-xs md:text-xl font-bold text-white tracking-wide transition-all duration-500 group-hover:scale-105">
+            <span className="relative text-base md:text-xl xl:text-2xl font-black text-white tracking-wide transition-all duration-500 group-hover:scale-105">
               Emirates Palace, Abu Dhabi
             </span>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-700" />
