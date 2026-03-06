@@ -8,9 +8,22 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen bg-white overflow-hidden pt-28 xl:pt-32">
       {/* Main grid layout */}
-      <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">
+      <div className="min-h-screen grid grid-rows-[auto_auto_1fr_auto]">
+        {/* Marquee banner */}
+        <div className="bg-brown-950 py-2.5 overflow-hidden whitespace-nowrap">
+          <div className="animate-[marquee_20s_linear_infinite] inline-block">
+            <span className="text-md font-medium text-gold-400 tracking-wide px-4">
+              ***Important Update: The United World Summit 2026 is temporarily on hold due to regional developments. A new venue will be announced shortly. All invitations remain valid. Stay tuned.***
+            </span>
+            <span className="text-md font-medium text-gold-400 tracking-wide px-4">
+              ***Important Update: The United World Summit 2026 is temporarily on hold due to regional developments. A new venue will be announced shortly. All invitations remain valid. Stay tuned.***
+            </span>
+          </div>
+        </div>
+
         {/* Top bar */}
-        <div className="relative px-6 md:px-12 py-8 flex max-md:flex-col items-center justify-between my-1 bg-brown-950 backdrop-blur-sm overflow-hidden shadow-lg">
+
+        <div className="relative px-6 md:px-12 py-8 flex max-md:flex-col items-center justify-between my-1 bg-brown-950 backdrop-blur-sm overflow-hidden shadow-lg hidden">
           {/* Matrix effect background */}
           <div className="absolute inset-0 opacity-10">
             <div className="matrix-rain"></div>
