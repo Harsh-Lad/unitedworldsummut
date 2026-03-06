@@ -46,7 +46,7 @@ export default function SummitPage() {
               animate={{ opacity: 1 }}
               className="text-yellow-300 text-sm tracking-[0.2em] mb-6 font-black"
             >
-              10-12 April 2026 · UAE
+              {/* 10-12 April 2026 · UAE */} On Hold - New Venue Coming Soon
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -80,15 +80,15 @@ export default function SummitPage() {
               <div className="space-y-2 text-yellow-100">
                 <p>
                   <span className="font-(family-name:--font-good-times) text-yellow-300 font-semibold">
-                    April 10:
+                    Scouting New Venues - 
                   </span>{" "}
-                  Emirates Palace, Abu Dhabi
+                  Amid Ongoing Geopolitical Tensions
                 </p>
                 <p>
                   <span className="font-(family-name:--font-good-times) text-yellow-300 font-semibold">
-                    April 11-12:
+                    {/* April 11-12: */}
                   </span>{" "}
-                  Dubai
+                  {/* Dubai */}
                 </p>
               </div>
             </motion.div>
