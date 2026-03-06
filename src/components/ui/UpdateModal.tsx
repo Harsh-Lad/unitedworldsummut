@@ -75,27 +75,34 @@ export default function UpdateModal() {
 
               {/* Body */}
               <div className="space-y-4 text-sm text-brown-700 leading-relaxed">
-                <p>Dear Delegates</p>
+                <p>Dear Distinguished Delegates,</p>
                 <p>
-                  Due to the evolving geopolitical situation in the region, the
-                  United World Summit 2026 has been temporarily placed on hold as
-                  a precautionary measure. We want to emphasize —{" "}
+                  In light of the evolving geopolitical situation in the region,
+                  the United World Summit 2026 has been temporarily placed on
+                  hold as a precautionary measure. We wish to assure you that{" "}
                   <strong className="text-brown-950 font-semibold">
-                    the summit is NOT canceled.
+                    the summit is not canceled.
                   </strong>
                 </p>
                 <p>
-                  Our team is actively finalizing an alternative venue in a
-                  secure and accessible location, and we expect to share
-                  confirmed details very shortly.
+                  Our organizing team is actively finalizing arrangements for an
+                  alternative venue in a secure and accessible location. We
+                  expect to communicate the confirmed details with you shortly.
                 </p>
                 <p>
-                  Your invitation and registration remain fully valid. We are as
-                  committed as ever to bringing together 1,200+ leaders from 100+
-                  countries to shape the future of global development.
+                  Your invitation and registration remain fully valid. We remain
+                  firmly committed to convening more than 1,200 leaders from over
+                  100 countries to engage in meaningful dialogue and
+                  collaboration aimed at shaping the future of global
+                  development.
+                </p>
+                <p>
+                  We deeply appreciate your patience, understanding, and
+                  continued trust as we work diligently to ensure a successful
+                  and impactful summit.
                 </p>
                 <p className="text-brown-950 font-medium">
-                  Thank you for your patience and continued trust.
+                  With highest regards,
                 </p>
               </div>
             </div>
