@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Main grid layout */}
       <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">
         {/* Top bar */}
-        <div className="relative px-6 md:px-12 py-6 flex max-md:flex-col max-md:gap-3 items-center justify-between bg-brown-950 overflow-hidden">
+        <div className="relative px-2 md:px-12 py-6 flex max-md:flex-col max-md:gap-3 items-center justify-between bg-brown-950 overflow-hidden">
           {/* Subtle shimmer */}
           <div className="absolute inset-0 bg-linear-to-r from-transparent via-gold-400/8 to-transparent animate-[shimmer_8s_ease-in-out_infinite]" />
           <div className="absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-gold-400/40 to-transparent" />
@@ -22,10 +22,10 @@ export default function Hero() {
           </div>
 
           <div className="relative">
-            <div className="font-(family-name:--font-good-times) text-sm md:text-base xl:text-lg font-bold text-gold-300 tracking-wide">
+            <div className="font-(family-name:--font-good-times) text-[8.6px] md:text-base xl:text-lg font-bold text-gold-300 tracking-wide">
               United Nations Economic Commission of Africa, Addis Ababa
             </div>
-            <h5 className="text-right font-(family-name:--font-good-times) text-sm md:text-base xl:text-sm font-medium text-gold-300 tracking-wide">Conference Room no. 2</h5>
+            <h5 className="mt-1 md:mt-0 text-center md:text-right font-(family-name:--font-good-times) text-[8.5px] md:text-base xl:text-sm font-medium text-gold-300 tracking-wide">Conference Room no. 2</h5>
           </div>
         </div>
 
