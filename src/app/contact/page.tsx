@@ -18,8 +18,12 @@ const contactSchema = z.object({
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
+// Deploy the google-apps-script.js as a web app and paste the URL here
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxsnlCtd7Fo935p-Tvim5bvmHcFo08b0nqHEq_usClnzX6eDJib1FMy7npSveHYRK3iBg/exec";
+
 export default function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -31,10 +35,28 @@ export default function ContactPage() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitted(true);
-    reset();
-    setTimeout(() => setIsSubmitted(false), 5000);
+    setSubmitError(null);
+    try {
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          company: data.company || "Not provided",
+          message: data.message,
+        }),
+      });
+      const result = await response.json();
+      if (result.success) {
+        setIsSubmitted(true);
+        reset();
+        setTimeout(() => setIsSubmitted(false), 8000);
+      } else {
+        setSubmitError("Something went wrong. Please try again or email us directly.");
+      }
+    } catch {
+      setSubmitError("Network error. Please try again or email us directly.");
+    }
   };
 
   return (
@@ -202,6 +224,10 @@ export default function ContactPage() {
                       </p>
                     )}
                   </div>
+
+                  {submitError && (
+                    <p className="text-red-500 text-sm">{submitError}</p>
+                  )}
 
                   <button
                     type="submit"
