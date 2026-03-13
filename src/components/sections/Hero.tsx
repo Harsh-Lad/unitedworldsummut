@@ -22,10 +22,13 @@ export default function Hero() {
           </div>
 
           <div className="relative">
-            <div className="font-(family-name:--font-good-times) text-[8.6px] md:text-base xl:text-lg font-bold text-gold-300 tracking-wide">
+            <div className="text-center font-(family-name:--font-good-times) text-[12px] md:text-base xl:text-lg font-bold text-gold-300 tracking-wide hidden md:block">
               United Nations Economic Commission of Africa, Addis Ababa
             </div>
-            <h5 className="mt-1 md:mt-0 text-center md:text-right font-(family-name:--font-good-times) text-[8.5px] md:text-base xl:text-sm font-medium text-gold-300 tracking-wide">Conference Room no. 2</h5>
+            <div className="text-center font-(family-name:--font-good-times) text-[10.5px] md:text-base xl:text-lg font-bold text-gold-300 tracking-wide block md:hidden">
+              United Nations Economic Commission of Africa, <br /> Addis Ababa
+            </div>
+            <h5 className="mt-1 md:mt-0 text-center md:text-right font-(family-name:--font-good-times) text-[10px] md:text-base xl:text-sm font-bold text-gold-300 tracking-wide">Conference Room no. 2</h5>
           </div>
         </div>
 
