@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-white overflow-hidden pt-28 xl:pt-32">
+    <section className="relative min-h-screen bg-white overflow-hidden pt-28 xl:pt-32 -mt-4">
       {/* Main grid layout */}
       <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">
         {/* Top bar */}
@@ -22,9 +22,10 @@ export default function Hero() {
           </div>
 
           <div className="relative">
-            <span className="font-(family-name:--font-good-times) text-sm md:text-base xl:text-lg font-bold text-gold-300 tracking-wide">
-              UNECA, Addis Ababa
-            </span>
+            <div className="font-(family-name:--font-good-times) text-sm md:text-base xl:text-lg font-bold text-gold-300 tracking-wide">
+              United Nations Economic Commission of Africa, Addis Ababa
+            </div>
+            <h5 className="text-right font-(family-name:--font-good-times) text-sm md:text-base xl:text-sm font-medium text-gold-300 tracking-wide">Conference Room no. 2</h5>
           </div>
         </div>
 

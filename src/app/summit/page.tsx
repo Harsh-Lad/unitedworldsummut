@@ -708,7 +708,7 @@ export default function SummitPage() {
                 transition={{ delay: 0.1 }}
                 className="text-gray-400 leading-relaxed mb-8"
               >
-                Hosted at the UNECA headquarters in Addis Ababa, this summit
+                Hosted at the United Nations Economic Commission of Africa headquarters in Addis Ababa, this summit
                 aligns with the African Union&apos;s vision for an integrated,
                 prosperous and peaceful Africa.
               </motion.p>
