@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-navy">
+    <section className="min-h-screen flex items-center justify-center bg-brown-950">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 30 }}

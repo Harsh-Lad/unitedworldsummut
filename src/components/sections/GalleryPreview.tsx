@@ -39,7 +39,7 @@ export default function GalleryPreview() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-500 text-sm tracking-[0.15em] mb-4"
+              className="font-(family-name:--font-good-times) text-gold-500/60 text-xs tracking-[0.2em] uppercase mb-4"
             >
               Gallery
             </motion.p>

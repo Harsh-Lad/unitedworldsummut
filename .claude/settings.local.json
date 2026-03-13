@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /d/unitedworldsummut/*.ts /d/unitedworldsummut/*.json)",
+      "WebFetch(domain:sdgs.un.org)",
+      "Bash(npx next:*)"
+    ]
+  }
+}

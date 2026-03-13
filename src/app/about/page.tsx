@@ -16,7 +16,7 @@ export default function AboutPage() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-gold-500 text-sm tracking-[0.2em] mb-6 font-black"
+              className="font-(family-name:--font-good-times) text-gold-400/60 text-xs tracking-[0.2em] uppercase mb-6"
             >
               About Us
             </motion.p>
@@ -43,7 +43,7 @@ export default function AboutPage() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="text-gold-600 text-sm tracking-[0.15em] mb-4"
+                className="font-(family-name:--font-good-times) text-gold-500/60 text-xs tracking-[0.2em] uppercase mb-4"
               >
                 Our Story
               </motion.p>
@@ -67,9 +67,10 @@ export default function AboutPage() {
               >
                 <p>
                   The United World Summit 2026 marks the inaugural gathering of
-                  global leaders, entrepreneurs, and innovators in Abu Dhabi.
-                  This landmark event represents a bold new platform for
-                  cross-border collaboration and sustainable development.
+                  global leaders, entrepreneurs, and innovators in Addis Ababa
+                  at the United Nations Economic Commission of Africa. This
+                  landmark event represents a bold new platform for cross-border
+                  collaboration and sustainable development.
                 </p>
                 <p>
                   We are bringing together heads of state, Fortune 500
@@ -123,7 +124,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="lg:pt-12"
             >
-              <p className="text-gold-600 text-sm tracking-[0.15em] mb-4">
+              <p className="font-(family-name:--font-good-times) text-gold-500/60 text-xs tracking-[0.2em] uppercase mb-4">
                 Founder & Chairman
               </p>
               <h2 className="font-(family-name:--font-good-times) text-lg md:text-xl font-bold text-brown-900 mb-6">
@@ -171,7 +172,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <p className="text-gold-500 text-sm tracking-[0.15em] mb-4">
+              <p className="font-(family-name:--font-good-times) text-gold-400/60 text-xs tracking-[0.2em] uppercase mb-4">
                 Mission
               </p>
               <h3 className="font-(family-name:--font-good-times) text-base md:text-lg font-bold text-white mb-4">
@@ -191,7 +192,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <p className="text-gold-500 text-sm tracking-[0.15em] mb-4">
+              <p className="font-(family-name:--font-good-times) text-gold-400/60 text-xs tracking-[0.2em] uppercase mb-4">
                 Vision
               </p>
               <h3 className="font-(family-name:--font-good-times) text-base md:text-lg font-bold text-white mb-4">

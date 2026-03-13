@@ -46,7 +46,7 @@ export default function ContactPage() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-gold-500 text-sm tracking-[0.2em] mb-6 font-black"
+              className="font-(family-name:--font-good-times) text-gold-400/60 text-xs tracking-[0.2em] uppercase mb-6"
             >
               Contact
             </motion.p>
@@ -206,7 +206,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="inline-flex items-center gap-3 bg-gold-500 text-brown-950 px-8 py-4 font-semibold hover:bg-gold-400 transition-colors disabled:opacity-50"
+                    className="font-(family-name:--font-good-times) inline-flex items-center gap-3 bg-gold-500 text-brown-950 px-8 py-4 text-sm font-semibold hover:bg-gold-400 transition-colors disabled:opacity-50"
                   >
                     {isSubmitting ? (
                       "Sending..."
@@ -224,10 +224,10 @@ export default function ContactPage() {
         </Container>
       </section>
 
-      {/* Map */}
+      {/* Map - UNECA, Addis Ababa */}
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1944279990926!2d55.27037407537706!3d25.197195777673056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sae!4v1736086340031!5m2!1sen!2sae"
-        title="United World Summit office - Burj Khalifa, Dubai"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.577!2d38.7578!3d9.0192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sUnited%20Nations%20Economic%20Commission%20for%20Africa!5e0!3m2!1sen!2set"
+        title="United World Summit - UNECA, Addis Ababa"
         className="min-h-[50svh] w-full"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

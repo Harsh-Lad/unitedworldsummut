@@ -1,21 +1,20 @@
 @import "tailwindcss";
 
-/* Custom Brand Colors */
-/* Red: #d71921 (UAE red for backgrounds) */
-/* Gold: #C9961A (warm gold for accents) */
+/* ═══════════════════════════════════════════════════
+   UNITED WORLD SUMMIT — Design System
+   Premium color palette with deep burgundy + warm gold
+   ═══════════════════════════════════════════════════ */
 
 :root {
-  /* Design System Variables */
   --font-sans: var(--font-inter);
-  --font-display: var(--font-playfair);
+  --font-display: var(--font-good-times);
 }
 
 @theme inline {
-  /* Fonts */
   --font-sans: var(--font-inter);
-  --font-display: var(--font-playfair);
+  --font-display: var(--font-good-times);
 
-  /* Custom Brand Colors - UAE Red */
+  /* Brand Red */
   --color-brown-950: #a01118;
   --color-brown-900: #b51519;
   --color-brown-800: #d71921;
@@ -23,13 +22,17 @@
   --color-brown-600: #e84249;
   --color-brown-500: #ef5a60;
 
-  --color-gold-600: #a87c15;
-  --color-gold-500: #c9961a;
+  /* Warm Gold — prestige, achievement */
+  --color-gold-600: #9a7417;
+  --color-gold-500: #b8921e;
   --color-gold-400: #d4a73d;
   --color-gold-300: #dfb860;
   --color-gold-200: #eaca83;
   --color-gold-100: #f5dba6;
   --color-gold-50: #fdf5e6;
+
+  /* Off-white for section backgrounds */
+  --color-off-white: #faf8f5;
 
   /* Animations */
   --animate-shimmer: shimmer 2s infinite;
@@ -38,128 +41,67 @@
   --animate-bounce-slow: bounce 2s ease-in-out infinite;
 }
 
-/* Keyframe animations */
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
+/* ─── Keyframes ─── */
 
-  100% {
-    transform: translateX(100%);
-  }
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-    opacity: 0.4;
-  }
-
-  50% {
-    transform: translateY(-10px);
-    opacity: 1;
-  }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes flash {
-
-  0%,
-  100% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
 
 @keyframes pulse {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 @keyframes bounce {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 @keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
+
+/* ─── Base ─── */
 
 body {
   font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Design System Utilities */
+html {
+  scroll-behavior: smooth;
+}
 
-/* Premium Spacing Scale - consistently applied */
+/* ─── Spacing Utilities ─── */
+
 .section-py {
   @apply py-24 md:py-32;
 }
@@ -172,21 +114,22 @@ body {
   @apply px-4 md:px-6 lg:px-8;
 }
 
-/* Typography Hierarchy */
+/* ─── Typography Hierarchy (Good Times display font) ─── */
+
 .heading-hero {
-  @apply font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  @apply font-[family-name:var(--font-good-times)] text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
 }
 
 .heading-1 {
-  @apply font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
+  @apply font-[family-name:var(--font-good-times)] text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
 }
 
 .heading-2 {
-  @apply font-[family-name:var(--font-playfair)] text-2xl md:text-3xl lg:text-4xl font-bold leading-tight;
+  @apply font-[family-name:var(--font-good-times)] text-2xl md:text-3xl lg:text-4xl font-bold leading-tight;
 }
 
 .heading-3 {
-  @apply font-[family-name:var(--font-playfair)] text-xl md:text-2xl lg:text-3xl font-bold leading-snug;
+  @apply font-[family-name:var(--font-good-times)] text-xl md:text-2xl lg:text-3xl font-bold leading-snug;
 }
 
 .body-large {
@@ -197,16 +140,18 @@ body {
   @apply text-base md:text-lg leading-relaxed;
 }
 
-/* Gradient Text Utilities */
+/* ─── Gradient Text ─── */
+
 .text-gradient-gold {
-  @apply bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 bg-clip-text text-transparent;
 }
 
 .text-gradient-stone {
   @apply bg-gradient-to-r from-brown-700 to-brown-950 bg-clip-text text-transparent;
 }
 
-/* Background Gradients */
+/* ─── Background Gradients ─── */
+
 .bg-gradient-stone {
   @apply bg-gradient-to-br from-brown-950 via-brown-900 to-brown-950;
 }
@@ -219,29 +164,32 @@ body {
   @apply bg-gradient-to-br from-brown-950 via-brown-900 to-brown-950;
 }
 
-/* Premium Card Styles */
+/* ─── Premium Card Styles ─── */
+
 .card-premium {
-  @apply rounded-xl bg-white border border-gold-200 shadow-sm hover:shadow-md transition-all duration-300;
+  @apply rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300;
 }
 
 .card-dark {
   @apply rounded-xl bg-brown-950 border border-brown-800 shadow-lg;
 }
 
-/* Button Styles */
+/* ─── Button Styles ─── */
+
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-gold-500 text-white hover:bg-gold-600 focus:ring-gold-500 shadow-md hover:shadow-lg;
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-gold-500 text-brown-950 hover:bg-gold-400 focus:ring-gold-500 shadow-md hover:shadow-lg;
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-brown-950 text-white hover:bg-brown-900 focus:ring-brown-800 shadow-md hover:shadow-lg;
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-brown-950 text-white hover:bg-brown-900 focus:ring-brown-800 shadow-md hover:shadow-lg;
 }
 
 .btn-outline {
-  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 border-2 border-gold-500 text-gold-600 hover:bg-gold-500 hover:text-white focus:ring-gold-500;
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 border-2 border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-brown-950 focus:ring-gold-500;
 }
 
-/* Animation utilities */
+/* ─── Animation Utilities ─── */
+
 .animate-shimmer {
   animation: shimmer 2s infinite;
 }
@@ -258,19 +206,14 @@ body {
   animation: spin-slow 8s linear infinite;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
+/* ─── Selection & Scrollbar ─── */
 
-/* Selection styling */
 ::selection {
-  @apply bg-gold-500 text-brown-950;
+  @apply bg-gold-400 text-brown-950;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -278,19 +221,21 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gold-500 rounded;
+  @apply bg-gold-500/60 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-gold-600;
+  @apply bg-gold-500;
 }
 
-/* Focus visible for accessibility */
+/* ─── Focus ─── */
+
 *:focus-visible {
   @apply outline-2 outline-gold-500 outline-offset-2;
 }
 
-/* Image hover zoom effect */
+/* ─── Image Hover ─── */
+
 .img-zoom {
   overflow: hidden;
 }
@@ -303,82 +248,61 @@ html {
   transform: scale(1.05);
 }
 
-/* Magnetic button effect helper */
+/* ─── Magnetic Button ─── */
+
 .magnetic-button {
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Text reveal animation */
+/* ─── Text Reveal ─── */
+
 .text-reveal {
   clip-path: inset(0 100% 0 0);
   animation: reveal 0.8s ease forwards;
 }
 
 @keyframes reveal {
-  to {
-    clip-path: inset(0 0 0 0);
-  }
+  to { clip-path: inset(0 0 0 0); }
 }
 
-/* Stagger children animation */
-.stagger-children>* {
+/* ─── Stagger Children ─── */
+
+.stagger-children > * {
   opacity: 0;
   transform: translateY(20px);
   animation: stagger-fade 0.5s ease forwards;
 }
 
-.stagger-children>*:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.stagger-children>*:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.stagger-children>*:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.stagger-children>*:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.stagger-children>*:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.stagger-children>*:nth-child(6) {
-  animation-delay: 0.6s;
-}
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
 
 @keyframes stagger-fade {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Matrix Rain Effect */
+/* ─── Matrix Rain Effect ─── */
+
 .matrix-rain {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: repeating-linear-gradient(90deg,
-      transparent,
-      transparent 2px,
-      rgb(255, 248, 40) 2px,
-      rgba(255, 200, 30) 4px);
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 2px,
+    rgba(212, 167, 61, 0.15) 2px,
+    rgba(212, 167, 61, 0.08) 4px
+  );
   animation: matrix-scroll 2.5s linear infinite;
 }
 
 @keyframes matrix-scroll {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(100%);
-  }
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
 }

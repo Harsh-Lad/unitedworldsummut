@@ -18,7 +18,7 @@ export default function AboutPreview() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-500 text-sm tracking-[0.15em] mb-4"
+              className="font-(family-name:--font-good-times) text-gold-500/60 text-xs tracking-[0.2em] uppercase mb-4"
             >
               About the Summit
             </motion.p>
@@ -42,10 +42,11 @@ export default function AboutPreview() {
               transition={{ delay: 0.2 }}
               className="text-gray-600 text-sm md:text-base leading-relaxed mb-6"
             >
-              The United World Summit 2026 marks the first gathering of global
-              leaders, entrepreneurs, and innovators in Abu Dhabi. We facilitate
-              meaningful dialogue among governments, Fortune 500 executives, and
-              emerging market leaders to shape sustainable global development.
+              The United World Summit 2026 marks the inaugural gathering of
+              global leaders, entrepreneurs, and innovators in Addis Ababa. We
+              facilitate meaningful dialogue among governments, Fortune 500
+              executives, and emerging market leaders to shape sustainable global
+              development.
             </motion.p>
 
             <motion.div

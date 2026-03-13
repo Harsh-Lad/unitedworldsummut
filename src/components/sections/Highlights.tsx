@@ -35,7 +35,7 @@ export default function Highlights() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-gold-500 text-sm tracking-[0.15em] mb-4"
+              className="font-(family-name:--font-good-times) text-gold-500/60 text-xs tracking-[0.2em] uppercase mb-4"
             >
               Focus Areas
             </motion.p>
@@ -75,7 +75,7 @@ export default function Highlights() {
                   className="group border-t border-gray-200 py-8 first:border-t-0 first:pt-0"
                 >
                   <div className="flex gap-6 md:gap-10">
-                    <span className="text-gold-500 text-sm font-mono">
+                    <span className="font-(family-name:--font-good-times) text-gold-400/40 text-sm">
                       {theme.number}
                     </span>
                     <div className="flex-1">

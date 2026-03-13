@@ -140,7 +140,7 @@ export default function GalleryPage() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-gold-500 text-sm tracking-[0.2em] mb-6 font-black"
+              className="font-(family-name:--font-good-times) text-gold-400/60 text-xs tracking-[0.2em] uppercase mb-6"
             >
               Gallery
             </motion.p>
@@ -167,10 +167,10 @@ export default function GalleryPage() {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-4 py-2 text-sm transition-colors ${
+                className={`font-(family-name:--font-good-times) px-4 py-2 text-xs transition-colors ${
                   activeCategory === category
-                    ? "bg-brown-900 text-white"
-                    : "text-gray-600 hover:text-brown-900"
+                    ? "bg-brown-950 text-white"
+                    : "text-gray-500 hover:text-brown-950"
                 }`}
               >
                 {category}

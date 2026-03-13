@@ -27,8 +27,9 @@ export const metadata: Metadata = {
     "Business Leadership",
     "Sustainable Development",
     "Digital Transformation",
-    "UAE",
-    "Dubai",
+    "Addis Ababa",
+    "UNECA",
+    "Africa",
   ],
   openGraph: {
     title: "United World Summit 2026",
