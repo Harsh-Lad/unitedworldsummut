@@ -70,9 +70,17 @@ export default function Footer() {
           <p className="text-white/30 text-xs">
             &copy; {currentYear} United World Summit. All rights reserved.
           </p>
-          <p className="font-(family-name:--font-good-times) text-white/20 text-[10px] tracking-widest uppercase">
-            Organised by United Gate One
-          </p>
+          <div className="flex items-center gap-6">
+            <Link
+              href="/privacy-policy"
+              className="text-white/30 text-xs hover:text-gold-400 transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <p className="font-(family-name:--font-good-times) text-white/20 text-[10px] tracking-widest uppercase">
+              Organised by United Gate One
+            </p>
+          </div>
         </div>
       </Container>
     </footer>
