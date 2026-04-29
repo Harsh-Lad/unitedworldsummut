@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
 
       {/* Content */}
       <section className="section-py">
-        <Container size="sm">
+        <Container size="narrow">
           <div className="prose prose-stone max-w-none space-y-10 text-stone-700">
 
             <div>
