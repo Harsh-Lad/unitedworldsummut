@@ -6,7 +6,7 @@ export const siteConfig = {
   url: "https://www.unitedworldsummit.com",
   email: "info@unitedworldsummit.com",
   location: "United Nations Economic Commission of Africa, AddisAbaba",
-  eventDate: "7th August 2026",
+  eventDate: "10th & 11th December 2026",
 };
 
 export const navigation = [

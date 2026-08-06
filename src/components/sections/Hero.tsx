@@ -17,7 +17,7 @@ export default function Hero() {
 
           <div className="relative">
             <span className="font-(family-name:--font-good-times) text-sm md:text-base xl:text-lg font-bold text-white tracking-wide uppercase">
-              7th August 2026
+              10th &amp; 11th December 2026
             </span>
           </div>
 
