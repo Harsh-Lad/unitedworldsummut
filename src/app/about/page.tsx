@@ -67,8 +67,7 @@ export default function AboutPage() {
               >
                 <p>
                   The United World Summit 2026 marks the inaugural gathering of
-                  global leaders, entrepreneurs, and innovators in Addis Ababa
-                  at the United Nations Economic Commission of Africa. This
+                  global leaders, entrepreneurs, and innovators. This
                   landmark event represents a bold new platform for cross-border
                   collaboration and sustainable development.
                 </p>

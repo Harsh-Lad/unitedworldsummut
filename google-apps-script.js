@@ -134,7 +134,7 @@ function sendNotificationEmail(data) {
         </div>
       </div>
       <div style="padding: 16px; text-align: center; color: #9ca3af; font-size: 12px;">
-        United World Summit 2026 — UNECA, Addis Ababa
+        United World Summit 2026
       </div>
     </div>
   `;

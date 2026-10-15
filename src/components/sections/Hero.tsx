@@ -17,18 +17,14 @@ export default function Hero() {
 
           <div className="relative">
             <span className="font-(family-name:--font-good-times) text-sm md:text-base xl:text-lg font-bold text-white tracking-wide uppercase">
-              10th &amp; 11th December 2026
+              Dates Announcing Soon
             </span>
           </div>
 
           <div className="relative">
-            <div className="text-center font-(family-name:--font-good-times) text-[12px] md:text-base xl:text-lg font-bold text-gold-300 tracking-wide hidden md:block">
-              United Nations Economic Commission of Africa, Addis Ababa
+            <div className="text-center font-(family-name:--font-good-times) text-[12px] md:text-base xl:text-lg font-bold text-gold-300 tracking-wide">
+              Venue Announcing Soon
             </div>
-            <div className="text-center font-(family-name:--font-good-times) text-[10.5px] md:text-base xl:text-lg font-bold text-gold-300 tracking-wide block md:hidden">
-              United Nations Economic Commission of Africa, <br /> Addis Ababa
-            </div>
-            <h5 className="mt-1 md:mt-0 text-center md:text-right font-(family-name:--font-good-times) text-[10px] md:text-base xl:text-sm font-bold text-gold-300 tracking-wide">Conference Room no. 2</h5>
           </div>
         </div>
 
@@ -50,8 +46,7 @@ export default function Hero() {
 
             <p className="text-gray-600 text-base max-w-sm mb-10 leading-relaxed">
               Join 500+ delegates from 100+ countries. An invitation-only
-              gathering of global leaders and industry pioneers at the United
-              Nations Economic Commission of Africa.
+              gathering of global leaders and industry pioneers.
             </p>
 
             <div className="flex flex-wrap gap-4">

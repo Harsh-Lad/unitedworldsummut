@@ -28,8 +28,6 @@ export const metadata: Metadata = {
     "Business Leadership",
     "Sustainable Development",
     "Digital Transformation",
-    "Addis Ababa",
-    "UNECA",
     "Africa",
   ],
   openGraph: {

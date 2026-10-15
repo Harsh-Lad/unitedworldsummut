@@ -5,8 +5,8 @@ export const siteConfig = {
     "A Premier Global Leadership Summit bringing together 1000+ leaders from 100+ countries",
   url: "https://www.unitedworldsummit.com",
   email: "info@unitedworldsummit.com",
-  location: "United Nations Economic Commission of Africa, AddisAbaba",
-  eventDate: "10th & 11th December 2026",
+  location: "Venue to be announced soon",
+  eventDate: "Dates to be announced soon",
 };
 
 export const navigation = [

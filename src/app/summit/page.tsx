@@ -241,14 +241,14 @@ export default function SummitPage() {
               <div className="flex items-center gap-3">
                 <Calendar size={18} className="text-gold-400" />
                 <span className="text-white font-semibold">
-                  10th &amp; 11th December 2026
+                  Dates to be announced soon
                 </span>
               </div>
               <div className="hidden sm:block w-px h-6 bg-white/20" />
               <div className="flex items-center gap-3">
                 <MapPin size={18} className="text-gold-400" />
                 <span className="text-white/90 text-sm">
-                  United Nations Economic Commission of Africa, Addis Ababa
+                  Venue to be announced soon
                 </span>
               </div>
             </motion.div>
@@ -708,7 +708,7 @@ export default function SummitPage() {
                 transition={{ delay: 0.1 }}
                 className="text-gray-400 leading-relaxed mb-8"
               >
-                Hosted at the United Nations Economic Commission of Africa headquarters in Addis Ababa, this summit
+                This summit
                 aligns with the African Union&apos;s vision for an integrated,
                 prosperous and peaceful Africa.
               </motion.p>
