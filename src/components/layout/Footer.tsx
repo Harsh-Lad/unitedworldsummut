@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-brown-950 border-t border-white/5">
+    <footer className="bg-brown-950 border-t border-white/15">
       <Container>
         <div className="py-16">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
@@ -22,7 +22,7 @@ export default function Footer() {
                   className="h-20 w-auto rounded-full transition-opacity group-hover:opacity-80 bg-white p-1"
                 />
               </Link>
-              <p className="text-white/40 text-sm max-w-sm leading-relaxed">
+              <p className="text-white/85 text-sm max-w-sm leading-relaxed">
                 Connecting global leaders, fostering collaboration, and
                 advancing sustainable development across borders.
               </p>
@@ -38,7 +38,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="text-white/40 text-sm hover:text-gold-400 transition-colors"
+                      className="text-white/85 text-sm hover:text-gold-200 transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -52,11 +52,11 @@ export default function Footer() {
               <p className="font-(family-name:--font-good-times) text-white text-xs tracking-wider mb-4 font-semibold">
                 Contact
               </p>
-              <div className="space-y-3 text-white/40 text-sm">
+              <div className="space-y-3 text-white/85 text-sm">
                 {/* <p>{siteConfig.location}</p> */}
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="block hover:text-gold-400 transition-colors"
+                  className="block hover:text-gold-200 transition-colors"
                 >
                   {siteConfig.email}
                 </a>
@@ -66,18 +66,18 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="py-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/30 text-xs">
+        <div className="py-6 border-t border-white/15 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-white/75 text-xs">
             &copy; {currentYear} United World Summit. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link
               href="/privacy-policy"
-              className="text-white/30 text-xs hover:text-gold-400 transition-colors"
+              className="text-white/75 text-xs hover:text-gold-200 transition-colors"
             >
               Privacy Policy
             </Link>
-            <p className="font-(family-name:--font-good-times) text-white/20 text-[10px] tracking-widest uppercase">
+            <p className="font-(family-name:--font-good-times) text-gold-200 text-[10px] tracking-widest uppercase">
               Organised by United Gate One
             </p>
           </div>

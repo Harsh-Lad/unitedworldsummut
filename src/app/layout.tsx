@@ -18,12 +18,12 @@ const goodTimes = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "United World Summit 2026 | Global Leadership & Innovation",
+  title: "United World Summit 2027 | Global Leadership & Innovation",
   description:
-    "Join 1000+ global leaders, policymakers, and innovators from 100+ countries at the United World Summit 2026. Explore sustainable development, digital transformation, and inclusive growth.",
+    "Join 1000+ global leaders, policymakers, and innovators from 100+ countries at the United World Summit 2027. Explore sustainable development, digital transformation, and inclusive growth.",
   keywords: [
     "United World Summit",
-    "UWS 2026",
+    "UWS 2027",
     "Global Summit",
     "Business Leadership",
     "Sustainable Development",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Africa",
   ],
   openGraph: {
-    title: "United World Summit 2026",
+    title: "United World Summit 2027",
     description:
       "A Premier Global Leadership Summit bringing together leaders from 100+ countries",
     type: "website",

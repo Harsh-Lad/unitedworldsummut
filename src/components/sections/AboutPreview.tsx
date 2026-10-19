@@ -42,7 +42,7 @@ export default function AboutPreview() {
               transition={{ delay: 0.2 }}
               className="text-gray-600 text-sm md:text-base leading-relaxed mb-6"
             >
-              The United World Summit 2026 marks the inaugural gathering of
+              The United World Summit 2027 marks the inaugural gathering of
               global leaders, entrepreneurs, and innovators. We
               facilitate meaningful dialogue among governments, Fortune 500
               executives, and emerging market leaders to shape sustainable global

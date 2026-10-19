@@ -16,7 +16,7 @@ export default function CTA() {
             viewport={{ once: true }}
             className="font-(family-name:--font-good-times) text-gold-400/60 text-xs tracking-[0.2em] uppercase mb-6"
           >
-            Summit 2026
+            Summit 2027
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

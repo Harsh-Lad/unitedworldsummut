@@ -180,13 +180,15 @@ export default function SummitPage() {
         {/* Background image overlay */}
         <div className="absolute inset-0">
           <Image
-            src="/conference.jpg"
-            alt="Summit Conference"
+            src="/summit-hero.webp"
+            alt="Speaker addressing a full summit auditorium"
             fill
-            className="object-cover opacity-15"
+            sizes="100vw"
+            className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-brown-950/60 via-brown-950/80 to-brown-950" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-brown-950" />
+          <div className="absolute inset-0 bg-brown-950/20" />
         </div>
 
         {/* Decorative elements */}
@@ -216,7 +218,7 @@ export default function SummitPage() {
             >
               United World Summit
               <br />
-              <span className="text-gold-400">2026</span>
+              <span className="text-gold-400">2027</span>
             </motion.h1>
 
             <motion.p
@@ -338,7 +340,7 @@ export default function SummitPage() {
                 transition={{ delay: 0.1 }}
                 className="text-gray-600 leading-relaxed mb-6"
               >
-                The objective of United World Summit 2026 is to encourage,
+                The objective of United World Summit 2027 is to encourage,
                 acknowledge and reward the contribution of Entrepreneurs,
                 High-officials, Administrative Officers, Celebrities, and Sports
                 Personalities towards the society.
@@ -805,7 +807,7 @@ export default function SummitPage() {
                 className="space-y-4 text-gray-600 leading-relaxed"
               >
                 <p>
-                  The United World Summit 2026 is poised to be a truly
+                  The United World Summit 2027 is poised to be a truly
                   unparalleled gathering of global decision-makers, reflecting a
                   commitment from every corner of the world to shaping our shared
                   economic future.
@@ -839,7 +841,7 @@ export default function SummitPage() {
               {...fadeInUp}
               className="text-gold-400/60 text-xs tracking-[0.2em] uppercase mb-6"
             >
-              Summit 2026
+              Summit 2027
             </motion.p>
             <motion.h2
               {...fadeInUp}

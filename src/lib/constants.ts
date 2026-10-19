@@ -12,7 +12,8 @@ export const siteConfig = {
 export const navigation = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "Summit 2026", href: "/summit" },
+  { name: "Summit 2027", href: "/summit" },
+  { name: "Dubai 2026", href: "/dubai-summit" },
   { name: "Gallery", href: "/gallery" },
   // { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
