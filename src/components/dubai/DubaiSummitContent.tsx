@@ -506,8 +506,8 @@ export default function DubaiSummitContent() {
               </SectionTitle>
               <motion.p {...fadeInUp} className="text-gray-600 leading-relaxed mb-8">
                 An exclusive conversation on the vision, strategic direction and international aspirations of United
-                Gate One, with particular emphasis on the proposed United World Summit in Addis Ababa, Ethiopia, in
-                February 2027: its strategic rationale, global outreach and potential to bring international
+                Gate One, with particular emphasis on the proposed United World Summit in Addis Ababa, Ethiopia, on 1st
+                &amp; 2nd April 2027: its strategic rationale, global outreach and potential to bring international
                 stakeholders together for dialogue, cooperation and shared progress.
               </motion.p>
               <p className="text-gray-400 text-xs uppercase tracking-widest mb-4">Key discussion areas</p>
@@ -730,10 +730,10 @@ export default function DubaiSummitContent() {
             <SectionTitle light>
               Towards United World Summit 2027
               <br />
-              <span className="text-gold-400">Addis Ababa, Ethiopia</span>
+              <span className="text-gold-400">UNECA, Addis Ababa · 1st &amp; 2nd April 2027</span>
             </SectionTitle>
             <motion.p {...fadeInUp} className="text-white/75 leading-relaxed mb-10">
-              Building on the Dubai edition, the proposed United World Summit in Addis Ababa in February 2027 will
+              Building on the Dubai edition, the United World Summit at the United Nations Economic Commission for Africa (UNECA), Addis Ababa, on 1st &amp; 2nd April 2027 will
               provide an additional platform for strengthening international partnerships, fostering cross-border
               economic engagement and connecting emerging opportunities with global stakeholders.
             </motion.p>

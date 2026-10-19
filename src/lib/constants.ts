@@ -5,8 +5,8 @@ export const siteConfig = {
     "A Premier Global Leadership Summit bringing together 1000+ leaders from 100+ countries",
   url: "https://www.unitedworldsummit.com",
   email: "info@unitedworldsummit.com",
-  location: "Venue to be announced soon",
-  eventDate: "Dates to be announced soon",
+  location: "UNECA Headquarters, Addis Ababa, Ethiopia",
+  eventDate: "1st & 2nd April 2027",
 };
 
 export const navigation = [

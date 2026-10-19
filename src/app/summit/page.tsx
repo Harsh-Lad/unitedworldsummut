@@ -243,14 +243,14 @@ export default function SummitPage() {
               <div className="flex items-center gap-3">
                 <Calendar size={18} className="text-gold-400" />
                 <span className="text-white font-semibold">
-                  Dates to be announced soon
+                  1st &amp; 2nd April 2027
                 </span>
               </div>
               <div className="hidden sm:block w-px h-6 bg-white/20" />
               <div className="flex items-center gap-3">
                 <MapPin size={18} className="text-gold-400" />
                 <span className="text-white/90 text-sm">
-                  Venue to be announced soon
+                  United Nations Economic Commission for Africa (UNECA), Addis Ababa
                 </span>
               </div>
             </motion.div>

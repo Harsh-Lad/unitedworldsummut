@@ -17,13 +17,13 @@ export default function Hero() {
 
           <div className="relative">
             <span className="font-(family-name:--font-good-times) text-sm md:text-base xl:text-lg font-bold text-white tracking-wide uppercase">
-              Dates Announcing Soon
+              1st &amp; 2nd April 2027
             </span>
           </div>
 
           <div className="relative">
             <div className="text-center font-(family-name:--font-good-times) text-[12px] md:text-base xl:text-lg font-bold text-gold-300 tracking-wide">
-              Venue Announcing Soon
+              United Nations Economic Commission for Africa (UNECA), Addis Ababa
             </div>
           </div>
         </div>
