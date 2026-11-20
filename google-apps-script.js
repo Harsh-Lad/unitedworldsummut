@@ -116,7 +116,7 @@ function testBookingEmails() {
     delegates: 1,
     additionalDelegates: "",
     event: "United Economic Summit 2026 (Dubai Edition)",
-    eventDates: "30th December 2026",
+    eventDates: "30th December 2026 to 9th January 2027",
     eventCity: "Dubai, United Arab Emirates",
   };
   sendBookingConfirmation(sample);
@@ -381,7 +381,7 @@ function emailShell(title, subtitle, inner) {
       <div style="height:4px;background:#d4a73d;"></div>
       <div style="padding:28px 28px 8px;">${inner}</div>
       <div style="padding:20px 28px 28px;text-align:center;color:#9ca3af;font-size:12px;line-height:1.6;">
-        United Economic Summit 2026 · Dubai · 30th December 2026<br>
+        United Economic Summit 2026 · Dubai · 30th December 2026 to 9th January 2027<br>
         Organised by United Gate One · Media Partner: Bharat 24<br>
         <a href="mailto:${BOOKING_REPLY_TO}" style="color:#a01118;">${BOOKING_REPLY_TO}</a>
       </div>
@@ -440,7 +440,7 @@ function sendBookingConfirmation(b) {
     htmlBody: emailShell("Booking Confirmed", "United Economic Summit 2026 · Dubai", inner),
     body:
       "Dear " + b.fullName + ",\n\n" +
-      "Your place at the United Economic Summit 2026, Dubai (30th December 2026) is confirmed.\n\n" +
+      "Your place at the United Economic Summit 2026, Dubai (30th December 2026 to 9th January 2027) is confirmed.\n\n" +
       "Booking ID: " + b.bookingId + "\n" +
       "Travel dates: " + formatArrival(b.arrivalDate) + "\n" +
       "Delegates: " + b.delegates + "\n" +
