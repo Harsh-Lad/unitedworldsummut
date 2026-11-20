@@ -12,7 +12,7 @@ export const dubaiSummit = {
   organiser: "United Gate One",
   mediaPartner: "Bharat 24",
   city: "Dubai, United Arab Emirates",
-  dateLabel: "1st to 10th December 2026",
+  dateLabel: "30th December 2026",
   startDate: "2026-12-01",
   endDate: "2026-12-10",
   /** Package length: 2 nights / 3 days. Last arrival day keeps the stay inside the event window. */
